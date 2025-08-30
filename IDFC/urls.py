@@ -16,15 +16,20 @@ Including another URLconf
 """
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from django.views.generic.base import RedirectView # Import RedirectView
 from . import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.index, name="index"),
-    path("transactions", views.transactions_view, name="transactions"),
-    path("instructions", views.instructions_view, name="instructions"),
+    # Redirect direct access to chat, transactions, and instructions to the dashboard
+    path("chat/", RedirectView.as_view(url='/', permanent=False), name='chat_redirect'),
+    path("transactions", RedirectView.as_view(url='/', permanent=False), name='transactions_redirect'),
+    path("instructions", RedirectView.as_view(url='/', permanent=False), name='instructions_redirect'),
+    path("settings", RedirectView.as_view(url='/', permanent=False), name='settings_redirect'),
+    path('api/', include('chatbot.urls')),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

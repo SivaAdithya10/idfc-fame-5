@@ -7,8 +7,8 @@ import markdown
 def index(request):
     return render(request, 'index.html')
 
-def transactions_view(request):
-    return HttpResponse("This is the transactions page.")
+# def transactions_view(request):
+#     return HttpResponse("This is the transactions page.")
 
-def instructions_view(request):
-    return render(request, 'index.html')
+# def instructions_view(request):
+#     return render(request, 'index.html')

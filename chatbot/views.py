@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from crewai import Agent, Task, Crew, Process
 from django.conf import settings
-from langchain_google_genai import ChatGoogleGenerativeAI
+from crewai.llm import LLM
 import logging
 
 # Get an instance of a logger
@@ -25,8 +25,8 @@ class ChatView(APIView):
                             status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         try:
-            llm = ChatGoogleGenerativeAI(
-                model=selected_model,
+            llm = LLM(
+                model=f"gemini/{selected_model}",
                 google_api_key=gemini_api_key
             )
         except Exception as e:
@@ -63,10 +63,10 @@ class ChatView(APIView):
             logger.info(f"Attempting to kickoff CrewAI for user message: {user_message}")
             result = crew.kickoff()
             bot_response = result
-            logger.info(f"CrewAI kickoff successful. Response: {bot_response[:100]}...") # Log first 100 chars
+            logger.info(f"CrewAI kickoff successful. Response: {bot_response.raw[:100]}...") # Log first 100 chars
         except Exception as e:
             logger.exception(f"Error during CrewAI kickoff for user message: {user_message}")
-            bot_response = f"An internal error occurred while processing your request. Please try again later. Error: {str(e)}"
+            bot_response = "An internal error occurred while processing your request. Please try again later."
             return Response({"error": bot_response}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         return Response({"response": bot_response}, status=status.HTTP_200_OK)

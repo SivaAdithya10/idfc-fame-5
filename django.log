@@ -1,0 +1,37 @@
+INFO 2025-08-30 18:41:45,312 autoreload 61976 60284 Watching for file changes with StatReloader
+INFO 2025-08-30 18:41:58,992 basehttp 61976 10144 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 18:41:59,004 basehttp 61976 10144 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 18:41:59,050 basehttp 61976 10144 "GET /static/assets/index-B_xogRZr.js HTTP/1.1" 304 0
+INFO 2025-08-30 18:41:59,055 basehttp 61976 57544 "GET /static/assets/index-Dk23as1N.css HTTP/1.1" 304 0
+INFO 2025-08-30 18:42:00,465 basehttp 61976 57544 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 18:42:05,621 basehttp 61976 57544 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 18:42:06,011 basehttp 61976 57544 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 18:42:11,818 views 61976 57544 Attempting to kickoff CrewAI for user message: hello
+INFO 2025-08-30 18:42:13,143 views 61976 57544 CrewAI kickoff successful. Response: Hello! How can I help you today?...
+INFO 2025-08-30 18:42:13,144 basehttp 61976 57544 "POST /api/chat/ HTTP/1.1" 200 615
+WARNING 2025-08-30 18:43:23,460 log 61976 57544 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-30 18:43:23,461 basehttp 61976 57544 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3508
+INFO 2025-08-30 18:45:02,413 basehttp 61976 57544 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 18:45:02,423 basehttp 61976 57544 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 18:45:02,467 basehttp 61976 57544 "GET /static/assets/index-B_xogRZr.js HTTP/1.1" 304 0
+INFO 2025-08-30 18:45:02,472 basehttp 61976 10144 "GET /static/assets/index-Dk23as1N.css HTTP/1.1" 304 0
+INFO 2025-08-30 18:45:07,416 views 61976 10144 Attempting to kickoff CrewAI for user message: hi
+INFO 2025-08-30 18:45:08,684 views 61976 10144 CrewAI kickoff successful. Response: Hello! How can I help you today?...
+INFO 2025-08-30 18:45:08,685 basehttp 61976 10144 "POST /api/chat/ HTTP/1.1" 200 606
+WARNING 2025-08-30 18:45:11,126 log 61976 10144 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-30 18:45:11,127 basehttp 61976 10144 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3508
+INFO 2025-08-30 18:48:39,345 autoreload 54976 60288 Watching for file changes with StatReloader
+INFO 2025-08-30 18:48:50,431 basehttp 54976 60808 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-30 18:48:50,441 basehttp 54976 56528 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 18:48:50,452 basehttp 54976 56528 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 18:48:50,584 basehttp 54976 25292 "GET /static/assets/index-Dk23as1N.css HTTP/1.1" 200 65232
+INFO 2025-08-30 18:48:50,585 basehttp 54976 56528 "GET /static/assets/index-D4vO44n3.js HTTP/1.1" 200 398301
+INFO 2025-08-30 18:48:53,732 views 54976 56528 Attempting to kickoff CrewAI for user message: hello
+INFO 2025-08-30 18:48:56,587 views 54976 56528 CrewAI kickoff successful. Response: Hello! How can I help you today?...
+INFO 2025-08-30 18:48:56,588 basehttp 54976 56528 "POST /api/chat/ HTTP/1.1" 200 616
+INFO 2025-08-30 18:49:09,681 views 54976 56528 Attempting to kickoff CrewAI for user message: what can you do for me?
+INFO 2025-08-30 18:49:12,278 views 54976 56528 CrewAI kickoff successful. Response: I can help you with a variety of tasks, including answering questions, providing information, genera...
+INFO 2025-08-30 18:49:12,279 basehttp 54976 56528 "POST /api/chat/ HTTP/1.1" 200 954
+INFO 2025-08-30 18:49:31,920 views 54976 56528 Attempting to kickoff CrewAI for user message: hi are u gemini flash?
+INFO 2025-08-30 18:49:41,387 views 54976 56528 CrewAI kickoff successful. Response: Hello! I am an AI assistant for customer support. My goal is to provide helpful and concise answers ...
+INFO 2025-08-30 18:49:41,388 basehttp 54976 56528 "POST /api/chat/ HTTP/1.1" 200 902

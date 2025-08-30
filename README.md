@@ -11,13 +11,21 @@ The backend is a Django project. The main application is located in the `IDFC` d
 A new Django app named `chatbot` has been added to handle AI chatbot functionalities. This includes:
 
 *   **Chat API Endpoint**: A new endpoint `/api/chat/` has been introduced for text-based communication with the chatbot.
-*   **Gemini Model Integration**: The chatbot now dynamically uses the Gemini model selected from the frontend, leveraging `langchain_google_genai.ChatGoogleGenerativeAI` for integration. The supported models are `gemini-2.5-pro`, `gemini-2.5-flash`, and `gemini-2.5-flash-lite`.
+*   **Gemini Model Integration**: The chatbot now dynamically uses the Gemini model selected from the frontend, leveraging `crewai.llm.LLM` for integration. The `model` parameter is passed with the `gemini/` prefix (e.g., `gemini/gemini-2.5-pro`) to ensure `litellm` correctly identifies the provider. The supported models are `gemini-2.5-pro`, `gemini-2.5-flash`, and `gemini-2.5-flash-lite`.
 *   **Voice Chat Integration (Future)**: Planned integration for accepting voice inputs and providing audio outputs.
 *   **Settings Management (Future)**: Functionality to allow users to change chatbot settings.
 *   **Financial Services Sales (Future)**: The chatbot will be able to offer relevant financial services.
 *   **Financial Advice with Disclaimer (Future)**: The chatbot will provide financial advice based on a configurable playbook.
 
-*   **CrewAI Verbose Setting**: The `verbose` parameter for the CrewAI `Crew` object now expects a boolean value (`True` or `False`) instead of integer logging levels (1 or 2). This change was made to align with pydantic validation requirements.
+*   **Frontend Output Handling**: The frontend now correctly extracts the raw string content from the `CrewOutput` object received from the backend, preventing rendering errors and blank pages.
+
+### Logging Configuration
+
+Logs are now saved to a file named `django.log` in the project's base directory. This file will store detailed log messages from both the `chatbot` application and the Django framework. The logging is configured with a rotating file handler, meaning it will automatically manage log file sizes and keep a certain number of backup files.
+
+### Error Handling
+
+Internal server errors encountered during chat processing will no longer display detailed error messages to the user in the frontend. Instead, a generic message "An internal error occurred while processing your request. Please try again later." will be displayed. Detailed error information will still be available in the `django.log` file.
 
 ### Running the Django Server
 
@@ -53,7 +61,15 @@ The frontend is a React application built with Vite. The source files are locate
 To make changes to the frontend, you need to have Node.js and npm installed. Then, you can run the following commands in the `react_frontend` directory:
 
 *   `npm install` to install the dependencies.
+*   **Markdown Rendering Dependencies**: For the AI chatbot's messages to display in Markdown format, you need to install additional dependencies. Navigate to the `react_frontend` directory and run:
+    ```bash
+    npm install react-markdown rehype-raw remark-gfm react-syntax-highlighter
+    ```
 *   `npm run dev` to start the Vite development server.
+
+    **Note:** After making changes to the frontend code, you will need to rebuild the frontend for the changes to take effect. Run `npm --prefix react_frontend run build` to rebuild the production-ready static files.
+
+    **Note:** The `rehype-raw` and `react-syntax-highlighter` dependencies have been installed to resolve build issues.
 
 **Note:** The chat interface now allows selection of specific Gemini models (`gemini-2.5-pro` (default), `gemini-2.5-flash`, `gemini-2.5-flash-lite`).
 
