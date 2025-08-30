@@ -22,6 +22,8 @@ The backend is a Django project. The main application is located in the `IDFC` d
 
     The application will be available at http://127.0.0.1:8000/.
 
+    A new endpoint `/transactions` has been added, accessible at http://127.0.0.1:8000/transactions.
+
 ## Frontend (React)
 
 The frontend is a React application built with Vite. The source files are located in the `react_frontend` directory.
@@ -35,9 +37,13 @@ To make changes to the frontend, you need to have Node.js and npm installed. The
 
 ### Building the Frontend
 
-*   `npm run build` to build the production-ready static files.
+*   `npm --prefix react_frontend run build` to build the production-ready static files.
 
-After building the frontend, the new static files will be located in the `react_frontend/dist` directory. You need to copy the contents of the `dist/assets` directory to the `static/react/assets` directory, and the `dist/index.html` to `static/react/index.html` for them to be served by Django.
+The Vite build process is configured (in `react_frontend/vite.config.ts`) to output assets directly into the `static/react` directory with a `/static/` base path. This means there is no need to manually copy files after building. Django is configured to serve these files directly from the `static/react` directory.
+
+## Instructions Page
+
+The "Instructions" page is now handled by the React frontend. When you navigate to `/instructions`, the React application loads, and the `Instructions` component fetches and renders the content from `static/react/instructions.md`. To update the content of this page, simply edit the `static/react/instructions.md` file.
 
 ## Troubleshooting
 
