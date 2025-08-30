@@ -6,6 +6,19 @@ This is a Django project with a React frontend.
 
 The backend is a Django project. The main application is located in the `IDFC` directory.
 
+### New Chatbot Functionality
+
+A new Django app named `chatbot` has been added to handle AI chatbot functionalities. This includes:
+
+*   **Chat API Endpoint**: A new endpoint `/api/chat/` has been introduced for text-based communication with the chatbot.
+*   **Gemini Model Integration**: The chatbot now dynamically uses the Gemini model selected from the frontend, leveraging `langchain_google_genai.ChatGoogleGenerativeAI` for integration. The supported models are `gemini-2.5-pro`, `gemini-2.5-flash`, and `gemini-2.5-flash-lite`.
+*   **Voice Chat Integration (Future)**: Planned integration for accepting voice inputs and providing audio outputs.
+*   **Settings Management (Future)**: Functionality to allow users to change chatbot settings.
+*   **Financial Services Sales (Future)**: The chatbot will be able to offer relevant financial services.
+*   **Financial Advice with Disclaimer (Future)**: The chatbot will provide financial advice based on a configurable playbook.
+
+*   **CrewAI Verbose Setting**: The `verbose` parameter for the CrewAI `Crew` object now expects a boolean value (`True` or `False`) instead of integer logging levels (1 or 2). This change was made to align with pydantic validation requirements.
+
 ### Running the Django Server
 
 1.  **Install Python dependencies:**
@@ -14,7 +27,14 @@ The backend is a Django project. The main application is located in the `IDFC` d
     pip install -r requirements.txt
     ```
 
-2.  **Run the Django development server:**
+2.  **Set up Gemini API Key:**
+    Create a `.env` file in the project root (`IDFCFame5/`) and add your Gemini API key:
+    ```
+    GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+    ```
+    Replace `YOUR_GEMINI_API_KEY` with your actual key obtained from Google AI Studio.
+
+3.  **Run the Django development server:**
 
     ```bash
     python manage.py runserver
@@ -22,7 +42,7 @@ The backend is a Django project. The main application is located in the `IDFC` d
 
     The application will be available at http://127.0.0.1:8000/.
 
-    A new endpoint `/transactions` has been added, accessible at http://127.0.0.1:8000/transactions.
+    The new chat API endpoint is accessible at http://127.0.0.1:8000/api/chat/.
 
 ## Frontend (React)
 
@@ -34,6 +54,8 @@ To make changes to the frontend, you need to have Node.js and npm installed. The
 
 *   `npm install` to install the dependencies.
 *   `npm run dev` to start the Vite development server.
+
+**Note:** The chat interface now allows selection of specific Gemini models (`gemini-2.5-pro` (default), `gemini-2.5-flash`, `gemini-2.5-flash-lite`).
 
 ### Building the Frontend
 
