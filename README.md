@@ -61,10 +61,6 @@ The frontend is a React application built with Vite. The source files are locate
 To make changes to the frontend, you need to have Node.js and npm installed. Then, you can run the following commands in the `react_frontend` directory:
 
 *   `npm install` to install the dependencies.
-*   **Markdown Rendering Dependencies**: For the AI chatbot's messages to display in Markdown format, you need to install additional dependencies. Navigate to the `react_frontend` directory and run:
-    ```bash
-    npm install react-markdown rehype-raw remark-gfm react-syntax-highlighter
-    ```
 *   `npm run dev` to start the Vite development server.
 
     **Note:** After making changes to the frontend code, you will need to rebuild the frontend for the changes to take effect. Run `npm --prefix react_frontend run build` to rebuild the production-ready static files.
@@ -76,6 +72,7 @@ To make changes to the frontend, you need to have Node.js and npm installed. The
 ### Building the Frontend
 
 *   `npm --prefix react_frontend run build` to build the production-ready static files.
+    The `vite.config.ts` has been updated to ensure `remark-gfm` is correctly bundled.
 
 The Vite build process is configured (in `react_frontend/vite.config.ts`) to output assets directly into the `static/react` directory with a `/static/` base path. This means there is no need to manually copy files after building. Django is configured to serve these files directly from the `static/react` directory.
 

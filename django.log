@@ -35,3 +35,681 @@ INFO 2025-08-30 18:49:12,279 basehttp 54976 56528 "POST /api/chat/ HTTP/1.1" 200
 INFO 2025-08-30 18:49:31,920 views 54976 56528 Attempting to kickoff CrewAI for user message: hi are u gemini flash?
 INFO 2025-08-30 18:49:41,387 views 54976 56528 CrewAI kickoff successful. Response: Hello! I am an AI assistant for customer support. My goal is to provide helpful and concise answers ...
 INFO 2025-08-30 18:49:41,388 basehttp 54976 56528 "POST /api/chat/ HTTP/1.1" 200 902
+INFO 2025-08-30 18:58:48,966 autoreload 58108 57312 Watching for file changes with StatReloader
+INFO 2025-08-30 18:58:58,819 basehttp 58108 49808 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 18:58:58,830 basehttp 58108 49808 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 18:58:58,959 basehttp 58108 56964 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 200 65290
+INFO 2025-08-30 18:58:58,970 basehttp 58108 49808 "GET /static/assets/index-B4XIfnko.js HTTP/1.1" 200 1374665
+INFO 2025-08-30 18:59:01,660 basehttp 58108 56964 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 18:59:01,686 basehttp 58108 56964 "GET /static/assets/index-B4XIfnko.js HTTP/1.1" 304 0
+INFO 2025-08-30 18:59:01,687 basehttp 58108 49808 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+INFO 2025-08-30 18:59:06,145 basehttp 58108 56964 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+WARNING 2025-08-30 18:59:06,168 log 58108 56964 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-30 18:59:06,169 basehttp 58108 56964 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3508
+INFO 2025-08-30 19:01:30,971 autoreload 40012 9196 Watching for file changes with StatReloader
+INFO 2025-08-30 19:01:41,552 basehttp 40012 57076 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:01:41,694 basehttp 40012 55556 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 200 65290
+INFO 2025-08-30 19:01:41,711 basehttp 40012 57076 "GET /static/assets/index-DzdFZJ7a.js HTTP/1.1" 200 1416301
+INFO 2025-08-30 19:01:45,975 basehttp 40012 57076 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-30 19:01:45,984 basehttp 40012 55556 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:01:45,994 basehttp 40012 55556 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:01:46,026 basehttp 40012 55556 "GET /static/assets/index-DzdFZJ7a.js HTTP/1.1" 304 0
+INFO 2025-08-30 19:01:46,027 basehttp 40012 36732 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+INFO 2025-08-30 19:01:48,916 basehttp 40012 55556 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+WARNING 2025-08-30 19:01:48,942 log 40012 55556 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-30 19:01:48,943 basehttp 40012 55556 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3508
+INFO 2025-08-30 19:03:09,979 autoreload 56452 51688 Watching for file changes with StatReloader
+INFO 2025-08-30 19:03:30,026 basehttp 56452 58032 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-30 19:03:30,034 basehttp 56452 47548 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:03:30,044 basehttp 56452 47548 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:03:30,184 basehttp 56452 47548 "GET /static/assets/index-Bq__Z8_r.js HTTP/1.1" 200 1416306
+INFO 2025-08-30 19:03:30,186 basehttp 56452 43816 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 200 65290
+INFO 2025-08-30 19:03:33,409 basehttp 56452 43816 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+WARNING 2025-08-30 19:03:33,431 log 56452 43816 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-30 19:03:33,432 basehttp 56452 43816 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3508
+INFO 2025-08-30 19:04:35,237 autoreload 62572 40936 Watching for file changes with StatReloader
+INFO 2025-08-30 19:04:44,118 basehttp 62572 59024 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-30 19:04:44,127 basehttp 62572 30316 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:04:44,140 basehttp 62572 30316 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:04:44,282 basehttp 62572 54868 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 200 65290
+INFO 2025-08-30 19:04:44,344 basehttp 62572 30316 "GET /static/assets/index-BfoHgUa5.js HTTP/1.1" 200 1416498
+INFO 2025-08-30 19:04:48,385 basehttp 62572 30316 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-30 19:04:48,393 basehttp 62572 54868 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:04:48,402 basehttp 62572 54868 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:04:48,429 basehttp 62572 54868 "GET /static/assets/index-BfoHgUa5.js HTTP/1.1" 304 0
+INFO 2025-08-30 19:04:48,433 basehttp 62572 48476 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+INFO 2025-08-30 19:04:50,603 basehttp 62572 48476 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+WARNING 2025-08-30 19:04:50,630 log 62572 48476 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-30 19:04:50,631 basehttp 62572 48476 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3508
+INFO 2025-08-30 19:04:53,191 basehttp 62572 48476 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-30 19:04:53,201 basehttp 62572 54868 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:04:53,211 basehttp 62572 54868 "GET / HTTP/1.1" 200 1362
+WARNING 2025-08-30 19:04:53,246 log 62572 54868 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-30 19:04:53,248 basehttp 62572 54868 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3508
+INFO 2025-08-30 19:04:53,251 basehttp 62572 60572 "GET /static/assets/index-BfoHgUa5.js HTTP/1.1" 304 0
+INFO 2025-08-30 19:04:53,260 basehttp 62572 60572 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+INFO 2025-08-30 19:06:11,848 autoreload 59028 56076 Watching for file changes with StatReloader
+INFO 2025-08-30 19:06:22,693 basehttp 59028 62832 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-30 19:06:22,703 basehttp 59028 59548 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:06:22,715 basehttp 59028 59548 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:06:22,841 basehttp 59028 63244 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 200 65290
+INFO 2025-08-30 19:06:22,863 basehttp 59028 59548 "GET /static/assets/index-D7Qukq3o.js HTTP/1.1" 200 1416523
+INFO 2025-08-30 19:06:24,225 basehttp 59028 59548 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:06:26,895 basehttp 59028 59548 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+WARNING 2025-08-30 19:06:26,918 log 59028 59548 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-30 19:06:26,919 basehttp 59028 59548 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3508
+INFO 2025-08-30 19:08:03,207 autoreload 59512 35212 Watching for file changes with StatReloader
+INFO 2025-08-30 19:08:12,307 basehttp 59512 56076 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-30 19:08:12,318 basehttp 59512 61540 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:08:12,332 basehttp 59512 61540 "GET / HTTP/1.1" 200 1362
+WARNING 2025-08-30 19:08:12,388 log 59512 61540 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-30 19:08:12,390 basehttp 59512 61540 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3508
+INFO 2025-08-30 19:08:12,477 basehttp 59512 60424 "GET /static/assets/index-BB3iv0Tk.css HTTP/1.1" 200 65255
+INFO 2025-08-30 19:08:12,509 basehttp 59512 54816 "GET /static/assets/index-Cc7OjPI7.js HTTP/1.1" 200 779896
+INFO 2025-08-30 19:18:10,712 autoreload 56860 57076 Watching for file changes with StatReloader
+INFO 2025-08-30 19:18:23,165 basehttp 56860 42108 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-30 19:18:23,174 basehttp 56860 61084 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:18:23,185 basehttp 56860 61084 "GET / HTTP/1.1" 200 1362
+WARNING 2025-08-30 19:18:23,229 log 56860 61084 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-30 19:18:23,230 basehttp 56860 61084 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3508
+INFO 2025-08-30 19:18:23,318 basehttp 56860 61084 "GET /static/assets/index-BB3iv0Tk.css HTTP/1.1" 200 65255
+INFO 2025-08-30 19:18:23,329 basehttp 56860 47808 "GET /static/assets/index-Cc7OjPI7.js HTTP/1.1" 200 779896
+INFO 2025-08-30 19:18:23,499 basehttp 56860 47808 "GET / HTTP/1.1" 200 1362
+WARNING 2025-08-30 19:18:23,544 log 56860 47808 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-30 19:18:23,546 basehttp 56860 47808 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3508
+INFO 2025-08-30 19:18:26,596 basehttp 56860 47808 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-30 19:18:26,604 basehttp 56860 61084 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:18:26,613 basehttp 56860 61084 "GET / HTTP/1.1" 200 1362
+WARNING 2025-08-30 19:18:26,653 log 56860 61084 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-30 19:18:26,656 basehttp 56860 61084 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3508
+INFO 2025-08-30 19:18:26,660 basehttp 56860 51812 "GET /static/assets/index-Cc7OjPI7.js HTTP/1.1" 304 0
+INFO 2025-08-30 19:18:26,663 basehttp 56860 56140 "GET /static/assets/index-BB3iv0Tk.css HTTP/1.1" 304 0
+INFO 2025-08-30 19:21:02,665 autoreload 10088 62532 Watching for file changes with StatReloader
+INFO 2025-08-30 19:21:13,800 basehttp 10088 54904 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:21:13,905 basehttp 10088 60948 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 200 65290
+INFO 2025-08-30 19:21:13,917 basehttp 10088 54904 "GET /static/assets/index-CL4mXUw7.js HTTP/1.1" 200 1382464
+INFO 2025-08-30 19:21:14,826 basehttp 10088 54904 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:21:14,856 basehttp 10088 54904 "GET /static/assets/index-CL4mXUw7.js HTTP/1.1" 304 0
+INFO 2025-08-30 19:21:14,858 basehttp 10088 60948 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+INFO 2025-08-30 19:21:15,482 basehttp 10088 60948 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:21:19,809 views 10088 60948 Attempting to kickoff CrewAI for user message: great
+INFO 2025-08-30 19:21:22,498 views 10088 60948 CrewAI kickoff successful. Response: I'm glad to hear that! Is there anything else I can help you with today?...
+INFO 2025-08-30 19:21:22,499 basehttp 10088 60948 "POST /api/chat/ HTTP/1.1" 200 696
+INFO 2025-08-30 19:21:36,420 views 10088 60948 Attempting to kickoff CrewAI for user message: can you write me a poem?
+INFO 2025-08-30 19:21:48,927 views 10088 60948 CrewAI kickoff successful. Response: I can write you a poem! To help me write something you'll enjoy, could you tell me what kind of poem...
+INFO 2025-08-30 19:21:48,928 basehttp 10088 60948 "POST /api/chat/ HTTP/1.1" 200 1193
+INFO 2025-08-30 19:24:18,802 autoreload 10088 62532 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:24:19,883 autoreload 31196 62028 Watching for file changes with StatReloader
+INFO 2025-08-30 19:24:28,632 autoreload 31196 62028 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:24:29,655 autoreload 63300 60788 Watching for file changes with StatReloader
+INFO 2025-08-30 19:24:47,477 autoreload 63300 60788 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:24:48,559 autoreload 60424 56484 Watching for file changes with StatReloader
+INFO 2025-08-30 19:25:08,210 autoreload 60424 56484 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:25:09,241 autoreload 51528 63224 Watching for file changes with StatReloader
+INFO 2025-08-30 19:25:17,723 autoreload 51528 63224 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:25:18,754 autoreload 59452 45068 Watching for file changes with StatReloader
+INFO 2025-08-30 19:26:01,550 autoreload 59452 45068 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:26:02,564 autoreload 39132 36968 Watching for file changes with StatReloader
+INFO 2025-08-30 19:26:40,001 autoreload 39132 36968 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:26:41,026 autoreload 42776 59704 Watching for file changes with StatReloader
+INFO 2025-08-30 19:26:49,518 autoreload 42776 59704 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:26:50,543 autoreload 53532 56240 Watching for file changes with StatReloader
+INFO 2025-08-30 19:27:03,990 autoreload 53532 56240 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:27:05,079 autoreload 38144 48676 Watching for file changes with StatReloader
+INFO 2025-08-30 19:30:05,645 autoreload 38144 48676 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:30:06,698 autoreload 46792 59704 Watching for file changes with StatReloader
+INFO 2025-08-30 19:30:29,130 autoreload 46792 59704 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:30:30,168 autoreload 54380 44244 Watching for file changes with StatReloader
+INFO 2025-08-30 19:30:41,043 autoreload 54380 44244 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:30:42,213 autoreload 59040 41560 Watching for file changes with StatReloader
+INFO 2025-08-30 19:30:50,701 autoreload 59040 41560 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:30:51,736 autoreload 25688 54852 Watching for file changes with StatReloader
+INFO 2025-08-30 19:31:26,865 autoreload 58800 58124 Watching for file changes with StatReloader
+INFO 2025-08-30 19:31:38,324 basehttp 58800 54476 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:31:38,336 basehttp 58800 54476 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:31:38,382 basehttp 58800 54476 "GET /static/assets/index-CL4mXUw7.js HTTP/1.1" 304 0
+INFO 2025-08-30 19:31:38,390 basehttp 58800 61196 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+INFO 2025-08-30 19:31:41,581 views 58800 61196 Attempting to kickoff CrewAI for user message: hi
+ERROR 2025-08-30 19:31:41,581 views 58800 61196 Error during CrewAI kickoff for user message: hi
+Traceback (most recent call last):
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py", line 58, in post
+    result = crew.kickoff()
+             ^^^^
+NameError: name 'crew' is not defined. Did you mean: 'Crew'?
+ERROR 2025-08-30 19:31:41,582 log 58800 61196 Internal Server Error: /api/chat/
+ERROR 2025-08-30 19:31:41,583 basehttp 58800 61196 "POST /api/chat/ HTTP/1.1" 500 93
+INFO 2025-08-30 19:32:11,790 autoreload 58800 58124 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:32:13,051 autoreload 58416 59804 Watching for file changes with StatReloader
+INFO 2025-08-30 19:32:19,940 basehttp 58416 43148 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-30 19:32:19,949 basehttp 58416 61456 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:32:19,961 basehttp 58416 61456 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:32:26,045 views 58416 61456 Attempting to kickoff CrewAI for user message: hi
+ERROR 2025-08-30 19:32:26,045 views 58416 61456 Error during CrewAI kickoff for user message: hi
+Traceback (most recent call last):
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py", line 58, in post
+    result = Crew.kickoff()
+TypeError: Crew.kickoff() missing 1 required positional argument: 'self'
+ERROR 2025-08-30 19:32:26,047 log 58416 61456 Internal Server Error: /api/chat/
+ERROR 2025-08-30 19:32:26,048 basehttp 58416 61456 "POST /api/chat/ HTTP/1.1" 500 93
+INFO 2025-08-30 19:33:58,451 autoreload 58416 59804 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:33:59,599 autoreload 63356 63256 Watching for file changes with StatReloader
+INFO 2025-08-30 19:34:09,426 basehttp 63356 55424 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:34:09,439 basehttp 63356 55424 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:34:09,479 basehttp 63356 55424 "GET /static/assets/index-CL4mXUw7.js HTTP/1.1" 304 0
+INFO 2025-08-30 19:34:09,488 basehttp 63356 36244 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+INFO 2025-08-30 19:34:13,184 views 63356 36244 Attempting to kickoff CrewAI for user message: hi
+INFO 2025-08-30 19:34:15,819 views 63356 36244 CrewAI kickoff successful. Response: Hello! How can I help you today?...
+INFO 2025-08-30 19:34:15,820 basehttp 63356 36244 "POST /api/chat/ HTTP/1.1" 200 606
+INFO 2025-08-30 19:34:23,335 views 63356 36244 Attempting to kickoff CrewAI for user message: my name is Siva
+INFO 2025-08-30 19:34:25,697 views 63356 36244 CrewAI kickoff successful. Response: Hello Siva, how can I help you today?...
+INFO 2025-08-30 19:34:25,698 basehttp 63356 36244 "POST /api/chat/ HTTP/1.1" 200 656
+INFO 2025-08-30 19:34:35,995 views 63356 36244 Attempting to kickoff CrewAI for user message: what is my name?
+INFO 2025-08-30 19:34:37,094 views 63356 36244 CrewAI kickoff successful. Response: I do not have access to your personal information, including your name. I am a large language model,...
+INFO 2025-08-30 19:34:37,096 basehttp 63356 36244 "POST /api/chat/ HTTP/1.1" 200 823
+INFO 2025-08-30 19:36:52,046 autoreload 63356 63256 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:36:54,291 autoreload 51360 62708 Watching for file changes with StatReloader
+INFO 2025-08-30 19:40:20,843 autoreload 60276 52236 Watching for file changes with StatReloader
+INFO 2025-08-30 19:40:30,821 basehttp 60276 48876 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-30 19:40:30,830 basehttp 60276 61376 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:40:30,846 basehttp 60276 61376 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:40:30,993 basehttp 60276 57456 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 200 65290
+INFO 2025-08-30 19:40:31,004 basehttp 60276 61376 "GET /static/assets/index-TzoQqQR4.js HTTP/1.1" 200 1382600
+INFO 2025-08-30 19:40:34,814 views 60276 57456 Attempting to kickoff CrewAI for user message: hi
+INFO 2025-08-30 19:40:34,815 views 60276 57456 Conversation history contains 1 messages.
+ERROR 2025-08-30 19:40:34,817 views 60276 57456 Error during CrewAI kickoff for user message: hi
+Traceback (most recent call last):
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py", line 89, in post
+    crew = Crew(agents=[chatbot_agent], tasks=[chat_task], verbose=2) # verbose=2 gives more detail
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\pydantic\main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for Crew
+verbose
+  Input should be a valid boolean, unable to interpret input [type=bool_parsing, input_value=2, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/bool_parsing
+ERROR 2025-08-30 19:40:34,824 log 60276 57456 Internal Server Error: /api/chat/
+ERROR 2025-08-30 19:40:34,825 basehttp 60276 57456 "POST /api/chat/ HTTP/1.1" 500 272
+INFO 2025-08-30 19:41:58,673 autoreload 60276 52236 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:42:00,234 autoreload 61980 27884 Watching for file changes with StatReloader
+INFO 2025-08-30 19:42:10,342 basehttp 61980 47224 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-30 19:42:10,351 basehttp 61980 41380 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:42:10,361 basehttp 61980 41380 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:42:10,389 basehttp 61980 41380 "GET /static/assets/index-TzoQqQR4.js HTTP/1.1" 304 0
+INFO 2025-08-30 19:42:10,393 basehttp 61980 56056 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+INFO 2025-08-30 19:42:13,744 views 61980 56056 Attempting to kickoff CrewAI for user message: Hi
+INFO 2025-08-30 19:42:13,745 views 61980 56056 Conversation history contains 1 messages.
+ERROR 2025-08-30 19:42:13,845 views 61980 56056 Error during CrewAI kickoff for user message: Hi
+Traceback (most recent call last):
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py", line 90, in post
+    result = crew.kickoff()
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\crew.py", line 661, in kickoff
+    result = self._run_sequential_process()
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\crew.py", line 772, in _run_sequential_process
+    return self._execute_tasks(self.tasks)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\crew.py", line 875, in _execute_tasks
+    task_output = task.execute_sync(
+        agent=agent_to_use,
+        context=context,
+        tools=cast(List[BaseTool], tools_for_task),
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\task.py", line 382, in execute_sync
+    return self._execute_core(agent, context, tools)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\task.py", line 530, in _execute_core
+    raise e  # Re-raise the exception after emitting the event
+    ^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\task.py", line 446, in _execute_core
+    result = agent.execute_task(
+        task=self,
+        context=context,
+        tools=tools,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agent.py", line 475, in execute_task
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agent.py", line 451, in execute_task
+    result = self._execute_without_timeout(task_prompt, task)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agent.py", line 547, in _execute_without_timeout
+    return self.agent_executor.invoke(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        {
+        ^
+    ...<4 lines>...
+        }
+        ^
+    )["output"]
+    ^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 114, in invoke
+    formatted_answer = self._invoke_loop()
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 208, in _invoke_loop
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 154, in _invoke_loop
+    answer = get_llm_response(
+        llm=self.llm,
+    ...<3 lines>...
+        from_task=self.task
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\utilities\agent_utils.py", line 160, in get_llm_response
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\utilities\agent_utils.py", line 153, in get_llm_response
+    answer = llm.call(
+        messages,
+    ...<2 lines>...
+        from_agent=from_agent,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\llm.py", line 1030, in call
+    return self._handle_non_streaming_response(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        params, callbacks, available_functions, from_task, from_agent
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\llm.py", line 813, in _handle_non_streaming_response
+    response = litellm.completion(**params)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\utils.py", line 1330, in wrapper
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\utils.py", line 1205, in wrapper
+    result = original_function(*args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\main.py", line 3427, in completion
+    raise exception_type(
+    ...<5 lines>...
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\main.py", line 1097, in completion
+    model, custom_llm_provider, dynamic_api_key, api_base = get_llm_provider(
+                                                            ~~~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        api_key=api_key,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\litellm_core_utils\get_llm_provider_logic.py", line 391, in get_llm_provider
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\litellm_core_utils\get_llm_provider_logic.py", line 368, in get_llm_provider
+    raise litellm.exceptions.BadRequestError(  # type: ignore
+    ...<8 lines>...
+    )
+litellm.exceptions.BadRequestError: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=models/gemini-2.5-flash-lite
+ Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
+ERROR 2025-08-30 19:42:13,866 log 61980 56056 Internal Server Error: /api/chat/
+ERROR 2025-08-30 19:42:13,867 basehttp 61980 56056 "POST /api/chat/ HTTP/1.1" 500 351
+INFO 2025-08-30 19:44:42,732 autoreload 61980 27884 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:44:44,500 autoreload 50464 61072 Watching for file changes with StatReloader
+INFO 2025-08-30 19:45:16,582 basehttp 50464 58324 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-30 19:45:16,593 basehttp 50464 52112 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:45:16,607 basehttp 50464 52112 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:45:16,654 basehttp 50464 52112 "GET /static/assets/index-TzoQqQR4.js HTTP/1.1" 304 0
+INFO 2025-08-30 19:45:16,657 basehttp 50464 39572 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+INFO 2025-08-30 19:45:19,447 views 50464 39572 Attempting to kickoff CrewAI for user message: hi
+INFO 2025-08-30 19:45:19,448 views 50464 39572 Conversation history contains 1 messages.
+ERROR 2025-08-30 19:45:19,518 views 50464 39572 Error during CrewAI kickoff for user message: hi
+Traceback (most recent call last):
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py", line 90, in post
+    result = crew.kickoff()
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\crew.py", line 661, in kickoff
+    result = self._run_sequential_process()
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\crew.py", line 772, in _run_sequential_process
+    return self._execute_tasks(self.tasks)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\crew.py", line 875, in _execute_tasks
+    task_output = task.execute_sync(
+        agent=agent_to_use,
+        context=context,
+        tools=cast(List[BaseTool], tools_for_task),
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\task.py", line 382, in execute_sync
+    return self._execute_core(agent, context, tools)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\task.py", line 530, in _execute_core
+    raise e  # Re-raise the exception after emitting the event
+    ^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\task.py", line 446, in _execute_core
+    result = agent.execute_task(
+        task=self,
+        context=context,
+        tools=tools,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agent.py", line 475, in execute_task
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agent.py", line 451, in execute_task
+    result = self._execute_without_timeout(task_prompt, task)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agent.py", line 547, in _execute_without_timeout
+    return self.agent_executor.invoke(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        {
+        ^
+    ...<4 lines>...
+        }
+        ^
+    )["output"]
+    ^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 114, in invoke
+    formatted_answer = self._invoke_loop()
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 208, in _invoke_loop
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 154, in _invoke_loop
+    answer = get_llm_response(
+        llm=self.llm,
+    ...<3 lines>...
+        from_task=self.task
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\utilities\agent_utils.py", line 160, in get_llm_response
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\utilities\agent_utils.py", line 153, in get_llm_response
+    answer = llm.call(
+        messages,
+    ...<2 lines>...
+        from_agent=from_agent,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\llm.py", line 1030, in call
+    return self._handle_non_streaming_response(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        params, callbacks, available_functions, from_task, from_agent
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\llm.py", line 813, in _handle_non_streaming_response
+    response = litellm.completion(**params)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\utils.py", line 1330, in wrapper
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\utils.py", line 1205, in wrapper
+    result = original_function(*args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\main.py", line 3427, in completion
+    raise exception_type(
+    ...<5 lines>...
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\main.py", line 1097, in completion
+    model, custom_llm_provider, dynamic_api_key, api_base = get_llm_provider(
+                                                            ~~~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        api_key=api_key,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\litellm_core_utils\get_llm_provider_logic.py", line 391, in get_llm_provider
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\litellm_core_utils\get_llm_provider_logic.py", line 368, in get_llm_provider
+    raise litellm.exceptions.BadRequestError(  # type: ignore
+    ...<8 lines>...
+    )
+litellm.exceptions.BadRequestError: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=models/gemini/gemini-2.5-flash-lite
+ Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
+ERROR 2025-08-30 19:45:19,528 log 50464 39572 Internal Server Error: /api/chat/
+ERROR 2025-08-30 19:45:19,528 basehttp 50464 39572 "POST /api/chat/ HTTP/1.1" 500 358
+INFO 2025-08-30 19:46:28,889 autoreload 50464 61072 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:46:30,135 autoreload 59076 58076 Watching for file changes with StatReloader
+INFO 2025-08-30 19:47:02,517 autoreload 59076 58076 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:47:04,049 autoreload 36240 59828 Watching for file changes with StatReloader
+INFO 2025-08-30 19:47:15,188 autoreload 38952 62832 Watching for file changes with StatReloader
+INFO 2025-08-30 19:47:26,921 basehttp 38952 58960 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:47:26,953 basehttp 38952 58960 "GET /static/assets/index-TzoQqQR4.js HTTP/1.1" 304 0
+INFO 2025-08-30 19:47:26,956 basehttp 38952 51720 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+INFO 2025-08-30 19:47:27,635 basehttp 38952 51720 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:47:30,412 views 38952 51720 Attempting to kickoff CrewAI for user message: hi
+INFO 2025-08-30 19:47:30,413 views 38952 51720 Conversation history contains 1 messages.
+ERROR 2025-08-30 19:47:30,489 views 38952 51720 Error during CrewAI kickoff for user message: hi
+Traceback (most recent call last):
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py", line 90, in post
+    result = crew.kickoff()
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\crew.py", line 661, in kickoff
+    result = self._run_sequential_process()
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\crew.py", line 772, in _run_sequential_process
+    return self._execute_tasks(self.tasks)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\crew.py", line 875, in _execute_tasks
+    task_output = task.execute_sync(
+        agent=agent_to_use,
+        context=context,
+        tools=cast(List[BaseTool], tools_for_task),
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\task.py", line 382, in execute_sync
+    return self._execute_core(agent, context, tools)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\task.py", line 530, in _execute_core
+    raise e  # Re-raise the exception after emitting the event
+    ^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\task.py", line 446, in _execute_core
+    result = agent.execute_task(
+        task=self,
+        context=context,
+        tools=tools,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agent.py", line 475, in execute_task
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agent.py", line 451, in execute_task
+    result = self._execute_without_timeout(task_prompt, task)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agent.py", line 547, in _execute_without_timeout
+    return self.agent_executor.invoke(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        {
+        ^
+    ...<4 lines>...
+        }
+        ^
+    )["output"]
+    ^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 114, in invoke
+    formatted_answer = self._invoke_loop()
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 208, in _invoke_loop
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 154, in _invoke_loop
+    answer = get_llm_response(
+        llm=self.llm,
+    ...<3 lines>...
+        from_task=self.task
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\utilities\agent_utils.py", line 160, in get_llm_response
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\utilities\agent_utils.py", line 153, in get_llm_response
+    answer = llm.call(
+        messages,
+    ...<2 lines>...
+        from_agent=from_agent,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\llm.py", line 1030, in call
+    return self._handle_non_streaming_response(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        params, callbacks, available_functions, from_task, from_agent
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\llm.py", line 813, in _handle_non_streaming_response
+    response = litellm.completion(**params)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\utils.py", line 1330, in wrapper
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\utils.py", line 1205, in wrapper
+    result = original_function(*args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\main.py", line 3427, in completion
+    raise exception_type(
+    ...<5 lines>...
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\main.py", line 1097, in completion
+    model, custom_llm_provider, dynamic_api_key, api_base = get_llm_provider(
+                                                            ~~~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        api_key=api_key,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\litellm_core_utils\get_llm_provider_logic.py", line 391, in get_llm_provider
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\litellm_core_utils\get_llm_provider_logic.py", line 368, in get_llm_provider
+    raise litellm.exceptions.BadRequestError(  # type: ignore
+    ...<8 lines>...
+    )
+litellm.exceptions.BadRequestError: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=models/gemini-2.5-flash-lite
+ Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
+ERROR 2025-08-30 19:47:30,498 log 38952 51720 Internal Server Error: /api/chat/
+ERROR 2025-08-30 19:47:30,499 basehttp 38952 51720 "POST /api/chat/ HTTP/1.1" 500 351
+INFO 2025-08-30 19:48:50,410 autoreload 38952 62832 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:48:51,732 autoreload 60900 61636 Watching for file changes with StatReloader
+INFO 2025-08-30 19:50:03,297 autoreload 60900 61636 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:50:04,601 autoreload 59476 59940 Watching for file changes with StatReloader
+INFO 2025-08-30 19:50:14,205 basehttp 59476 42732 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-30 19:50:14,214 basehttp 59476 54056 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:50:14,227 basehttp 59476 54056 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:50:14,272 basehttp 59476 54056 "GET /static/assets/index-TzoQqQR4.js HTTP/1.1" 304 0
+INFO 2025-08-30 19:50:14,278 basehttp 59476 63124 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+INFO 2025-08-30 19:50:16,985 views 59476 63124 Attempting to kickoff CrewAI for user message: hi
+INFO 2025-08-30 19:50:16,986 views 59476 63124 Conversation history contains 1 messages.
+ERROR 2025-08-30 19:50:17,076 views 59476 63124 Error during CrewAI kickoff for user message: hi
+Traceback (most recent call last):
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py", line 90, in post
+    result = crew.kickoff()
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\crew.py", line 661, in kickoff
+    result = self._run_sequential_process()
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\crew.py", line 772, in _run_sequential_process
+    return self._execute_tasks(self.tasks)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\crew.py", line 875, in _execute_tasks
+    task_output = task.execute_sync(
+        agent=agent_to_use,
+        context=context,
+        tools=cast(List[BaseTool], tools_for_task),
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\task.py", line 382, in execute_sync
+    return self._execute_core(agent, context, tools)
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\task.py", line 530, in _execute_core
+    raise e  # Re-raise the exception after emitting the event
+    ^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\task.py", line 446, in _execute_core
+    result = agent.execute_task(
+        task=self,
+        context=context,
+        tools=tools,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agent.py", line 475, in execute_task
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agent.py", line 451, in execute_task
+    result = self._execute_without_timeout(task_prompt, task)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agent.py", line 547, in _execute_without_timeout
+    return self.agent_executor.invoke(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        {
+        ^
+    ...<4 lines>...
+        }
+        ^
+    )["output"]
+    ^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 114, in invoke
+    formatted_answer = self._invoke_loop()
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 208, in _invoke_loop
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\agents\crew_agent_executor.py", line 154, in _invoke_loop
+    answer = get_llm_response(
+        llm=self.llm,
+    ...<3 lines>...
+        from_task=self.task
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\utilities\agent_utils.py", line 160, in get_llm_response
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\utilities\agent_utils.py", line 153, in get_llm_response
+    answer = llm.call(
+        messages,
+    ...<2 lines>...
+        from_agent=from_agent,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\llm.py", line 1030, in call
+    return self._handle_non_streaming_response(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        params, callbacks, available_functions, from_task, from_agent
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\llm.py", line 813, in _handle_non_streaming_response
+    response = litellm.completion(**params)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\utils.py", line 1330, in wrapper
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\utils.py", line 1205, in wrapper
+    result = original_function(*args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\main.py", line 3427, in completion
+    raise exception_type(
+    ...<5 lines>...
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\main.py", line 1097, in completion
+    model, custom_llm_provider, dynamic_api_key, api_base = get_llm_provider(
+                                                            ~~~~~~~~~~~~~~~~^
+        model=model,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        api_key=api_key,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\litellm_core_utils\get_llm_provider_logic.py", line 391, in get_llm_provider
+    raise e
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\litellm\litellm_core_utils\get_llm_provider_logic.py", line 368, in get_llm_provider
+    raise litellm.exceptions.BadRequestError(  # type: ignore
+    ...<8 lines>...
+    )
+litellm.exceptions.BadRequestError: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=models/gemini-2.5-flash-lite
+ Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
+ERROR 2025-08-30 19:50:17,089 log 59476 63124 Internal Server Error: /api/chat/
+ERROR 2025-08-30 19:50:17,090 basehttp 59476 63124 "POST /api/chat/ HTTP/1.1" 500 351
+INFO 2025-08-30 19:51:57,728 autoreload 59476 59940 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:51:59,334 autoreload 45860 43816 Watching for file changes with StatReloader
+INFO 2025-08-30 19:52:12,704 basehttp 45860 61072 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-30 19:52:12,712 basehttp 45860 56904 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:52:12,723 basehttp 45860 56904 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:52:12,764 basehttp 45860 56904 "GET /static/assets/index-TzoQqQR4.js HTTP/1.1" 304 0
+INFO 2025-08-30 19:52:12,770 basehttp 45860 47224 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+INFO 2025-08-30 19:52:15,379 views 45860 47224 Attempting to kickoff CrewAI for user message: HI
+INFO 2025-08-30 19:52:15,379 views 45860 47224 Conversation history contains 1 messages.
+ERROR 2025-08-30 19:52:18,105 views 45860 47224 Error during CrewAI kickoff for user message: HI
+Traceback (most recent call last):
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py", line 92, in post
+    logger.info(f"CrewAI kickoff successful. Response: {bot_response[:100]}...")
+                                                        ~~~~~~~~~~~~^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\crewai\crews\crew_output.py", line 50, in __getitem__
+    raise KeyError(f"Key '{key}' not found in CrewOutput.")
+KeyError: "Key 'slice(None, 100, None)' not found in CrewOutput."
+ERROR 2025-08-30 19:52:18,109 log 45860 47224 Internal Server Error: /api/chat/
+ERROR 2025-08-30 19:52:18,110 basehttp 45860 47224 "POST /api/chat/ HTTP/1.1" 500 97
+INFO 2025-08-30 19:53:29,885 autoreload 45860 43816 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:53:31,251 autoreload 43808 58432 Watching for file changes with StatReloader
+INFO 2025-08-30 19:53:46,120 autoreload 43808 58432 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:53:47,409 autoreload 56000 55192 Watching for file changes with StatReloader
+INFO 2025-08-30 19:53:56,459 autoreload 56000 55192 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:53:57,541 autoreload 58432 57260 Watching for file changes with StatReloader
+INFO 2025-08-30 19:54:55,853 autoreload 58432 57260 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:54:57,505 autoreload 57232 62884 Watching for file changes with StatReloader
+INFO 2025-08-30 19:55:08,612 basehttp 57232 1832 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:55:08,627 basehttp 57232 1832 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:55:08,666 basehttp 57232 1832 "GET /static/assets/index-TzoQqQR4.js HTTP/1.1" 304 0
+INFO 2025-08-30 19:55:08,666 basehttp 57232 56136 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+INFO 2025-08-30 19:55:13,129 views 57232 1832 Attempting to kickoff CrewAI for user message: hi
+INFO 2025-08-30 19:55:13,130 views 57232 1832 Conversation history contains 1 messages.
+ERROR 2025-08-30 19:55:15,991 views 57232 1832 Error during CrewAI kickoff for user message: hi
+Traceback (most recent call last):
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py", line 92, in post
+    logger.info(f"CrewAI kickoff successful. Response: {bot_response.raw[:100]}...")
+                                                        ^^^^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'raw'
+ERROR 2025-08-30 19:55:15,992 log 57232 1832 Internal Server Error: /api/chat/
+ERROR 2025-08-30 19:55:15,993 basehttp 57232 1832 "POST /api/chat/ HTTP/1.1" 500 67
+INFO 2025-08-30 19:55:39,247 autoreload 57232 62884 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-30 19:55:40,447 autoreload 60284 48476 Watching for file changes with StatReloader
+INFO 2025-08-30 19:55:50,374 basehttp 60284 38068 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-30 19:55:50,388 basehttp 60284 38068 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 19:55:53,930 views 60284 38068 Attempting to kickoff CrewAI for user message: hi
+INFO 2025-08-30 19:55:53,930 views 60284 38068 Conversation history contains 1 messages.
+INFO 2025-08-30 19:55:55,181 views 60284 38068 CrewAI kickoff successful. Response: Hello! I'm your IDFC Bank AI assistant. How can I help you today? I can help you with account inform...
+INFO 2025-08-30 19:55:55,182 basehttp 60284 38068 "POST /api/chat/ HTTP/1.1" 200 195
+INFO 2025-08-30 19:56:59,518 views 60284 38068 Attempting to kickoff CrewAI for user message: my name is Siva. What is your name?
+INFO 2025-08-30 19:56:59,518 views 60284 38068 Conversation history contains 3 messages.
+INFO 2025-08-30 19:57:02,082 views 60284 38068 CrewAI kickoff successful. Response: It's nice to meet you, Siva! I am an AI assistant for IDFC Bank. I don't have a name, but I'm here t...
+INFO 2025-08-30 19:57:02,083 basehttp 60284 38068 "POST /api/chat/ HTTP/1.1" 200 178
+INFO 2025-08-30 19:57:09,104 views 60284 38068 Attempting to kickoff CrewAI for user message: What is my name?
+INFO 2025-08-30 19:57:09,104 views 60284 38068 Conversation history contains 5 messages.
+INFO 2025-08-30 19:57:11,317 views 60284 38068 CrewAI kickoff successful. Response: Your name is Siva. Is there anything else I can help you with today, Siva?...
+INFO 2025-08-30 19:57:11,318 basehttp 60284 38068 "POST /api/chat/ HTTP/1.1" 200 89
+INFO 2025-08-30 19:57:27,795 views 60284 38068 Attempting to kickoff CrewAI for user message: Did I say Hi to you or did I say hello?
+INFO 2025-08-30 19:57:27,796 views 60284 38068 Conversation history contains 7 messages.
+INFO 2025-08-30 19:57:30,152 views 60284 38068 CrewAI kickoff successful. Response: You said "hi". Is there anything else I can help you with today, Siva?...
+INFO 2025-08-30 19:57:30,153 basehttp 60284 38068 "POST /api/chat/ HTTP/1.1" 200 87
