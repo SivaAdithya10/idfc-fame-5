@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-@0z#f#_ays&kgu!2!r5fxdj11fcb5)n$($0m!njgjxg7$k+%ex
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['IDFCFame5.pythonanywhere.com']
+ALLOWED_HOSTS = ['IDFCFame5.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -51,10 +51,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "IDFC.urls"
 
+import os
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, 'static/react')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -116,6 +117,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = "static/"
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static/react/assets'),
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
