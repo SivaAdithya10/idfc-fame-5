@@ -3774,3 +3774,265 @@ INFO 2025-08-31 16:00:34,455 views 8244 3656 [ad1b00e4-9ee7-4b87-ba7b-1c9c12a465
 INFO 2025-08-31 16:00:34,456 views 8244 3656 ======== [END REQUEST: ad1b00e4-9ee7-4b87-ba7b-1c9c12a465d9] ========
 
 INFO 2025-08-31 16:00:34,457 basehttp 8244 3656 "POST /api/chat/ HTTP/1.1" 200 163
+INFO 2025-08-31 16:08:08,393 autoreload 22236 29512 Watching for file changes with StatReloader
+INFO 2025-08-31 16:08:10,823 autoreload 21148 26484 Watching for file changes with StatReloader
+INFO 2025-08-31 16:08:16,113 basehttp 21148 6772 "GET /admin/chatbot/account/ HTTP/1.1" 200 17313
+INFO 2025-08-31 16:08:16,198 basehttp 21148 6772 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:08:19,517 basehttp 21148 6772 "GET /admin/chatbot/transaction/ HTTP/1.1" 200 17383
+INFO 2025-08-31 16:08:19,559 basehttp 21148 6772 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:08:20,691 basehttp 21148 6772 "GET /admin/chatbot/transaction/3/change/ HTTP/1.1" 200 20344
+INFO 2025-08-31 16:08:20,741 basehttp 21148 6772 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:09:26,565 autoreload 21148 26484 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:09:27,374 autoreload 16544 584 Watching for file changes with StatReloader
+INFO 2025-08-31 16:12:12,727 autoreload 16544 584 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:12:13,565 autoreload 14088 15300 Watching for file changes with StatReloader
+INFO 2025-08-31 16:12:20,389 autoreload 14088 15300 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:12:21,252 autoreload 19724 12948 Watching for file changes with StatReloader
+INFO 2025-08-31 16:12:24,742 basehttp 19724 1520 "GET /admin/chatbot/creditcard/ HTTP/1.1" 200 16731
+INFO 2025-08-31 16:12:24,805 basehttp 19724 1520 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:12:25,372 basehttp 19724 1520 "GET /admin/chatbot/creditcardsettings/ HTTP/1.1" 200 16838
+INFO 2025-08-31 16:12:25,422 basehttp 19724 1520 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:12:26,342 basehttp 19724 1520 "GET /admin/chatbot/creditcardsettings/1/change/ HTTP/1.1" 200 20993
+INFO 2025-08-31 16:12:26,416 basehttp 19724 1520 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:16:33,526 autoreload 19724 12948 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:16:34,658 autoreload 8612 17648 Watching for file changes with StatReloader
+INFO 2025-08-31 16:17:17,316 autoreload 8612 17648 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 16:17:18,182 autoreload 2780 5764 Watching for file changes with StatReloader
+INFO 2025-08-31 16:17:34,068 autoreload 2780 5764 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:17:34,899 autoreload 18584 17880 Watching for file changes with StatReloader
+INFO 2025-08-31 16:17:41,006 autoreload 18584 17880 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:17:41,832 autoreload 14560 3216 Watching for file changes with StatReloader
+INFO 2025-08-31 16:17:45,544 autoreload 14560 3216 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:17:46,442 autoreload 29384 2072 Watching for file changes with StatReloader
+INFO 2025-08-31 16:17:50,246 autoreload 29384 2072 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:17:51,283 autoreload 14892 22476 Watching for file changes with StatReloader
+INFO 2025-08-31 16:18:15,766 autoreload 14892 22476 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:18:16,683 autoreload 6776 13076 Watching for file changes with StatReloader
+INFO 2025-08-31 16:19:17,273 basehttp 6776 22604 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 16:19:17,292 basehttp 6776 23708 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 16:19:17,293 basehttp 6776 16460 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 16:19:17,295 basehttp 6776 29512 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:19:17,309 basehttp 6776 29512 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:19:17,320 basehttp 6776 16460 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:19:17,343 basehttp 6776 16460 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:19:17,359 basehttp 6776 16460 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 16:19:25,831 basehttp 6776 16460 "GET /admin/chatbot/creditcard/ HTTP/1.1" 200 16731
+INFO 2025-08-31 16:19:25,890 basehttp 6776 16460 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:19:27,414 basehttp 6776 16460 "GET /admin/chatbot/creditcard/1/change/ HTTP/1.1" 200 20610
+INFO 2025-08-31 16:19:27,464 basehttp 6776 16460 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:20:44,960 autoreload 6776 13076 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:20:45,943 autoreload 27156 6868 Watching for file changes with StatReloader
+INFO 2025-08-31 16:21:05,962 autoreload 27156 6868 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:21:06,761 autoreload 8872 300 Watching for file changes with StatReloader
+INFO 2025-08-31 16:21:56,870 autoreload 8872 300 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:21:57,606 autoreload 23480 26396 Watching for file changes with StatReloader
+INFO 2025-08-31 16:23:33,297 autoreload 23480 26396 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:23:34,066 autoreload 9056 26684 Watching for file changes with StatReloader
+INFO 2025-08-31 16:24:07,704 autoreload 9056 26684 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:24:08,474 autoreload 22720 15904 Watching for file changes with StatReloader
+INFO 2025-08-31 16:25:16,434 autoreload 22720 15904 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:25:17,226 autoreload 10912 18852 Watching for file changes with StatReloader
+INFO 2025-08-31 16:25:38,632 autoreload 10912 18852 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:25:39,529 autoreload 7268 5548 Watching for file changes with StatReloader
+INFO 2025-08-31 16:25:58,701 autoreload 7268 5548 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:25:59,569 autoreload 20768 23028 Watching for file changes with StatReloader
+INFO 2025-08-31 16:26:17,350 basehttp 20768 26316 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 16:26:17,392 basehttp 20768 26316 "GET /static/assets/index-shc4WIfB.js HTTP/1.1" 304 0
+INFO 2025-08-31 16:26:17,395 basehttp 20768 16040 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 16:26:17,762 basehttp 20768 16040 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 16:26:17,762 basehttp 20768 28088 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 16:26:17,762 basehttp 20768 26316 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:26:17,767 basehttp 20768 14736 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 16:26:17,778 basehttp 20768 26316 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:26:17,874 basehttp 20768 26316 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:26:17,888 basehttp 20768 26316 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:26:17,925 basehttp 20768 26316 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 16:26:19,092 basehttp 20768 26316 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:26:19,092 basehttp 20768 14736 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 16:26:19,116 basehttp 20768 14736 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:26:19,117 basehttp 20768 26316 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 16:26:19,140 basehttp 20768 14736 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 16:26:22,422 views 20768 14736 ======== [START TEXT REQUEST: bb2976f0-2c8b-49b1-a65a-ed366b5e762f] ========
+INFO 2025-08-31 16:26:22,423 views 20768 14736 [bb2976f0-2c8b-49b1-a65a-ed366b5e762f] User Message (after potential transcription): 'How can I apply for a loan?'
+INFO 2025-08-31 16:26:22,423 views 20768 14736 [bb2976f0-2c8b-49b1-a65a-ed366b5e762f] STEP 1: Performing orchestration call to Gemini...
+INFO 2025-08-31 16:26:24,979 views 20768 14736 [bb2976f0-2c8b-49b1-a65a-ed366b5e762f] ORCHESTRATOR RAW OUTPUT:
+{
+  "decision": "direct_answer",
+  "response": "To apply for a loan, you can visit our website and navigate to the loans section. You'll find different loan products there and can start the application process online. Do you need help finding the specific loan product you're interested in, or would you like information on the types of loans we offer?"
+}
+INFO 2025-08-31 16:26:24,980 views 20768 14736 [bb2976f0-2c8b-49b1-a65a-ed366b5e762f] Decision: Direct Answer. No agent transfer needed.
+INFO 2025-08-31 16:26:24,980 views 20768 14736 [bb2976f0-2c8b-49b1-a65a-ed366b5e762f] FINAL RESPONSE to User: 'To apply for a loan, you can visit our website and navigate to the loans section. You'll find different loan products there and can start the application process online. Do you need help finding the specific loan product you're interested in, or would you like information on the types of loans we offer?'
+INFO 2025-08-31 16:26:24,980 views 20768 14736 ======== [END REQUEST: bb2976f0-2c8b-49b1-a65a-ed366b5e762f] ========
+
+INFO 2025-08-31 16:26:24,981 basehttp 20768 14736 "POST /api/chat/ HTTP/1.1" 200 319
+INFO 2025-08-31 16:26:40,558 views 20768 14736 ======== [START TEXT REQUEST: 8e17ca82-e26e-4413-92d1-f74b2a3740f5] ========
+INFO 2025-08-31 16:26:40,559 views 20768 14736 [8e17ca82-e26e-4413-92d1-f74b2a3740f5] User Message (after potential transcription): 'how many loans do I have curently?'
+INFO 2025-08-31 16:26:40,560 views 20768 14736 [8e17ca82-e26e-4413-92d1-f74b2a3740f5] STEP 1: Performing orchestration call to Gemini...
+INFO 2025-08-31 16:26:43,105 views 20768 14736 [8e17ca82-e26e-4413-92d1-f74b2a3740f5] ORCHESTRATOR RAW OUTPUT:
+{
+  "decision": "direct_answer",
+  "response": "I can help you with that. I can't directly see how many loans you have. However, I can help you find that information. Would you like me to check your loan accounts or provide you with information on how to view all your loan products online?"
+}
+INFO 2025-08-31 16:26:43,105 views 20768 14736 [8e17ca82-e26e-4413-92d1-f74b2a3740f5] Decision: Direct Answer. No agent transfer needed.
+INFO 2025-08-31 16:26:43,106 views 20768 14736 [8e17ca82-e26e-4413-92d1-f74b2a3740f5] FINAL RESPONSE to User: 'I can help you with that. I can't directly see how many loans you have. However, I can help you find that information. Would you like me to check your loan accounts or provide you with information on how to view all your loan products online?'
+INFO 2025-08-31 16:26:43,106 views 20768 14736 ======== [END REQUEST: 8e17ca82-e26e-4413-92d1-f74b2a3740f5] ========
+
+INFO 2025-08-31 16:26:43,107 basehttp 20768 14736 "POST /api/chat/ HTTP/1.1" 200 257
+INFO 2025-08-31 16:27:03,755 autoreload 20768 23028 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:27:06,618 autoreload 28216 29440 Watching for file changes with StatReloader
+INFO 2025-08-31 16:27:39,169 autoreload 28216 29440 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:27:40,212 autoreload 11536 3584 Watching for file changes with StatReloader
+INFO 2025-08-31 16:27:42,437 basehttp 11536 18528 "GET /admin/chatbot/account/ HTTP/1.1" 200 17313
+INFO 2025-08-31 16:27:42,514 basehttp 11536 18528 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:27:43,269 basehttp 11536 18528 "GET /admin/chatbot/account/3/change/ HTTP/1.1" 200 19943
+INFO 2025-08-31 16:27:43,327 basehttp 11536 18528 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:28:00,079 autoreload 11536 3584 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:28:00,968 autoreload 27788 14764 Watching for file changes with StatReloader
+INFO 2025-08-31 16:28:04,772 autoreload 27788 14764 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:28:05,628 autoreload 25272 8660 Watching for file changes with StatReloader
+INFO 2025-08-31 16:28:20,389 autoreload 25272 8660 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:28:21,291 autoreload 1804 16764 Watching for file changes with StatReloader
+INFO 2025-08-31 16:28:36,399 autoreload 1804 16764 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 16:28:37,345 autoreload 8884 29016 Watching for file changes with StatReloader
+INFO 2025-08-31 16:29:03,286 autoreload 8884 29016 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 16:29:04,126 autoreload 5000 12372 Watching for file changes with StatReloader
+INFO 2025-08-31 16:29:54,832 autoreload 5000 12372 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 16:29:56,012 autoreload 15824 21192 Watching for file changes with StatReloader
+INFO 2025-08-31 16:30:49,537 autoreload 15824 21192 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:30:50,277 autoreload 16440 22952 Watching for file changes with StatReloader
+INFO 2025-08-31 16:31:30,558 autoreload 16440 22952 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:31:31,359 autoreload 12204 27116 Watching for file changes with StatReloader
+INFO 2025-08-31 16:32:07,882 basehttp 12204 26008 "GET /admin/chatbot/chatbotknowledge/ HTTP/1.1" 200 17388
+INFO 2025-08-31 16:32:07,950 basehttp 12204 26008 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:32:09,303 basehttp 12204 26008 "GET /admin/chatbot/chatbotknowledge/3/change/ HTTP/1.1" 200 17192
+INFO 2025-08-31 16:32:09,356 basehttp 12204 26008 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:32:11,818 basehttp 12204 26008 "GET /admin/chatbot/chatbotknowledge/ HTTP/1.1" 200 17388
+INFO 2025-08-31 16:32:12,835 basehttp 12204 26008 "GET /admin/chatbot/chatbotknowledge/2/change/ HTTP/1.1" 200 17213
+INFO 2025-08-31 16:32:12,884 basehttp 12204 26008 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:32:22,192 autoreload 12204 27116 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:32:23,158 autoreload 26684 22480 Watching for file changes with StatReloader
+INFO 2025-08-31 16:32:43,104 autoreload 26684 22480 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:32:44,016 autoreload 27432 27936 Watching for file changes with StatReloader
+INFO 2025-08-31 16:32:48,399 autoreload 27432 27936 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:32:49,384 autoreload 23452 16536 Watching for file changes with StatReloader
+INFO 2025-08-31 16:32:53,621 autoreload 23452 16536 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:32:54,755 autoreload 3108 22992 Watching for file changes with StatReloader
+INFO 2025-08-31 16:33:02,624 autoreload 3108 22992 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:33:03,537 autoreload 28544 16240 Watching for file changes with StatReloader
+INFO 2025-08-31 16:33:07,525 basehttp 28544 8880 "GET /admin/chatbot/chatbotknowledge/ HTTP/1.1" 200 17388
+INFO 2025-08-31 16:33:08,878 basehttp 28544 8880 "GET /admin/chatbot/chatbotknowledge/1/change/ HTTP/1.1" 200 17221
+INFO 2025-08-31 16:33:08,936 basehttp 28544 8880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:33:10,654 basehttp 28544 8880 "GET /admin/chatbot/chatbotknowledge/ HTTP/1.1" 200 17388
+INFO 2025-08-31 16:33:11,579 basehttp 28544 8880 "GET /admin/chatbot/chatbotknowledge/3/change/ HTTP/1.1" 200 17192
+INFO 2025-08-31 16:33:11,625 basehttp 28544 8880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:33:12,570 basehttp 28544 8880 "GET /admin/chatbot/chatbotknowledge/3/delete/ HTTP/1.1" 200 15423
+INFO 2025-08-31 16:33:12,629 basehttp 28544 8880 "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2025-08-31 16:33:13,495 basehttp 28544 8880 "POST /admin/chatbot/chatbotknowledge/3/delete/ HTTP/1.1" 302 0
+INFO 2025-08-31 16:33:13,524 basehttp 28544 8880 "GET /admin/chatbot/chatbotknowledge/ HTTP/1.1" 200 17266
+INFO 2025-08-31 16:33:13,572 basehttp 28544 8880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:33:15,025 basehttp 28544 8880 "GET /admin/chatbot/chatbotknowledge/ HTTP/1.1" 200 17084
+INFO 2025-08-31 16:33:15,064 basehttp 28544 8880 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:33:23,505 basehttp 28544 8880 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 16:33:23,517 basehttp 28544 2928 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 16:33:23,527 basehttp 28544 2928 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 16:33:23,560 basehttp 28544 2928 "GET /static/assets/index-shc4WIfB.js HTTP/1.1" 304 0
+INFO 2025-08-31 16:33:23,565 basehttp 28544 20864 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 16:33:23,973 basehttp 28544 20864 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:33:23,974 basehttp 28544 2928 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 16:33:23,983 basehttp 28544 19520 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 16:33:23,984 basehttp 28544 26396 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 16:33:23,989 basehttp 28544 20864 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:33:24,044 basehttp 28544 20864 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:33:24,060 basehttp 28544 20864 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:33:24,107 basehttp 28544 20864 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 16:33:27,296 basehttp 28544 20864 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:33:27,317 basehttp 28544 20864 "GET /api/chatbotknowledge/ HTTP/1.1" 200 205
+INFO 2025-08-31 16:33:27,320 basehttp 28544 26396 "GET /api/notifications/ HTTP/1.1" 200 258
+WARNING 2025-08-31 16:38:33,168 log 28544 17900 Bad Request: /api/chatbotknowledge/1/
+WARNING 2025-08-31 16:38:33,171 basehttp 28544 17900 "PUT /api/chatbotknowledge/1/ HTTP/1.1" 400 37
+INFO 2025-08-31 16:39:16,532 autoreload 28544 16240 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\serializers.py changed, reloading.
+INFO 2025-08-31 16:39:17,432 autoreload 14508 2252 Watching for file changes with StatReloader
+INFO 2025-08-31 16:40:17,314 autoreload 2064 7748 Watching for file changes with StatReloader
+INFO 2025-08-31 16:40:24,771 basehttp 2064 360 "GET /chatbot-knowledge HTTP/1.1" 302 0
+INFO 2025-08-31 16:40:24,787 basehttp 2064 360 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 16:40:24,841 basehttp 2064 352 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 200 65802
+INFO 2025-08-31 16:40:24,854 basehttp 2064 360 "GET /static/assets/index-shc4WIfB.js HTTP/1.1" 200 1401219
+INFO 2025-08-31 16:40:25,282 basehttp 2064 360 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:40:25,282 basehttp 2064 352 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 16:40:25,287 basehttp 2064 16960 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 16:40:25,302 basehttp 2064 13760 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 16:40:25,308 basehttp 2064 360 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:40:25,364 basehttp 2064 360 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:40:25,379 basehttp 2064 360 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:40:25,418 basehttp 2064 360 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 16:40:26,886 basehttp 2064 360 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:40:26,899 basehttp 2064 360 "GET /api/chatbotknowledge/ HTTP/1.1" 200 205
+INFO 2025-08-31 16:40:26,907 basehttp 2064 13760 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:40:29,620 basehttp 2064 13760 "PUT /api/chatbotknowledge/1/ HTTP/1.1" 200 387
+INFO 2025-08-31 16:40:32,302 basehttp 2064 13760 "GET /chatbot-knowledge HTTP/1.1" 302 0
+INFO 2025-08-31 16:40:32,313 basehttp 2064 13760 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 16:40:32,343 basehttp 2064 13760 "GET /static/assets/index-shc4WIfB.js HTTP/1.1" 304 0
+INFO 2025-08-31 16:40:32,347 basehttp 2064 360 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 16:40:32,585 basehttp 2064 13760 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 16:40:32,585 basehttp 2064 360 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:40:32,587 basehttp 2064 352 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 16:40:32,588 basehttp 2064 16960 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 16:40:32,607 basehttp 2064 360 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:40:32,640 basehttp 2064 360 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:40:32,664 basehttp 2064 360 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:40:32,695 basehttp 2064 360 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 16:40:33,023 basehttp 2064 360 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:40:33,039 basehttp 2064 360 "GET /api/chatbotknowledge/ HTTP/1.1" 200 487
+INFO 2025-08-31 16:40:33,045 basehttp 2064 16960 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:41:33,701 basehttp 2064 360 "PUT /api/chatbotknowledge/2/ HTTP/1.1" 200 3463
+INFO 2025-08-31 16:41:45,318 basehttp 2064 16960 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 16:41:45,331 basehttp 2064 360 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:41:45,350 basehttp 2064 16960 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 16:41:45,387 basehttp 2064 16960 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:41:45,410 basehttp 2064 360 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 16:42:01,582 views 2064 360 ======== [START TEXT REQUEST: df4a9eee-a224-48d8-b5aa-26b25b3d1340] ========
+INFO 2025-08-31 16:42:01,583 views 2064 360 [df4a9eee-a224-48d8-b5aa-26b25b3d1340] User Message (after potential transcription): 'Hi I want to improve my financial plaaning. where shud i start?'
+INFO 2025-08-31 16:42:01,584 views 2064 360 [df4a9eee-a224-48d8-b5aa-26b25b3d1340] STEP 1: Performing orchestration call to Gemini...
+INFO 2025-08-31 16:42:04,236 views 2064 360 [df4a9eee-a224-48d8-b5aa-26b25b3d1340] ORCHESTRATOR RAW OUTPUT:
+{
+  "decision": "direct_answer",
+  "response": "That's a great goal! To help you improve your financial planning, I'd need a little more information. Would you like to start by reviewing your current accounts and recent transactions, or are you interested in setting up a budget or savings goals?"
+}
+INFO 2025-08-31 16:42:04,237 views 2064 360 [df4a9eee-a224-48d8-b5aa-26b25b3d1340] Decision: Direct Answer. No agent transfer needed.
+INFO 2025-08-31 16:42:04,238 views 2064 360 [df4a9eee-a224-48d8-b5aa-26b25b3d1340] FINAL RESPONSE to User: 'That's a great goal! To help you improve your financial planning, I'd need a little more information. Would you like to start by reviewing your current accounts and recent transactions, or are you interested in setting up a budget or savings goals?'
+INFO 2025-08-31 16:42:04,238 views 2064 360 ======== [END REQUEST: df4a9eee-a224-48d8-b5aa-26b25b3d1340] ========
+
+INFO 2025-08-31 16:42:04,239 basehttp 2064 360 "POST /api/chat/ HTTP/1.1" 200 263
+INFO 2025-08-31 16:43:12,837 autoreload 2064 7748 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:43:15,651 autoreload 6076 20884 Watching for file changes with StatReloader
+INFO 2025-08-31 16:43:17,632 basehttp 6076 19508 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 16:43:17,641 basehttp 6076 27460 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 16:43:17,653 basehttp 6076 27460 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 16:43:17,706 basehttp 6076 27460 "GET /static/assets/index-shc4WIfB.js HTTP/1.1" 304 0
+INFO 2025-08-31 16:43:17,713 basehttp 6076 27592 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 16:43:18,057 basehttp 6076 29584 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 16:43:18,060 basehttp 6076 25012 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 16:43:18,066 basehttp 6076 27592 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:43:18,067 basehttp 6076 27460 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 16:43:18,077 basehttp 6076 27592 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:43:18,107 basehttp 6076 27592 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:43:18,136 basehttp 6076 27592 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:43:18,171 basehttp 6076 27592 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 16:43:18,823 basehttp 6076 27592 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:43:18,830 basehttp 6076 27460 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 16:43:18,856 basehttp 6076 27592 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 16:43:18,865 basehttp 6076 27460 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:43:18,882 basehttp 6076 27592 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 16:43:20,822 views 6076 27592 ======== [START TEXT REQUEST: 2657b9fe-ebd8-488f-b22d-7536b62a669a] ========
+INFO 2025-08-31 16:43:20,822 views 6076 27592 [2657b9fe-ebd8-488f-b22d-7536b62a669a] User Message (after potential transcription): 'Hi I want to improve my financial plaaning. where shud i start?'
+INFO 2025-08-31 16:43:20,823 views 6076 27592 [2657b9fe-ebd8-488f-b22d-7536b62a669a] STEP 1: Performing orchestration call to Gemini...
+INFO 2025-08-31 16:43:23,274 views 6076 27592 [2657b9fe-ebd8-488f-b22d-7536b62a669a] ORCHESTRATOR RAW OUTPUT:
+{
+  "decision": "direct_answer",
+  "response": "That's a great goal! To help you improve your financial planning, I can start by giving you an overview of your current financial situation. Would you like me to show you your account balances or recent transactions?"
+}
+INFO 2025-08-31 16:43:23,274 views 6076 27592 [2657b9fe-ebd8-488f-b22d-7536b62a669a] Decision: Direct Answer. No agent transfer needed.
+INFO 2025-08-31 16:43:23,274 views 6076 27592 [2657b9fe-ebd8-488f-b22d-7536b62a669a] FINAL RESPONSE to User: 'That's a great goal! To help you improve your financial planning, I can start by giving you an overview of your current financial situation. Would you like me to show you your account balances or recent transactions?'
+INFO 2025-08-31 16:43:23,275 views 6076 27592 ======== [END REQUEST: 2657b9fe-ebd8-488f-b22d-7536b62a669a] ========
+
+INFO 2025-08-31 16:43:23,276 basehttp 6076 27592 "POST /api/chat/ HTTP/1.1" 200 231

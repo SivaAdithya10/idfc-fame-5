@@ -11,6 +11,7 @@ import logging
 import os
 import json
 import uuid # Used for creating a unique request ID for tracing
+import time
 
 # --- NEW: Import for Google Gemini API ---
 import google.generativeai as genai
@@ -46,8 +47,7 @@ TOOL_TO_AGENT_MAP = {
     'get_credit_card_details': 'Account Data Retrieval Specialist',
     'block_credit_card': 'Card and Account Security Officer',
     'update_card_transaction_limits': 'Card and Account Security Officer',
-    'toggle_international_transactions': 'Card and Account Security Officer',
-    'search_financial_playbook': 'Certified Financial Playbook Advisor'
+    'toggle_international_transactions': 'Card and Account Security Officer'
 }
 
 

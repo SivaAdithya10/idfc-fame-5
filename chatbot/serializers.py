@@ -31,6 +31,7 @@ class ChatbotKnowledgeSerializer(serializers.ModelSerializer):
     class Meta:
         model = ChatbotKnowledge
         fields = '__all__'
+        read_only_fields = ('title',)
 
 class NotificationSerializer(serializers.ModelSerializer):
     class Meta:
