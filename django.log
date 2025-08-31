@@ -5358,3 +5358,45 @@ INFO 2025-08-31 18:19:10,722 autoreload 7176 15468 Watching for file changes wit
 INFO 2025-08-31 18:19:59,607 autoreload 7176 15468 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\IDFC\settings.py changed, reloading.
 INFO 2025-08-31 18:20:00,396 autoreload 20508 22728 Watching for file changes with StatReloader
 INFO 2025-08-31 18:24:30,893 autoreload 27360 22760 Watching for file changes with StatReloader
+INFO 2025-08-31 20:01:29,219 autoreload 29412 28024 Watching for file changes with StatReloader
+INFO 2025-08-31 20:01:53,347 basehttp 29412 18144 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 20:01:53,411 basehttp 29412 3344 "GET /static/assets/index-DFRIR_YX.css HTTP/1.1" 200 65671
+INFO 2025-08-31 20:01:53,427 basehttp 29412 18144 "GET /static/assets/index-nBK44N7F.js HTTP/1.1" 200 1401239
+INFO 2025-08-31 20:01:53,680 basehttp 29412 1108 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 20:01:53,685 basehttp 29412 3344 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 20:01:53,686 basehttp 29412 18144 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 20:01:53,700 basehttp 29412 19312 "GET /api/transactions/ HTTP/1.1" 200 535
+INFO 2025-08-31 20:01:53,702 basehttp 29412 3344 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 20:01:53,770 basehttp 29412 19312 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 20:01:53,784 basehttp 29412 19312 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 20:01:53,819 basehttp 29412 19312 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 20:01:54,900 basehttp 29412 19312 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 20:01:54,901 basehttp 29412 3344 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 20:01:54,923 basehttp 29412 19312 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 20:01:54,926 basehttp 29412 3344 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 20:01:54,949 basehttp 29412 3344 "GET /api/suggestedprompts/ HTTP/1.1" 200 557
+INFO 2025-08-31 20:02:03,190 views 29412 3344 ======== [START AUDIO REQUEST: 1e771234-27f9-4cfd-9807-c5c9d5d5d98c] ========
+INFO 2025-08-31 20:02:03,191 views 29412 3344 [1e771234-27f9-4cfd-9807-c5c9d5d5d98c] Received audio file: voice-message.mp3
+INFO 2025-08-31 20:02:13,738 views 29412 3344 [1e771234-27f9-4cfd-9807-c5c9d5d5d98c] Transcribed from audio: 'Hi, can you tell my account balances?'
+INFO 2025-08-31 20:02:13,738 views 29412 3344 [1e771234-27f9-4cfd-9807-c5c9d5d5d98c] User Message (after potential transcription): 'Hi, can you tell my account balances?'
+INFO 2025-08-31 20:02:13,739 views 29412 3344 [1e771234-27f9-4cfd-9807-c5c9d5d5d98c] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 20:02:15,684 views 29412 3344 [1e771234-27f9-4cfd-9807-c5c9d5d5d98c] Orchestrator selected agent: 'AccountSpecialist'
+INFO 2025-08-31 20:02:15,684 views 29412 3344 [1e771234-27f9-4cfd-9807-c5c9d5d5d98c] Delegating to sub-agent: 'AccountSpecialist'
+INFO 2025-08-31 20:02:15,685 views 29412 3344 [1e771234-27f9-4cfd-9807-c5c9d5d5d98c] STEP 2a: Sub-agent 'AccountSpecialist' is deciding which tool to use...
+INFO 2025-08-31 20:02:16,319 views 29412 3344 [1e771234-27f9-4cfd-9807-c5c9d5d5d98c] Sub-agent 'AccountSpecialist' decided to use tool 'get_user_accounts' with arguments: {}
+INFO 2025-08-31 20:02:16,368 views 29412 3344 [1e771234-27f9-4cfd-9807-c5c9d5d5d98c] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 20:02:40,716 views 29412 19312 ======== [START TEXT REQUEST: a70074c6-4f90-4b51-bdf1-e35bb5a35043] ========
+INFO 2025-08-31 20:02:40,717 views 29412 19312 [a70074c6-4f90-4b51-bdf1-e35bb5a35043] User Message (after potential transcription): 'where is it?'
+INFO 2025-08-31 20:02:40,719 views 29412 19312 [a70074c6-4f90-4b51-bdf1-e35bb5a35043] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 20:02:42,705 views 29412 19312 [a70074c6-4f90-4b51-bdf1-e35bb5a35043] Orchestrator selected agent: 'Generalist'
+INFO 2025-08-31 20:02:42,706 views 29412 19312 [a70074c6-4f90-4b51-bdf1-e35bb5a35043] Delegating to Generalist for a direct answer.
+INFO 2025-08-31 20:02:50,455 email_utils 29412 3344 Chatbot interaction notification email sent successfully.
+INFO 2025-08-31 20:02:50,462 views 29412 3344 ======== [END REQUEST: 1e771234-27f9-4cfd-9807-c5c9d5d5d98c] ========
+
+INFO 2025-08-31 20:02:50,463 basehttp 29412 3344 "POST /api/chat/ HTTP/1.1" 200 267
+INFO 2025-08-31 20:02:53,075 email_utils 29412 19312 Chatbot interaction notification email sent successfully.
+INFO 2025-08-31 20:02:53,081 views 29412 19312 ======== [END REQUEST: a70074c6-4f90-4b51-bdf1-e35bb5a35043] ========
+
+INFO 2025-08-31 20:02:53,083 basehttp 29412 19312 "POST /api/chat/ HTTP/1.1" 200 129
+INFO 2025-08-31 20:08:53,141 autoreload 29412 28024 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 20:08:55,921 autoreload 1424 4584 Watching for file changes with StatReloader

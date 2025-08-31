@@ -217,7 +217,7 @@ If no tool is appropriate, respond with a JSON object containing an error.
                     tool_call_text = sub_agent_response.text.strip().replace("```json", "").replace("```", "")
                     tool_call_json = json.loads(tool_call_text)
                     tool_name = tool_call_json.get("tool_name")
-                    arguments = tool_call_json.get("arguments", {{}})
+                    arguments = tool_call_json.get("arguments", {})
 
                     if not tool_name:
                          raise ValueError("Sub-agent did not return a tool name.")
