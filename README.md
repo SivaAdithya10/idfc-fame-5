@@ -21,22 +21,25 @@ A new Django app named `chatbot` has been added to handle AI chatbot functionali
 
 ### New Data Models and API Endpoints
 
-Several new data models and corresponding API endpoints have been introduced to support dynamic content fetching for the frontend. **Note: The direct links (ForeignKeys/OneToOneFields) to the `User` model have been removed from `Notification`, `QuickStat`, `Transaction`, `CreditCard`, `ChatMessage`, `UserNotificationSettings`, and `UserSecuritySettings` models. The `UserProfile` model retains its link to the `User` model.**
+Several new data models and corresponding API endpoints have been introduced to support dynamic content fetching for the frontend.
 
-*   `/api/userprofiles/`: Fetches the authenticated user's profile information (e.g., first name, mobile, customer ID).
-*   `/api/initialbotmessages/`: Retrieves the initial welcome message for the chatbot.
-*   `/api/aimodels/`: Lists available AI models for the chatbot.
-*   `/api/suggestedprompts/`: Provides a list of suggested prompts for the chatbot.
-*   `/api/chatbotknowledge/`: Manages the chatbot's knowledge base (GET and PUT).
-*   `/api/notifications/`: Fetches notifications.
-*   `/api/quickstats/`: Retrieves quick financial statistics.
-*   `/api/accounts/`: Lists bank accounts (not linked to a specific user for demo purposes), including their status and branch. The `Account` model's string representation has been updated to reflect the removal of the `user` field, now displaying `account_type (account_number)`.
+*   `/api/userprofiles/`: Fetches user profile information (e.g., first name, mobile, customer ID). (Note: CSRF protection is explicitly exempted and authentication is disabled for this endpoint by setting `csrf_exempt = True` and `authentication_classes = []` in the viewset.) **Note: This model, along with `UserNotificationSettings` and `UserSecuritySettings`, is currently designed to hold global or default settings and is not directly linked to the Django `User` model via a foreign key. The frontend fetches the first available record.**
+*   `/api/initialbotmessages/`: Retrieves the initial welcome message for the chatbot. (Note: CSRF protection is explicitly exempted and authentication is disabled for this endpoint by setting `csrf_exempt = True` and `authentication_classes = []` in the viewset.)
+*   `/api/aimodels/`: Lists available AI models for the chatbot. (Note: CSRF protection is explicitly exempted and authentication is disabled for this endpoint by setting `csrf_exempt = True` and `authentication_classes = []` in the viewset.)
+*   `/api/suggestedprompts/`: Provides a list of suggested prompts for the chatbot. (Note: CSRF protection is explicitly exempted and authentication is disabled for this endpoint by setting `csrf_exempt = True` and `authentication_classes = []` in the viewset.)
+*   `/api/chatbotknowledge/`: Manages the chatbot's knowledge base (GET and PUT). (Note: CSRF protection is explicitly exempted and authentication is disabled for this endpoint by setting `csrf_exempt = True` and `authentication_classes = []` in the viewset.)
+*   `/api/notifications/`: Fetches notifications. (Note: CSRF protection is explicitly exempted and authentication is disabled for this endpoint by setting `csrf_exempt = True` and `authentication_classes = []` in the viewset.)
+*   `/api/quickstats/`: Retrieves quick financial statistics. (Note: CSRF protection is explicitly exempted and authentication is disabled for this endpoint by setting `csrf_exempt = True` and `authentication_classes = []` in the viewset.)
+*   `/api/accounts/`: Lists bank accounts (not linked to a specific user for demo purposes), including their status and branch. (Note: CSRF protection is explicitly exempted and authentication is disabled for this endpoint by setting `csrf_exempt = True` and `authentication_classes = []` in the viewset.) The `Account` model's string representation has been updated to reflect the removal of the `user` field, now displaying `account_type (account_number)`.
 *   `/api/transactions/`: Provides a history of transactions. (Note: CSRF protection is explicitly exempted and authentication is disabled for this endpoint by setting `csrf_exempt = True` and `authentication_classes = []` in the viewset.)
 *   `/api/transactions/choices/`: Returns the available choices for `transaction_type`, `method`, and `category` fields.
-*   `/api/creditcards/`: Fetches credit card details.
-*   `/api/chatmessages/`: Stores and retrieves chat history.
-*   `/api/usernotificationsettings/`: Manages user notification preferences.
-*   `/api/usersecuritysettings/`: Manages user security settings.
+*   `/api/creditcards/`: Fetches credit card details. (Note: CSRF protection is explicitly exempted and authentication is disabled for this endpoint by setting `csrf_exempt = True` and `authentication_classes = []` in the viewset.) **Note: The `CreditCard` model now includes a `user` foreign key for user-specific credit card management.**
+*   `/api/chatmessages/`: Stores and retrieves chat history. (Note: CSRF protection is explicitly exempted and authentication is disabled for this endpoint by setting `csrf_exempt = True` and `authentication_classes = []` in the viewset.)
+*   `/api/usernotificationsettings/`: Manages user notification preferences. (Note: CSRF protection is explicitly exempted and authentication is disabled for this endpoint by setting `csrf_exempt = True` and `authentication_classes = []` in the viewset.) **Note: This model is currently designed to hold global or default settings and is not directly linked to the Django `User` model via a foreign key. The frontend fetches the first available record.**
+*   `/api/usersecuritysettings/`: Manages user security settings. (Note: CSRF protection is explicitly exempted and authentication is disabled for this endpoint by setting `csrf_exempt = True` and `authentication_classes = []` in the viewset.) **Note: This model is currently designed to hold global or default settings and is not directly linked to the Django `User` model via a foreign key. The frontend fetches the first available record.**
+*   `/api/debitcardsettings/`: Manages debit card specific settings, including transaction limits and international usage. (Note: CSRF protection is explicitly exempted and authentication is disabled for this endpoint by setting `csrf_exempt = True` and `authentication_classes = []` in the viewset.)
+*   `/api/creditcardsettings/`: Manages credit card specific settings, including transaction limits and international usage. (Note: CSRF protection is explicitly exempted and authentication is disabled for this endpoint by setting `csrf_exempt = True` and `authentication_classes = []` in the viewset.)
+*   `/api/instructions/`: Manages instructions. (Note: CSRF protection is explicitly exempted and authentication is disabled for this endpoint by setting `csrf_exempt = True` and `authentication_classes = []` in the viewset.)
 
 ### Logging Configuration
 
@@ -69,7 +72,7 @@ Internal server errors encountered during chat processing will no longer display
     Replace `YOUR_GEMINI_API_KEY` with your actual key obtained from Google AI Studio.
 
 4.  **Populate Initial Data (Important!):**
-    Many of the new frontend components now fetch data from the backend. For the application to function correctly, you will need to populate some initial data for models like `InitialBotMessage`, `AIModel`, `SuggestedPrompt`, `ChatbotKnowledge`, `Notification`, `QuickStat`, `Account`, `Transaction`, `CreditCard`, `UserProfile`, `ChatMessage`, `UserNotificationSettings`, and `UserSecuritySettings`. You can do this via the Django Admin interface (accessible at `/admin/` after creating a superuser) or by creating a Django management command.
+    Many of the new frontend components now fetch data from the backend. For the application to function correctly, you will need to populate some initial data for models like `InitialBotMessage`, `AIModel`, `SuggestedPrompt`, `ChatbotKnowledge`, `Notification`, `QuickStat`, `Account`, `Transaction`, `CreditCard`, `UserProfile`, `ChatMessage`, `UserNotificationSettings`, `UserSecuritySettings`, `DebitCardSettings`, and `CreditCardSettings`. You can do this via the Django Admin interface (accessible at `/admin/` after creating a superuser) or by creating a Django management command.
 
     To create a superuser:
     ```bash
@@ -100,7 +103,7 @@ The frontend components have been updated to fetch dynamic content from the new 
 *   **Transaction History Component**: Recent transaction records.
 *   **Credit Card Section Component**: Credit card details.
 *   **Transaction Management Page**: Fetches, adds, and deletes transaction records. Now fetches available `transaction_type`, `method`, and `category` options from the backend.
-*   **Account Settings Page**: Fetches and updates personal information, notification preferences, security settings, and account summaries.
+*   **Account Settings Page**: Fetches and updates personal information, notification preferences, security settings, account summaries, and now also **a single debit card setting (for the Savings Account) and credit card settings**.
 
 ### Frontend Development
 
@@ -114,6 +117,12 @@ To make changes to the frontend, you need to have Node.js and npm installed. The
     **Note:** The `rehype-raw` and `react-syntax-highlighter` dependencies have been installed to resolve build issues.
 
 **Note:** The chat interface now allows selection of specific Gemini models (`gemini-2.5-pro` (default), `gemini-2.5-flash`, `gemini-2.5-flash-lite`).
+
+### Fix for TypeError: B.map is not a function
+
+Resolved a `TypeError: B.map is not a function` occurring in the chat interface. This error was caused by the `aiModels` or `suggestedPrompts` data not being an array when fetched from the backend APIs (`/api/aimodels/` and `/api/suggestedprompts/`).
+
+The fix involves adding `Array.isArray()` checks in `react_frontend/src/pages/Chat.tsx` before attempting to call `.map()` on the fetched data. This ensures that `aiModels` and `suggestedPrompts` are always treated as arrays, preventing the runtime error. If the API returns non-array data, the corresponding state is initialized with an empty array, and a console warning is logged.
 
 ### Building the Frontend
 
@@ -140,7 +149,7 @@ If you see a blank white page and console errors about MIME types or 404s for CS
     urlpatterns += staticfiles_urlpatterns()
     ```
 2.  **Asset Paths in `index.html`**: Check that the asset paths in `static/react/index.html` are correct. They should be prefixed with `/static/`. For example:
-    `<link rel="stylesheet" crossorigin href="/static/index-BSIXzmV2.css">`
+    `<link rel="stylesheet" crossorigin href="/static/index-BSIXzmV2.css">
     If your frontend build process generates different paths, you may need to adjust them manually or configure the build process.
 
 ### 400 Bad Request Error on API Endpoints
@@ -164,5 +173,4 @@ To debug this:
     }
     ```
 6.  **Additionally, check your Django server logs.** The `TransactionSerializer` has been modified to log detailed validation errors to the console when a `400 Bad Request` occurs. This will provide precise information about missing or invalid fields.
-7.  6. **Additionally, check your Django server logs.** The `TransactionSerializer` has been modified to log detailed validation errors to the console when a `400 Bad Request` occurs. This will provide precise information about missing or invalid fields.
-7. Adjust the data sent from your frontend to match the serializer's requirements based on these error messages.
+7.  Adjust the data sent from your frontend to match the serializer's requirements based on these error messages.

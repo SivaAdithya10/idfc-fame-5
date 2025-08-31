@@ -29,6 +29,7 @@ urlpatterns = [
     path("transactions", RedirectView.as_view(url='/', permanent=False), name='transactions_redirect'),
     path("readme", RedirectView.as_view(url='/', permanent=False), name='readme_redirect'),
     path("settings", RedirectView.as_view(url='/', permanent=False), name='settings_redirect'),
+    path("chatbot-knowledge", RedirectView.as_view(url='/', permanent=False), name='chatbot_knowledge_redirect'),
     path('api/', include('chatbot.urls')),
 ]
 

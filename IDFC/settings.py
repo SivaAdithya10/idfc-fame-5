@@ -127,6 +127,7 @@ USE_TZ = True
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static/react'),
+    # os.path.join(BASE_DIR, 'react_frontend/dist'),
 ]
 
 # Logging configuration

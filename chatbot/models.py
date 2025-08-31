@@ -2,7 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User # Import Django's built-in User model
 
 class UserProfile(models.Model):
-    # user = models.OneToOneField(User, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=100, default="Rohan") # Default for now, will be updated by actual user data
     mobile = models.CharField(max_length=15, blank=True, null=True)
     customer_id = models.CharField(max_length=50, blank=True, null=True)
@@ -33,6 +32,7 @@ class SuggestedPrompt(models.Model):
         return self.text
 
 class ChatbotKnowledge(models.Model):
+    title = models.CharField(max_length=255)
     knowledge_text = models.TextField()
 
     def __str__(self):
@@ -126,6 +126,7 @@ class Transaction(models.Model):
         ordering = ['-date']
 
 class CreditCard(models.Model):
+    # user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='credit_cards', null=True, blank=True) # Added user field
     name = models.CharField(max_length=255)
     card_number = models.CharField(max_length=20) # Masked
     outstanding_balance = models.DecimalField(max_digits=15, decimal_places=2)
@@ -139,6 +140,28 @@ class CreditCard(models.Model):
 
     class Meta:
         verbose_name_plural = "Credit Cards"
+
+class DebitCardSettings(models.Model):
+    account = models.OneToOneField(Account, on_delete=models.CASCADE, related_name='debit_card_settings')
+    enable_domestic_transaction = models.BooleanField(default=True)
+    enable_international_transaction = models.BooleanField(default=False)
+    daily_limit = models.DecimalField(max_digits=15, decimal_places=2, default=0.00)
+    daily_pos_limit = models.DecimalField(max_digits=15, decimal_places=2, default=0.00)
+    daily_international_limit = models.DecimalField(max_digits=15, decimal_places=2, default=0.00)
+
+    def __str__(self):
+        return f"Debit Card Settings for {self.account.account_number}"
+
+class CreditCardSettings(models.Model):
+    credit_card = models.OneToOneField(CreditCard, on_delete=models.CASCADE, related_name='credit_card_settings')
+    enable_domestic_transaction = models.BooleanField(default=True)
+    enable_international_transaction = models.BooleanField(default=False)
+    daily_limit = models.DecimalField(max_digits=15, decimal_places=2, default=0.00)
+    daily_pos_limit = models.DecimalField(max_digits=15, decimal_places=2, default=0.00)
+    daily_international_limit = models.DecimalField(max_digits=15, decimal_places=2, default=0.00)
+
+    def __str__(self):
+        return f"Credit Card Settings for {self.credit_card.card_number}"
 
 class ChatMessage(models.Model):
     MESSAGE_TYPES = (

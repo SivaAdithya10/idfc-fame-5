@@ -4,7 +4,7 @@ from .models import (
     UserProfile, InitialBotMessage, AIModel, SuggestedPrompt,
     ChatbotKnowledge, Notification, QuickStat, Account,
     Transaction, CreditCard, ChatMessage, UserNotificationSettings,
-    UserSecuritySettings, Instruction
+    UserSecuritySettings, Instruction, DebitCardSettings, CreditCardSettings # Added new models
 )
 
 class UserProfileSerializer(serializers.ModelSerializer):
@@ -62,6 +62,16 @@ class TransactionSerializer(serializers.ModelSerializer):
 class CreditCardSerializer(serializers.ModelSerializer):
     class Meta:
         model = CreditCard
+        fields = '__all__'
+
+class DebitCardSettingsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = DebitCardSettings
+        fields = '__all__'
+
+class CreditCardSettingsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CreditCardSettings
         fields = '__all__'
 
 class ChatMessageSerializer(serializers.ModelSerializer):
