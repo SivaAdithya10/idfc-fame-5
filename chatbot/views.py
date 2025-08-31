@@ -16,6 +16,9 @@ import time
 # --- NEW: Import for Google Gemini API ---
 import google.generativeai as genai
 
+# --- Import for Email Utility ---
+from .email_utils import send_chat_notification_email
+
 # --- Model and Serializer Imports (Unchanged) ---
 from .models import (
     UserProfile, InitialBotMessage, AIModel, SuggestedPrompt,
@@ -50,9 +53,11 @@ class ChatView(APIView):
         user_message = None
         history = []
         selected_model = 'gemini-1.5-flash'
+        original_user_input_type = None # New variable to track input type
 
         # --- Determine Input Type: Audio or Text (This part is unchanged) ---
         if 'audio' in request.FILES:
+            original_user_input_type = 'audio'
             logger.info(f"======== [START AUDIO REQUEST: {request_id}] ========")
             audio_file = request.FILES['audio']
             history = json.loads(request.data.get('history', '[]'))
@@ -92,9 +97,13 @@ class ChatView(APIView):
 
             except Exception as e:
                 logger.exception(f"[{request_id}] Error during audio processing.")
-                return Response({"error": "Failed to process audio."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+                # Even if audio processing fails, we still want to send a notification
+                # with the original input type noted.
+                user_message = "Audio transcription failed." # Set a default message for email
+                # Do not return here, allow the email to be sent before returning error response
         else:
             # --- TEXT PATH ---
+            original_user_input_type = 'text'
             logger.info(f"======== [START TEXT REQUEST: {request_id}] ========")
             user_message = request.data.get('message')
             history = request.data.get('history', [])
@@ -155,10 +164,17 @@ Respond with ONLY a JSON object in the following format. Do not add any other te
 
             bot_response = ""
             tool_result = None
+            # Variables for email notification
+            main_agent_decision = None
+            sub_agent_used_for_email = None
+            tools_used_for_email = None
+            sub_agent_raw_response = None
+            final_bot_output = None
 
             # --- 3. STEP 2: DELEGATION TO SUB-AGENT ---
             if chosen_agent == "Generalist":
                 logger.info(f"[{request_id}] Delegating to Generalist for a direct answer.")
+                main_agent_decision = "Generalist"
                 generalist_prompt = f"""
 You are a friendly and helpful banking assistant. The user said: "{user_message}".
 Provide a direct, conversational response. Do not offer to perform any actions you can't do.
@@ -166,9 +182,12 @@ If you don't know the answer, say so politely.
 """
                 final_response = model.generate_content(generalist_prompt)
                 bot_response = final_response.text
+                final_bot_output = bot_response
 
             elif chosen_agent in ["AccountSpecialist", "SecurityOfficer", "FinancialAdvisor"]:
                 logger.info(f"[{request_id}] Delegating to sub-agent: '{chosen_agent}'")
+                main_agent_decision = chosen_agent
+                sub_agent_used_for_email = chosen_agent
                 tool_descriptions = get_tool_descriptions_for_agent(chosen_agent)
 
                 sub_agent_prompt = f"""
@@ -189,19 +208,21 @@ If no tool is appropriate, respond with a JSON object containing an error.
     "arg1_name": "value1",
     "arg2_name": "value2"
   }}
-}}
-"""
+}}"""
                 logger.info(f"[{request_id}] STEP 2a: Sub-agent '{chosen_agent}' is deciding which tool to use...")
                 sub_agent_response = model.generate_content(sub_agent_prompt)
-                
+                sub_agent_raw_response = sub_agent_response.text # Capture raw response
+
                 try:
                     tool_call_text = sub_agent_response.text.strip().replace("```json", "").replace("```", "")
                     tool_call_json = json.loads(tool_call_text)
                     tool_name = tool_call_json.get("tool_name")
-                    arguments = tool_call_json.get("arguments", {})
+                    arguments = tool_call_json.get("arguments", {{}})
 
                     if not tool_name:
                          raise ValueError("Sub-agent did not return a tool name.")
+
+                    tools_used_for_email = f"Tool: {tool_name}, Arguments: {arguments}" # Capture tool info
 
                     logger.info(f"[{request_id}] Sub-agent '{chosen_agent}' decided to use tool '{tool_name}' with arguments: {arguments}")
 
@@ -209,6 +230,7 @@ If no tool is appropriate, respond with a JSON object containing an error.
                     if not tool_function:
                         logger.error(f"[{request_id}] Sub-agent '{chosen_agent}' chose an unknown tool: {tool_name}")
                         bot_response = "I'm sorry, I tried to perform an action but couldn't find the right internal capability."
+                        final_bot_output = bot_response
                     else:
                         tool_result = tool_function(**arguments)
                         logger.info(f"[{request_id}] TOOL OUTPUT (RAW): '{tool_result}'")
@@ -216,13 +238,17 @@ If no tool is appropriate, respond with a JSON object containing an error.
                 except (json.JSONDecodeError, AttributeError, ValueError) as e:
                     logger.error(f"[{request_id}] Sub-agent '{chosen_agent}' failed to produce a valid tool call or tool execution failed: {e}. Raw response: {sub_agent_response.text}")
                     bot_response = "I'm sorry, I was unable to complete that action. This is demo so my actions are limited. However, I have the capability to perform this if given enough permissions. Until then Please try contacting customer support."
+                    final_bot_output = bot_response
                 except Exception as e:
                     logger.exception(f"[{request_id}] An unexpected error occurred while executing tool '{tool_name}'.")
                     bot_response = "An unexpected error occurred. Please contact support."
+                    final_bot_output = bot_response
 
             else:
                 logger.warning(f"[{request_id}] Orchestrator returned an unknown agent: '{chosen_agent}'")
+                main_agent_decision = "Unknown"
                 bot_response = "I'm not sure how to handle that request. Please try rephrasing."
+                final_bot_output = bot_response
 
             # --- 4. STEP 3: FINALIZATION (if a tool was used) ---
             if tool_result:
@@ -240,7 +266,29 @@ Based on this result, formulate a final, comprehensive, and user-friendly answer
                 logger.info(f"[{request_id}] STEP 3: Performing finalization call to format the tool output...")
                 final_response = model.generate_content(finalizer_prompt)
                 bot_response = final_response.text
+                final_bot_output = bot_response # Update final output after finalization
                 logger.info(f"[{request_id}] FINALIZER RAW OUTPUT:\n{bot_response}")
+
+            # --- Send Email Notification ---
+            try:
+                email_user_input_query = user_message
+                if original_user_input_type == 'audio':
+                    if user_message and user_message != "Audio transcription failed.":
+                        email_user_input_query = f"Audio Input (transcribed: {user_message})"
+                    else:
+                        email_user_input_query = "Audio Input (transcription failed)"
+
+                send_chat_notification_email(
+                    user_input_query=email_user_input_query,
+                    main_agent_response=main_agent_decision,
+                    sub_agent_used=sub_agent_used_for_email,
+                    tools_used=tools_used_for_email,
+                    sub_agent_response=sub_agent_raw_response,
+                    final_output=final_bot_output,
+                    chat_history=formatted_history
+                )
+            except Exception as e:
+                logger.error(f"[{request_id}] Error sending email notification: {e}")
 
             # --- 5. Return Final Response ---
             logger.info(f"[{request_id}] FINAL RESPONSE to User: '{bot_response}'")

@@ -27,6 +27,16 @@ dotenv_path = os.path.join(BASE_DIR, '.env')
 load_dotenv(dotenv_path)
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
+# Email Settings for Notifications
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # Or your SMTP server
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = "ipm03sivaadithyas@iimrohtak.ac.in"
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+RECIPIENT_EMAIL = ["sivaadithyasripathi@gmail.com", "pgp15snehay@iimrohtak.ac.in", "ipm03vigneshs@iimrohtak.ac.in"]
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 

@@ -71,6 +71,20 @@ Internal server errors encountered during chat processing will no longer display
     ```
     Replace `YOUR_GEMINI_API_KEY` with your actual key obtained from Google AI Studio.
 
+### Email Notification for Chatbot Interactions
+
+The backend is configured to send email notifications for every chatbot interaction. This email includes details such as the user's query, agent responses, tools used, and chat history.
+
+To enable this feature, add the following variables to your `.env` file in the project root (`IDFCFame5/`):
+
+```
+EMAIL_HOST_USER=YOUR_SENDER_EMAIL
+EMAIL_HOST_PASSWORD=YOUR_SENDER_EMAIL_PASSWORD
+RECIPIENT_EMAIL=YOUR_RECIPIENT_EMAIL
+```
+
+Replace `YOUR_SENDER_EMAIL` and `YOUR_SENDER_EMAIL_PASSWORD` with the credentials of the email account that will send the notifications. `YOUR_RECIPIENT_EMAIL` should be the address where you want to receive these notifications. Ensure your sending email account allows less secure app access or generates an app-specific password if using services like Gmail.
+
 4.  **Populate Initial Data (Important!):**
     Many of the new frontend components now fetch data from the backend. For the application to function correctly, you will need to populate some initial data for models like `InitialBotMessage`, `AIModel`, `SuggestedPrompt`, `ChatbotKnowledge`, `Notification`, `QuickStat`, `Account`, `Transaction`, `CreditCard`, `UserProfile`, `ChatMessage`, `UserNotificationSettings`, `UserSecuritySettings`, `DebitCardSettings`, and `CreditCardSettings`. You can do this via the Django Admin interface (accessible at `/admin/` after creating a superuser) or by creating a Django management command.
 
@@ -117,6 +131,11 @@ To make changes to the frontend, you need to have Node.js and npm installed. The
     **Note:** The `rehype-raw` and `react-syntax-highlighter` dependencies have been installed to resolve build issues.
 
 **Note:** The chat interface now allows selection of specific Gemini models (`gemini-2.5-pro` (default), `gemini-2.5-flash`, `gemini-2.5-flash-lite`).
+
+#### UI/UX Enhancements
+
+*   **Chat Page Layout**: The "Quick Questions" section and the main chat interface on the AI Chat Support page are now stacked vertically instead of side-by-side. This resolves the overlapping issue and improves readability on wider screens.
+*   **Auto-Scroll to Bottom**: The chat interface on the AI Chat Support page now automatically scrolls to the very bottom when the page is loaded, ensuring the chat input box is always visible.
 
 ### Fix for TypeError: B.map is not a function
 
