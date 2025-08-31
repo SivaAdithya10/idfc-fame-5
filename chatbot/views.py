@@ -47,7 +47,7 @@ class ChatView(APIView):
     permission_classes = [permissions.AllowAny]
     authentication_classes = []
     csrf_exempt = True
-    
+
     def post(self, request, *args, **kwargs):
         request_id = uuid.uuid4()
         user_message = None
@@ -73,11 +73,11 @@ class ChatView(APIView):
                 temp_dir = os.path.join(settings.BASE_DIR, 'temp_audio')
                 os.makedirs(temp_dir, exist_ok=True)
                 temp_path = os.path.join(temp_dir, f"{request_id}_{audio_file.name}")
-                
+
                 with open(temp_path, 'wb+') as temp_f:
                     for chunk in audio_file.chunks():
                         temp_f.write(chunk)
-                
+
                 uploaded_file = genai.upload_file(path=temp_path)
                 while uploaded_file.state.name == "PROCESSING":
                     time.sleep(2) # Reduced sleep time
@@ -123,11 +123,11 @@ class ChatView(APIView):
             # --- 1. Configure Gemini API ---
             genai.configure(api_key=gemini_api_key)
             model = genai.GenerativeModel(selected_model)
-            
+
             # --- 2. STEP 1: ORCHESTRATION ---
             # The first LLM call decides which specialist agent to route the query to.
             formatted_history = "\n".join([f"{msg.get('role', 'user').capitalize()}: {msg.get('content', '')}" for msg in history])
-            
+
             orchestrator_prompt = f"""
 You are the master request orchestrator for a digital bank. Your primary job is to analyze the user's query and route it to the correct specialist agent. Do not attempt to answer the user yourself.
 
@@ -151,7 +151,7 @@ Respond with ONLY a JSON object in the following format. Do not add any other te
 """
             logger.info(f"[{request_id}] STEP 1: Performing orchestration call to select an agent...")
             orchestrator_response = model.generate_content(orchestrator_prompt)
-            
+
             try:
                 decision_text = orchestrator_response.text.strip().replace("```json", "").replace("```", "")
                 decision_json = json.loads(decision_text)
@@ -217,7 +217,7 @@ If no tool is appropriate, respond with a JSON object containing an error.
                     tool_call_text = sub_agent_response.text.strip().replace("```json", "").replace("```", "")
                     tool_call_json = json.loads(tool_call_text)
                     tool_name = tool_call_json.get("tool_name")
-                    arguments = tool_call_json.get("arguments", {{}})
+                    arguments = tool_call_json.get("arguments", {})
 
                     if not tool_name:
                          raise ValueError("Sub-agent did not return a tool name.")
