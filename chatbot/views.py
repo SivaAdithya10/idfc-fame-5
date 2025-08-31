@@ -59,17 +59,67 @@ TOOL_TO_AGENT_MAP = {
 class ChatView(APIView):
     permission_classes = [permissions.AllowAny]
     authentication_classes = []
+    csrf_exempt = True
     
     def post(self, request, *args, **kwargs):
-        # Generate a unique ID for this request to trace it in the logs
         request_id = uuid.uuid4()
-        
-        user_message = request.data.get('message')
-        history = request.data.get('history', [])
-        selected_model = request.data.get('model', 'gemini-1.5-flash')
+        user_message = None
+        history = []
+        selected_model = 'gemini-1.5-flash'
 
-        logger.info(f"======== [START REQUEST: {request_id}] ========")
-        logger.info(f"[{request_id}] User Message: '{user_message}'")
+        # --- Determine Input Type: Audio or Text ---
+        if 'audio' in request.FILES:
+            # --- AUDIO PATH ---
+            logger.info(f"======== [START AUDIO REQUEST: {request_id}] ========")
+            audio_file = request.FILES['audio']
+            history = json.loads(request.data.get('history', '[]'))
+            selected_model = request.data.get('model', 'gemini-1.5-flash')
+            logger.info(f"[{request_id}] Received audio file: {audio_file.name}")
+
+            gemini_api_key = settings.GEMINI_API_KEY
+            if not gemini_api_key:
+                return Response({"error": "Gemini API key not configured."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+            try:
+                genai.configure(api_key=gemini_api_key)
+                temp_dir = os.path.join(settings.BASE_DIR, 'temp_audio')
+                os.makedirs(temp_dir, exist_ok=True)
+                temp_path = os.path.join(temp_dir, f"{request_id}_{audio_file.name}")
+                
+                with open(temp_path, 'wb+') as temp_f:
+                    for chunk in audio_file.chunks():
+                        temp_f.write(chunk)
+                
+                uploaded_file = genai.upload_file(path=temp_path)
+                # Wait for the file to be active.
+                while uploaded_file.state.name == "PROCESSING":
+                    time.sleep(5)
+                    uploaded_file = genai.get_file(uploaded_file.name)
+
+                if uploaded_file.state.name != "ACTIVE":
+                    logger.error(f"[{request_id}] File {uploaded_file.name} is not in an ACTIVE state. Current state: {uploaded_file.state.name}")
+                    return Response({"error": "Failed to process audio file."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+                os.remove(temp_path)
+
+                model = genai.GenerativeModel(selected_model)
+                # First, we get the transcription
+                transcription_prompt = "Please transcribe this audio file. Only return the transcribed text."
+                transcription_response = model.generate_content([transcription_prompt, uploaded_file])
+                user_message = transcription_response.text.strip()
+                logger.info(f"[{request_id}] Transcribed from audio: '{user_message}'")
+
+            except Exception as e:
+                logger.exception(f"[{request_id}] Error during audio processing.")
+                return Response({"error": "Failed to process audio."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        else:
+            # --- TEXT PATH ---
+            logger.info(f"======== [START TEXT REQUEST: {request_id}] ========")
+            user_message = request.data.get('message')
+            history = request.data.get('history', [])
+            selected_model = request.data.get('model', 'gemini-1.5-flash')
+
+        logger.info(f"[{request_id}] User Message (after potential transcription): '{user_message}'")
 
         if not user_message:
             return Response({"error": "No message provided"}, status=status.HTTP_400_BAD_REQUEST)
@@ -191,9 +241,8 @@ Based on this result, please formulate a final, comprehensive, and user-friendly
             error_message = "I'm sorry, a critical error occurred. Our technical team has been notified."
             return Response({"error": error_message}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-# ==============================================================================
-# === MODEL VIEWSETS ======================================
-# ==============================================================================
+
+
 
 @method_decorator(csrf_exempt, name='dispatch')
 class UserProfileViewSet(viewsets.ModelViewSet):

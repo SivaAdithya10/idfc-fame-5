@@ -1,0 +1,8 @@
+django
+djangorestframework
+python-dotenv
+crewai
+litellm
+SpeechRecognition
+pydub
+google-generativeai

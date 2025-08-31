@@ -3165,3 +3165,612 @@ INFO 2025-08-31 13:06:15,653 views 68668 65096 ======== [END REQUEST: 4af9b409-2
 INFO 2025-08-31 13:06:15,656 basehttp 68668 65096 "POST /api/chat/ HTTP/1.1" 200 50
 INFO 2025-08-31 13:20:30,108 autoreload 68668 68336 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\IDFC\settings.py changed, reloading.
 INFO 2025-08-31 13:20:33,378 autoreload 71236 63656 Watching for file changes with StatReloader
+INFO 2025-08-31 14:34:26,746 autoreload 44104 68108 Watching for file changes with StatReloader
+INFO 2025-08-31 14:34:34,918 basehttp 44104 64808 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 14:34:34,920 basehttp 44104 68152 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 14:34:34,920 basehttp 44104 58068 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 14:34:34,921 basehttp 44104 68852 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 14:34:34,941 basehttp 44104 58068 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 14:34:34,968 basehttp 44104 68852 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 14:34:34,990 basehttp 44104 68852 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 14:34:35,012 basehttp 44104 68852 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 14:34:36,313 basehttp 44104 68852 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 14:34:36,357 basehttp 44104 68852 "GET /static/assets/index-yBWfsfRc.js HTTP/1.1" 304 0
+INFO 2025-08-31 14:34:36,360 basehttp 44104 58068 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 14:34:36,682 basehttp 44104 68852 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 14:34:36,683 basehttp 44104 64808 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 14:34:36,685 basehttp 44104 58068 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 14:34:36,686 basehttp 44104 68152 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 14:34:36,695 basehttp 44104 58068 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 14:34:36,749 basehttp 44104 58068 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 14:34:36,764 basehttp 44104 58068 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 14:34:36,807 basehttp 44104 58068 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 14:48:22,835 autoreload 44104 68108 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\IDFC\settings.py changed, reloading.
+INFO 2025-08-31 14:48:23,944 autoreload 68508 71960 Watching for file changes with StatReloader
+INFO 2025-08-31 14:48:35,661 autoreload 68508 71960 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\IDFC\settings.py changed, reloading.
+INFO 2025-08-31 14:48:36,691 autoreload 61608 60608 Watching for file changes with StatReloader
+INFO 2025-08-31 14:49:00,169 basehttp 61608 60172 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 14:49:00,170 basehttp 61608 53488 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 14:49:00,207 basehttp 61608 60172 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 14:49:00,220 basehttp 61608 53488 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 14:49:00,287 basehttp 61608 53488 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:38:38,812 autoreload 15920 6652 Watching for file changes with StatReloader
+INFO 2025-08-31 15:38:51,606 basehttp 15920 23452 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:38:51,699 basehttp 15920 27260 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 200 65802
+INFO 2025-08-31 15:38:51,722 basehttp 15920 23452 "GET /static/assets/index-BU88cgC6.js HTTP/1.1" 200 1400683
+INFO 2025-08-31 15:38:52,121 basehttp 15920 25160 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:38:52,125 basehttp 15920 27260 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:38:52,126 basehttp 15920 23452 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:38:52,126 basehttp 15920 22156 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:38:52,142 basehttp 15920 27260 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:38:52,230 basehttp 15920 27260 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:38:52,249 basehttp 15920 27260 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:38:52,301 basehttp 15920 23452 "GET /api/quickstats/ HTTP/1.1" 200 310
+WARNING 2025-08-31 15:38:52,319 log 15920 27260 Not Found: /favicon.ico
+WARNING 2025-08-31 15:38:52,320 basehttp 15920 27260 "GET /favicon.ico HTTP/1.1" 404 3580
+INFO 2025-08-31 15:38:54,350 basehttp 15920 23452 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:38:54,351 basehttp 15920 27260 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:38:54,376 basehttp 15920 23452 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:38:54,388 basehttp 15920 27260 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:38:54,415 basehttp 15920 27260 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:38:58,265 views 15920 27260 ======== [START REQUEST: 496668be-eff0-4f9d-9723-501aa62ec89f] ========
+INFO 2025-08-31 15:38:58,266 views 15920 27260 [496668be-eff0-4f9d-9723-501aa62ec89f] User Message: 'Hi'
+INFO 2025-08-31 15:38:58,267 views 15920 27260 [496668be-eff0-4f9d-9723-501aa62ec89f] STEP 1: Performing orchestration call to Gemini...
+INFO 2025-08-31 15:39:00,954 views 15920 27260 [496668be-eff0-4f9d-9723-501aa62ec89f] ORCHESTRATOR RAW OUTPUT:
+{
+  "decision": "direct_answer",
+  "response": "Hi there! How can I assist you today?"
+}
+INFO 2025-08-31 15:39:00,955 views 15920 27260 [496668be-eff0-4f9d-9723-501aa62ec89f] Decision: Direct Answer. No agent transfer needed.
+INFO 2025-08-31 15:39:00,955 views 15920 27260 [496668be-eff0-4f9d-9723-501aa62ec89f] FINAL RESPONSE to User: 'Hi there! How can I assist you today?'
+INFO 2025-08-31 15:39:00,955 views 15920 27260 ======== [END REQUEST: 496668be-eff0-4f9d-9723-501aa62ec89f] ========
+
+INFO 2025-08-31 15:39:00,956 basehttp 15920 27260 "POST /api/chat/ HTTP/1.1" 200 52
+INFO 2025-08-31 15:39:10,349 views 15920 27260 ======== [START REQUEST: 0e9e8aff-a097-4da2-9aa2-06a439a64ed5] ========
+INFO 2025-08-31 15:39:10,349 views 15920 27260 [0e9e8aff-a097-4da2-9aa2-06a439a64ed5] User Message: 'What is my account balance?'
+INFO 2025-08-31 15:39:10,351 views 15920 27260 [0e9e8aff-a097-4da2-9aa2-06a439a64ed5] STEP 1: Performing orchestration call to Gemini...
+INFO 2025-08-31 15:39:12,805 views 15920 27260 [0e9e8aff-a097-4da2-9aa2-06a439a64ed5] ORCHESTRATOR RAW OUTPUT:
+The user is asking for their account balance. To get this information, I need to know which account they are referring to, as they might have multiple accounts. Therefore, I should first call the `get_user_accounts` tool to retrieve a list of their accounts. Once I have this list, I can then ask the user to specify which account's balance they want to know.
+
+
+{
+  "decision": "call_tool",
+  "tool_name": "get_user_accounts",
+  "arguments": {}
+}
+
+ERROR 2025-08-31 15:39:12,806 views 15920 27260 [0e9e8aff-a097-4da2-9aa2-06a439a64ed5] Failed to parse orchestrator JSON response: Expecting value: line 1 column 1 (char 0). Raw response was: The user is asking for their account balance. To get this information, I need to know which account they are referring to, as they might have multiple accounts. Therefore, I should first call the `get_user_accounts` tool to retrieve a list of their accounts. Once I have this list, I can then ask the user to specify which account's balance they want to know.
+
+```json
+{
+  "decision": "call_tool",
+  "tool_name": "get_user_accounts",
+  "arguments": {}
+}
+```
+INFO 2025-08-31 15:39:12,807 basehttp 15920 27260 "POST /api/chat/ HTTP/1.1" 200 490
+INFO 2025-08-31 15:39:44,450 basehttp 15920 27260 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 15:39:44,459 basehttp 15920 23452 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 15:39:44,470 basehttp 15920 23452 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:39:44,525 basehttp 15920 23452 "GET /static/assets/index-BU88cgC6.js HTTP/1.1" 304 0
+INFO 2025-08-31 15:39:44,533 basehttp 15920 22156 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 15:39:44,915 basehttp 15920 25160 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:39:44,915 basehttp 15920 23452 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:39:44,923 basehttp 15920 22156 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:39:44,928 basehttp 15920 24996 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:39:44,939 basehttp 15920 22156 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:39:44,983 basehttp 15920 22156 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:39:45,011 basehttp 15920 22156 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:39:45,039 basehttp 15920 22156 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:39:45,729 basehttp 15920 22156 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:39:45,734 basehttp 15920 24996 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:39:45,753 basehttp 15920 24996 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:39:45,755 basehttp 15920 22156 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:39:45,792 basehttp 15920 22156 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:39:50,035 views 15920 22156 ======== [START REQUEST: b432e3c4-3514-48d1-bb39-24f3ede61743] ========
+INFO 2025-08-31 15:39:50,035 views 15920 22156 [b432e3c4-3514-48d1-bb39-24f3ede61743] User Message: 'What is my account balance?'
+INFO 2025-08-31 15:39:50,036 views 15920 22156 [b432e3c4-3514-48d1-bb39-24f3ede61743] STEP 1: Performing orchestration call to Gemini...
+INFO 2025-08-31 15:39:52,147 views 15920 22156 [b432e3c4-3514-48d1-bb39-24f3ede61743] ORCHESTRATOR RAW OUTPUT:
+{
+  "decision": "call_tool",
+  "tool_name": "get_user_accounts",
+  "arguments": {}
+}
+INFO 2025-08-31 15:39:52,147 views 15920 22156 [b432e3c4-3514-48d1-bb39-24f3ede61743] Decision: Delegate to Agent -> 'Account Data Retrieval Specialist'
+INFO 2025-08-31 15:39:52,147 views 15920 22156 [b432e3c4-3514-48d1-bb39-24f3ede61743] STEP 2: Agent 'Account Data Retrieval Specialist' is handling the query.
+INFO 2025-08-31 15:39:52,147 views 15920 22156 [b432e3c4-3514-48d1-bb39-24f3ede61743] TOOL USED: 'get_user_accounts' with arguments: {}
+INFO 2025-08-31 15:39:52,215 views 15920 22156 [b432e3c4-3514-48d1-bb39-24f3ede61743] STEP 3: Performing finalization call to Gemini to format the tool output...
+INFO 2025-08-31 15:39:52,943 views 15920 22156 ======== [END REQUEST: b432e3c4-3514-48d1-bb39-24f3ede61743] ========
+
+INFO 2025-08-31 15:39:52,944 basehttp 15920 22156 "POST /api/chat/ HTTP/1.1" 200 192
+INFO 2025-08-31 15:40:15,856 views 15920 22156 ======== [START REQUEST: 7785774f-2802-4b4a-9d17-d02dead69ec0] ========
+INFO 2025-08-31 15:40:15,857 views 15920 22156 [7785774f-2802-4b4a-9d17-d02dead69ec0] User Message: 'None'
+WARNING 2025-08-31 15:40:15,857 log 15920 22156 Bad Request: /api/chat/
+WARNING 2025-08-31 15:40:15,858 basehttp 15920 22156 "POST /api/chat/ HTTP/1.1" 400 31
+INFO 2025-08-31 15:40:26,017 views 15920 22156 ======== [START REQUEST: 9654cc1c-26cf-458f-bfcc-1557b1fb2945] ========
+INFO 2025-08-31 15:40:26,018 views 15920 22156 [9654cc1c-26cf-458f-bfcc-1557b1fb2945] User Message: 'None'
+WARNING 2025-08-31 15:40:26,020 log 15920 22156 Bad Request: /api/chat/
+WARNING 2025-08-31 15:40:26,021 basehttp 15920 22156 "POST /api/chat/ HTTP/1.1" 400 31
+INFO 2025-08-31 15:40:29,402 basehttp 15920 22156 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+WARNING 2025-08-31 15:40:29,424 log 15920 22156 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-31 15:40:29,425 basehttp 15920 22156 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3691
+INFO 2025-08-31 15:41:40,658 autoreload 11492 21024 Watching for file changes with StatReloader
+INFO 2025-08-31 15:42:07,517 autoreload 26716 23048 Watching for file changes with StatReloader
+INFO 2025-08-31 15:42:20,761 basehttp 26716 22108 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:42:20,829 basehttp 26716 29052 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 200 65802
+INFO 2025-08-31 15:42:20,855 basehttp 26716 22108 "GET /static/assets/index-BU88cgC6.js HTTP/1.1" 200 1400683
+INFO 2025-08-31 15:42:21,309 basehttp 26716 22108 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:42:21,312 basehttp 26716 29052 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:42:21,319 basehttp 26716 28872 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:42:21,325 basehttp 26716 22388 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:42:21,328 basehttp 26716 22108 "GET /api/userprofiles/ HTTP/1.1" 200 90
+WARNING 2025-08-31 15:42:21,334 log 26716 29052 Not Found: /favicon.ico
+WARNING 2025-08-31 15:42:21,336 basehttp 26716 29052 "GET /favicon.ico HTTP/1.1" 404 3584
+INFO 2025-08-31 15:42:21,367 basehttp 26716 22388 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:42:21,446 basehttp 26716 22388 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:42:21,522 basehttp 26716 22388 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:42:38,606 basehttp 26716 22108 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:42:38,606 basehttp 26716 22388 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:42:38,629 basehttp 26716 22388 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:42:38,644 basehttp 26716 22108 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:42:38,702 basehttp 26716 22388 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:43:01,366 basehttp 26716 22108 - Broken pipe from ('192.168.137.20', 59808)
+INFO 2025-08-31 15:43:01,367 basehttp 26716 29052 - Broken pipe from ('192.168.137.20', 59810)
+INFO 2025-08-31 15:43:01,367 basehttp 26716 25764 - Broken pipe from ('192.168.137.20', 59828)
+INFO 2025-08-31 15:43:01,367 basehttp 26716 28872 - Broken pipe from ('192.168.137.20', 59812)
+INFO 2025-08-31 15:43:01,367 basehttp 26716 22388 - Broken pipe from ('192.168.137.20', 59826)
+INFO 2025-08-31 15:43:07,022 basehttp 26716 3408 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 15:43:07,030 basehttp 26716 8552 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 15:43:07,055 basehttp 26716 8552 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:43:07,080 basehttp 26716 22836 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 200 65802
+INFO 2025-08-31 15:43:07,101 basehttp 26716 8552 "GET /static/assets/index-BU88cgC6.js HTTP/1.1" 200 1400683
+INFO 2025-08-31 15:43:07,470 basehttp 26716 8552 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:43:07,486 basehttp 26716 17888 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:43:07,487 basehttp 26716 22836 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:43:07,491 basehttp 26716 8552 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:43:07,495 basehttp 26716 29216 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:43:07,498 basehttp 26716 12248 "GET /api/notifications/ HTTP/1.1" 200 258
+WARNING 2025-08-31 15:43:07,499 log 26716 23308 Not Found: /favicon.ico
+WARNING 2025-08-31 15:43:07,500 basehttp 26716 23308 "GET /favicon.ico HTTP/1.1" 404 3584
+INFO 2025-08-31 15:43:07,547 basehttp 26716 8552 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:43:07,617 basehttp 26716 8552 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:43:09,936 basehttp 26716 8552 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:43:09,938 basehttp 26716 23308 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:43:09,962 basehttp 26716 8552 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:43:09,979 basehttp 26716 23308 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:43:10,026 basehttp 26716 8552 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:43:35,254 basehttp 26716 23308 - Broken pipe from ('192.168.137.20', 40984)
+INFO 2025-08-31 15:43:35,254 basehttp 26716 12248 - Broken pipe from ('192.168.137.20', 40980)
+INFO 2025-08-31 15:43:35,254 basehttp 26716 29216 - Broken pipe from ('192.168.137.20', 40978)
+INFO 2025-08-31 15:43:35,254 basehttp 26716 22836 - Broken pipe from ('192.168.137.20', 40964)
+INFO 2025-08-31 15:43:35,254 basehttp 26716 8552 - Broken pipe from ('192.168.137.20', 40960)
+INFO 2025-08-31 15:43:35,254 basehttp 26716 17888 - Broken pipe from ('192.168.137.20', 40966)
+INFO 2025-08-31 15:44:25,775 basehttp 26716 6368 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 15:44:25,784 basehttp 26716 19116 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 15:44:25,792 basehttp 26716 19116 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:44:25,838 basehttp 26716 19116 "GET /static/assets/index-BU88cgC6.js HTTP/1.1" 304 0
+INFO 2025-08-31 15:44:25,845 basehttp 26716 13756 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 15:44:26,175 basehttp 26716 13756 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:44:26,196 basehttp 26716 19116 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:44:26,202 basehttp 26716 13756 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:44:26,205 basehttp 26716 7556 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:44:26,206 basehttp 26716 17004 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:44:26,251 basehttp 26716 17004 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:44:26,264 basehttp 26716 17004 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:44:26,304 basehttp 26716 17004 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:44:27,263 basehttp 26716 7556 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:44:27,266 basehttp 26716 17004 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:44:27,292 basehttp 26716 7556 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:44:27,307 basehttp 26716 17004 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:44:27,328 basehttp 26716 7556 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:44:32,187 views 26716 7556 ======== [START REQUEST: 1654f7c1-45bb-4343-bfd6-9425e6990afa] ========
+INFO 2025-08-31 15:44:32,188 views 26716 7556 [1654f7c1-45bb-4343-bfd6-9425e6990afa] User Message: 'None'
+WARNING 2025-08-31 15:44:32,188 log 26716 7556 Bad Request: /api/chat/
+WARNING 2025-08-31 15:44:32,189 basehttp 26716 7556 "POST /api/chat/ HTTP/1.1" 400 31
+INFO 2025-08-31 15:44:58,150 autoreload 26716 23048 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 15:44:59,170 autoreload 26356 6100 Watching for file changes with StatReloader
+INFO 2025-08-31 15:45:04,311 basehttp 26356 14136 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 15:45:04,319 basehttp 26356 28288 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 15:45:04,331 basehttp 26356 28288 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:45:04,377 basehttp 26356 28288 "GET /static/assets/index-BU88cgC6.js HTTP/1.1" 304 0
+INFO 2025-08-31 15:45:04,383 basehttp 26356 29600 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 15:45:04,673 basehttp 26356 29600 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:45:04,682 basehttp 26356 28288 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:45:04,687 basehttp 26356 13940 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:45:04,689 basehttp 26356 11684 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:45:04,691 basehttp 26356 29600 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:45:04,715 basehttp 26356 29600 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:45:04,725 basehttp 26356 29600 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:45:04,742 basehttp 26356 29600 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:45:05,642 basehttp 26356 29600 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:45:05,645 basehttp 26356 11684 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:45:05,665 basehttp 26356 11684 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:45:05,665 basehttp 26356 29600 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:45:05,682 basehttp 26356 29600 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:45:08,607 views 26356 29600 ======== [START REQUEST: bb8c7a99-acbb-4441-878b-562c93c5324d] ========
+INFO 2025-08-31 15:45:08,608 views 26356 29600 [bb8c7a99-acbb-4441-878b-562c93c5324d] User Message: 'None'
+WARNING 2025-08-31 15:45:08,609 log 26356 29600 Bad Request: /api/chat/
+WARNING 2025-08-31 15:45:08,609 basehttp 26356 29600 "POST /api/chat/ HTTP/1.1" 400 31
+INFO 2025-08-31 15:46:06,506 autoreload 26356 6100 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 15:46:07,397 autoreload 1316 26828 Watching for file changes with StatReloader
+INFO 2025-08-31 15:47:01,806 autoreload 19488 6252 Watching for file changes with StatReloader
+INFO 2025-08-31 15:47:08,825 basehttp 19488 27660 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 15:47:08,849 basehttp 19488 8148 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 15:47:08,868 basehttp 19488 8148 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:47:08,933 basehttp 19488 29380 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 200 65802
+INFO 2025-08-31 15:47:08,940 basehttp 19488 8148 "GET /static/assets/index-mXzwT1M2.js HTTP/1.1" 200 1400782
+INFO 2025-08-31 15:47:09,291 basehttp 19488 8148 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:47:09,307 basehttp 19488 29380 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:47:09,310 basehttp 19488 24732 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:47:09,310 basehttp 19488 9336 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:47:09,348 basehttp 19488 8148 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:47:09,355 basehttp 19488 24732 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:47:09,416 basehttp 19488 8148 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:47:09,470 basehttp 19488 8148 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:47:12,048 basehttp 19488 8148 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:47:12,051 basehttp 19488 24732 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:47:12,068 basehttp 19488 8148 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:47:12,075 basehttp 19488 24732 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:47:12,141 basehttp 19488 24732 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:47:22,706 basehttp 19488 24732 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 15:47:22,714 basehttp 19488 8148 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 15:47:22,725 basehttp 19488 8148 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:47:22,750 basehttp 19488 8148 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 15:47:22,755 basehttp 19488 9336 "GET /static/assets/index-mXzwT1M2.js HTTP/1.1" 304 0
+INFO 2025-08-31 15:47:23,082 basehttp 19488 8148 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:47:23,086 basehttp 19488 29380 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:47:23,086 basehttp 19488 9336 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:47:23,090 basehttp 19488 2604 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:47:23,093 basehttp 19488 8148 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:47:23,101 basehttp 19488 29380 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:47:23,156 basehttp 19488 29380 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:47:23,218 basehttp 19488 29380 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:47:26,744 basehttp 19488 29380 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:47:26,745 basehttp 19488 8148 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:47:26,762 basehttp 19488 8148 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:47:26,764 basehttp 19488 29380 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:47:26,829 basehttp 19488 8148 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:47:32,036 basehttp 19488 26936 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 15:47:32,046 basehttp 19488 11224 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 15:47:32,055 basehttp 19488 11224 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:47:32,119 basehttp 19488 22252 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 200 65802
+INFO 2025-08-31 15:47:32,128 basehttp 19488 11224 "GET /static/assets/index-mXzwT1M2.js HTTP/1.1" 200 1400782
+INFO 2025-08-31 15:47:32,526 basehttp 19488 11224 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:47:32,547 basehttp 19488 22252 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:47:32,547 basehttp 19488 11224 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:47:32,560 basehttp 19488 16424 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:47:32,569 basehttp 19488 11596 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:47:32,587 basehttp 19488 11224 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:47:32,606 basehttp 19488 11224 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:47:32,638 basehttp 19488 11224 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:47:33,403 basehttp 19488 11224 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:47:33,406 basehttp 19488 11596 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:47:33,433 basehttp 19488 11224 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:47:33,433 basehttp 19488 11596 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:47:33,456 basehttp 19488 11596 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:47:35,147 basehttp 19488 8148 - Broken pipe from ('192.168.137.20', 56586)
+INFO 2025-08-31 15:47:35,147 basehttp 19488 9336 - Broken pipe from ('192.168.137.20', 47684)
+INFO 2025-08-31 15:47:35,148 basehttp 19488 2604 - Broken pipe from ('192.168.137.20', 35144)
+INFO 2025-08-31 15:47:35,148 basehttp 19488 29380 - Broken pipe from ('192.168.137.20', 47676)
+INFO 2025-08-31 15:47:36,182 views 19488 11596 ======== [START AUDIO REQUEST: 5fd18069-34a1-4c05-9d97-f5e58700cef0] ========
+INFO 2025-08-31 15:47:36,182 views 19488 11596 [5fd18069-34a1-4c05-9d97-f5e58700cef0] Received audio file: voice-message.webm
+ERROR 2025-08-31 15:47:43,952 views 19488 11596 [5fd18069-34a1-4c05-9d97-f5e58700cef0] Error during audio processing.
+Traceback (most recent call last):
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py", line 99, in post
+    transcription_response = model.generate_content([transcription_prompt, uploaded_file])
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 868, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.FailedPrecondition: 400 The File q7riqi6c1pnp is not in an ACTIVE state and usage is not allowed.
+ERROR 2025-08-31 15:47:43,974 log 19488 11596 Internal Server Error: /api/chat/
+ERROR 2025-08-31 15:47:43,975 basehttp 19488 11596 "POST /api/chat/ HTTP/1.1" 500 36
+INFO 2025-08-31 15:48:13,012 autoreload 19488 6252 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 15:48:15,864 autoreload 27148 20980 Watching for file changes with StatReloader
+INFO 2025-08-31 15:48:28,861 autoreload 10224 15848 Watching for file changes with StatReloader
+INFO 2025-08-31 15:48:43,817 autoreload 1756 14360 Watching for file changes with StatReloader
+INFO 2025-08-31 15:48:51,534 basehttp 1756 2108 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 15:48:51,543 basehttp 1756 10592 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 15:48:51,553 basehttp 1756 10592 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:48:51,607 basehttp 1756 27072 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 200 65802
+INFO 2025-08-31 15:48:51,620 basehttp 1756 10592 "GET /static/assets/index-mXzwT1M2.js HTTP/1.1" 200 1400782
+INFO 2025-08-31 15:48:51,964 basehttp 1756 27072 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:48:51,968 basehttp 1756 10592 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:48:51,975 basehttp 1756 7204 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:48:51,982 basehttp 1756 10592 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:48:51,989 basehttp 1756 24688 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:48:52,000 basehttp 1756 7204 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:48:52,018 basehttp 1756 7204 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:48:52,049 basehttp 1756 7204 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:48:54,311 basehttp 1756 7204 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:48:54,311 basehttp 1756 24688 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:48:54,339 basehttp 1756 24688 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:48:54,340 basehttp 1756 7204 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:48:54,359 basehttp 1756 7204 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:48:59,361 views 1756 7204 ======== [START AUDIO REQUEST: f2d57587-cf6d-43fa-9295-cab9ff165ca3] ========
+INFO 2025-08-31 15:48:59,362 views 1756 7204 [f2d57587-cf6d-43fa-9295-cab9ff165ca3] Received audio file: voice-message.webm
+ERROR 2025-08-31 15:49:09,784 views 1756 7204 [f2d57587-cf6d-43fa-9295-cab9ff165ca3] Error during audio processing.
+Traceback (most recent call last):
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py", line 104, in post
+    transcription_response = model.generate_content([transcription_prompt, uploaded_file])
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 868, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.FailedPrecondition: 400 The File wo4eb1b3px0i is not in an ACTIVE state and usage is not allowed.
+ERROR 2025-08-31 15:49:09,788 log 1756 7204 Internal Server Error: /api/chat/
+ERROR 2025-08-31 15:49:09,789 basehttp 1756 7204 "POST /api/chat/ HTTP/1.1" 500 36
+INFO 2025-08-31 15:49:33,170 autoreload 1756 14360 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 15:49:35,983 autoreload 26316 11328 Watching for file changes with StatReloader
+INFO 2025-08-31 15:50:05,716 autoreload 23188 9376 Watching for file changes with StatReloader
+INFO 2025-08-31 15:50:20,701 basehttp 23188 27708 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 15:50:20,716 basehttp 23188 27708 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:50:20,774 basehttp 23188 24664 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 200 65802
+INFO 2025-08-31 15:50:20,785 basehttp 23188 27708 "GET /static/assets/index-mXzwT1M2.js HTTP/1.1" 200 1400782
+INFO 2025-08-31 15:50:21,065 basehttp 23188 27708 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:50:21,066 basehttp 23188 24664 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:50:21,068 basehttp 23188 5892 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:50:21,069 basehttp 23188 15748 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:50:21,085 basehttp 23188 27708 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:50:21,093 basehttp 23188 5892 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:50:21,106 basehttp 23188 5892 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:50:21,127 basehttp 23188 5892 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:50:23,066 basehttp 23188 5892 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:50:23,069 basehttp 23188 27708 "GET /api/chatbotknowledge/ HTTP/1.1" 200 282
+INFO 2025-08-31 15:50:23,087 basehttp 23188 5892 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:50:24,792 basehttp 23188 5892 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:50:24,795 basehttp 23188 27708 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:50:24,816 basehttp 23188 27708 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:50:24,821 basehttp 23188 5892 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:50:24,838 basehttp 23188 5892 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:50:28,659 views 23188 5892 ======== [START AUDIO REQUEST: 46cbd66d-fc42-49fc-9ac3-b25ec6f7e22b] ========
+INFO 2025-08-31 15:50:28,659 views 23188 5892 [46cbd66d-fc42-49fc-9ac3-b25ec6f7e22b] Received audio file: voice-message.webm
+ERROR 2025-08-31 15:50:37,079 views 23188 5892 [46cbd66d-fc42-49fc-9ac3-b25ec6f7e22b] File files/tigct2bj4jlp is not in an ACTIVE state. Current state: FAILED
+ERROR 2025-08-31 15:50:37,080 log 23188 5892 Internal Server Error: /api/chat/
+ERROR 2025-08-31 15:50:37,081 basehttp 23188 5892 "POST /api/chat/ HTTP/1.1" 500 41
+INFO 2025-08-31 15:52:10,523 autoreload 8404 12928 Watching for file changes with StatReloader
+INFO 2025-08-31 15:52:21,886 basehttp 8404 24456 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 15:52:21,895 basehttp 8404 29240 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 15:52:21,906 basehttp 8404 29240 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:52:21,960 basehttp 8404 9848 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 200 65802
+INFO 2025-08-31 15:52:21,981 basehttp 8404 29240 "GET /static/assets/index-CjIpMwmO.js HTTP/1.1" 200 1400781
+INFO 2025-08-31 15:52:22,313 basehttp 8404 9848 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:52:22,315 basehttp 8404 16452 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:52:22,316 basehttp 8404 29240 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:52:22,316 basehttp 8404 23276 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:52:22,327 basehttp 8404 29240 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:52:22,370 basehttp 8404 29240 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:52:22,383 basehttp 8404 29240 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:52:22,403 basehttp 8404 29240 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:52:23,160 basehttp 8404 29240 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:52:23,165 basehttp 8404 23276 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:52:23,184 basehttp 8404 23276 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:52:23,185 basehttp 8404 29240 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:52:23,207 basehttp 8404 23276 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:52:29,192 views 8404 23276 ======== [START AUDIO REQUEST: c1abd89d-27d7-4095-9480-15ee4f94e65f] ========
+INFO 2025-08-31 15:52:29,192 views 8404 23276 [c1abd89d-27d7-4095-9480-15ee4f94e65f] Received audio file: voice-message.mp3
+INFO 2025-08-31 15:52:38,751 views 8404 23276 [c1abd89d-27d7-4095-9480-15ee4f94e65f] Transcribed from audio: 'Test one two three'
+INFO 2025-08-31 15:52:38,752 views 8404 23276 [c1abd89d-27d7-4095-9480-15ee4f94e65f] User Message (after potential transcription): 'Test one two three'
+INFO 2025-08-31 15:52:38,753 views 8404 23276 [c1abd89d-27d7-4095-9480-15ee4f94e65f] STEP 1: Performing orchestration call to Gemini...
+INFO 2025-08-31 15:52:39,630 views 8404 23276 [c1abd89d-27d7-4095-9480-15ee4f94e65f] ORCHESTRATOR RAW OUTPUT:
+{
+  "decision": "direct_answer",
+  "response": "Hello! It seems like you're testing the system. How can I assist you with your banking needs today?"
+}
+INFO 2025-08-31 15:52:39,630 views 8404 23276 [c1abd89d-27d7-4095-9480-15ee4f94e65f] Decision: Direct Answer. No agent transfer needed.
+INFO 2025-08-31 15:52:39,630 views 8404 23276 [c1abd89d-27d7-4095-9480-15ee4f94e65f] FINAL RESPONSE to User: 'Hello! It seems like you're testing the system. How can I assist you with your banking needs today?'
+INFO 2025-08-31 15:52:39,630 views 8404 23276 ======== [END REQUEST: c1abd89d-27d7-4095-9480-15ee4f94e65f] ========
+
+INFO 2025-08-31 15:52:39,631 basehttp 8404 23276 "POST /api/chat/ HTTP/1.1" 200 114
+INFO 2025-08-31 15:52:49,841 basehttp 8404 21820 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 15:52:49,852 basehttp 8404 28120 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 15:52:49,868 basehttp 8404 28120 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:52:49,912 basehttp 8404 26520 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 200 65802
+INFO 2025-08-31 15:52:49,935 basehttp 8404 28120 "GET /static/assets/index-CjIpMwmO.js HTTP/1.1" 200 1400781
+INFO 2025-08-31 15:52:50,281 basehttp 8404 28120 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:52:50,283 basehttp 8404 26520 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:52:50,291 basehttp 8404 26752 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:52:50,294 basehttp 8404 5248 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:52:50,298 basehttp 8404 28120 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:52:50,299 basehttp 8404 26520 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:52:50,362 basehttp 8404 26520 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:52:50,423 basehttp 8404 26520 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:52:52,032 basehttp 8404 26520 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:52:52,037 basehttp 8404 28120 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:52:52,050 basehttp 8404 26520 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:52:52,058 basehttp 8404 28120 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:52:52,118 basehttp 8404 28120 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:54:23,423 autoreload 18500 22740 Watching for file changes with StatReloader
+INFO 2025-08-31 15:54:28,436 autoreload 9648 23656 Watching for file changes with StatReloader
+INFO 2025-08-31 15:54:33,071 basehttp 9648 8464 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 15:54:33,081 basehttp 9648 336 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 15:54:33,093 basehttp 9648 336 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:54:33,132 basehttp 9648 28428 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 200 65802
+INFO 2025-08-31 15:54:33,165 basehttp 9648 336 "GET /static/assets/index-BoCo8ihx.js HTTP/1.1" 200 1400768
+INFO 2025-08-31 15:54:33,496 basehttp 9648 336 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:54:33,509 basehttp 9648 28428 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:54:33,513 basehttp 9648 29352 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:54:33,515 basehttp 9648 24632 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:54:33,548 basehttp 9648 336 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:54:33,552 basehttp 9648 24632 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:54:33,614 basehttp 9648 24632 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:54:33,688 basehttp 9648 24632 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:54:36,496 basehttp 9648 336 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:54:36,498 basehttp 9648 24632 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:54:36,521 basehttp 9648 24632 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:54:36,525 basehttp 9648 336 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:54:36,596 basehttp 9648 24632 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:55:07,167 basehttp 9648 24632 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 15:55:07,177 basehttp 9648 336 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 15:55:07,187 basehttp 9648 336 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:55:07,232 basehttp 9648 336 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 15:55:07,233 basehttp 9648 29352 "GET /static/assets/index-BoCo8ihx.js HTTP/1.1" 304 0
+INFO 2025-08-31 15:55:07,604 basehttp 9648 336 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:55:07,606 basehttp 9648 29352 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:55:07,607 basehttp 9648 28428 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:55:07,612 basehttp 9648 26476 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:55:07,618 basehttp 9648 28428 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:55:07,638 basehttp 9648 26476 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:55:07,704 basehttp 9648 26476 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:55:07,776 basehttp 9648 26476 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:55:38,772 basehttp 9648 26476 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:55:38,796 basehttp 9648 26476 "GET /static/assets/index-BoCo8ihx.js HTTP/1.1" 304 0
+INFO 2025-08-31 15:55:38,796 basehttp 9648 28428 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 15:55:39,153 basehttp 9648 29352 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:55:39,155 basehttp 9648 26476 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:55:39,156 basehttp 9648 336 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:55:39,156 basehttp 9648 28428 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:55:39,169 basehttp 9648 336 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:55:39,171 basehttp 9648 28428 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:55:39,232 basehttp 9648 28428 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:55:39,298 basehttp 9648 28428 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:55:41,777 basehttp 9648 336 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:55:41,777 basehttp 9648 28428 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:55:41,793 basehttp 9648 28428 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:55:41,804 basehttp 9648 336 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:55:41,878 basehttp 9648 336 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:58:38,468 autoreload 17112 11800 Watching for file changes with StatReloader
+INFO 2025-08-31 15:58:42,336 autoreload 8244 24536 Watching for file changes with StatReloader
+INFO 2025-08-31 15:58:54,847 basehttp 8244 23200 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 15:58:54,864 basehttp 8244 28788 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 15:58:54,919 basehttp 8244 28788 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:58:55,009 basehttp 8244 28788 "GET /static/assets/index-shc4WIfB.js HTTP/1.1" 200 1401219
+INFO 2025-08-31 15:58:55,028 basehttp 8244 2764 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 200 65802
+INFO 2025-08-31 15:58:55,394 basehttp 8244 2764 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:58:55,395 basehttp 8244 28788 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:58:55,407 basehttp 8244 14352 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:58:55,407 basehttp 8244 144 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:58:55,453 basehttp 8244 14352 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:58:55,474 basehttp 8244 14352 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:58:55,533 basehttp 8244 14352 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:58:55,597 basehttp 8244 14352 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:58:55,794 basehttp 8244 14352 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:58:56,138 basehttp 8244 14352 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:58:56,140 basehttp 8244 144 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:58:56,142 basehttp 8244 2764 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:58:56,148 basehttp 8244 14352 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:58:56,159 basehttp 8244 28788 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:58:56,169 basehttp 8244 2764 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:58:56,223 basehttp 8244 2764 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:58:56,287 basehttp 8244 2764 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:58:59,975 basehttp 8244 14352 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:58:59,976 basehttp 8244 2764 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:59:00,006 basehttp 8244 2764 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:59:00,012 basehttp 8244 14352 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:59:00,090 basehttp 8244 2764 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 15:59:52,053 basehttp 8244 24260 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 15:59:52,063 basehttp 8244 3656 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 15:59:52,072 basehttp 8244 3656 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 15:59:52,129 basehttp 8244 29184 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 200 65802
+INFO 2025-08-31 15:59:52,138 basehttp 8244 3656 "GET /static/assets/index-shc4WIfB.js HTTP/1.1" 200 1401219
+INFO 2025-08-31 15:59:52,508 basehttp 8244 3656 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:59:52,515 basehttp 8244 25156 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 15:59:52,515 basehttp 8244 29432 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 15:59:52,515 basehttp 8244 29184 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 15:59:52,522 basehttp 8244 3656 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:59:52,572 basehttp 8244 3656 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:59:52,584 basehttp 8244 3656 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:59:52,621 basehttp 8244 3656 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 15:59:53,223 basehttp 8244 14352 - Broken pipe from ('192.168.137.20', 32788)
+INFO 2025-08-31 15:59:53,223 basehttp 8244 28788 - Broken pipe from ('192.168.137.20', 60990)
+INFO 2025-08-31 15:59:53,223 basehttp 8244 2764 - Broken pipe from ('192.168.137.20', 32772)
+INFO 2025-08-31 15:59:53,223 basehttp 8244 144 - Broken pipe from ('192.168.137.20', 32796)
+INFO 2025-08-31 15:59:54,333 basehttp 8244 3656 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 15:59:54,340 basehttp 8244 29184 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 15:59:54,360 basehttp 8244 29184 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 15:59:54,364 basehttp 8244 3656 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 15:59:54,386 basehttp 8244 3656 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 16:00:00,198 views 8244 3656 ======== [START AUDIO REQUEST: 6c438165-9588-475f-80fc-91e72433ef40] ========
+INFO 2025-08-31 16:00:00,198 views 8244 3656 [6c438165-9588-475f-80fc-91e72433ef40] Received audio file: voice-message.mp3
+INFO 2025-08-31 16:00:10,930 views 8244 3656 [6c438165-9588-475f-80fc-91e72433ef40] Transcribed from audio: 'What is my account balance right now'
+INFO 2025-08-31 16:00:10,931 views 8244 3656 [6c438165-9588-475f-80fc-91e72433ef40] User Message (after potential transcription): 'What is my account balance right now'
+INFO 2025-08-31 16:00:10,932 views 8244 3656 [6c438165-9588-475f-80fc-91e72433ef40] STEP 1: Performing orchestration call to Gemini...
+INFO 2025-08-31 16:00:13,219 views 8244 3656 [6c438165-9588-475f-80fc-91e72433ef40] ORCHESTRATOR RAW OUTPUT:
+{"decision": "call_tool", "tool_name": "get_user_accounts", "arguments": {}}
+INFO 2025-08-31 16:00:13,219 views 8244 3656 [6c438165-9588-475f-80fc-91e72433ef40] Decision: Delegate to Agent -> 'Account Data Retrieval Specialist'
+INFO 2025-08-31 16:00:13,220 views 8244 3656 [6c438165-9588-475f-80fc-91e72433ef40] STEP 2: Agent 'Account Data Retrieval Specialist' is handling the query.
+INFO 2025-08-31 16:00:13,220 views 8244 3656 [6c438165-9588-475f-80fc-91e72433ef40] TOOL USED: 'get_user_accounts' with arguments: {}
+INFO 2025-08-31 16:00:13,232 views 8244 3656 [6c438165-9588-475f-80fc-91e72433ef40] STEP 3: Performing finalization call to Gemini to format the tool output...
+INFO 2025-08-31 16:00:14,035 views 8244 3656 ======== [END REQUEST: 6c438165-9588-475f-80fc-91e72433ef40] ========
+
+INFO 2025-08-31 16:00:14,036 basehttp 8244 3656 "POST /api/chat/ HTTP/1.1" 200 212
+INFO 2025-08-31 16:00:28,521 views 8244 3656 ======== [START TEXT REQUEST: ad1b00e4-9ee7-4b87-ba7b-1c9c12a465d9] ========
+INFO 2025-08-31 16:00:28,522 views 8244 3656 [ad1b00e4-9ee7-4b87-ba7b-1c9c12a465d9] User Message (after potential transcription): 'What are the latest interest rates?'
+INFO 2025-08-31 16:00:28,523 views 8244 3656 [ad1b00e4-9ee7-4b87-ba7b-1c9c12a465d9] STEP 1: Performing orchestration call to Gemini...
+INFO 2025-08-31 16:00:33,678 views 8244 3656 [ad1b00e4-9ee7-4b87-ba7b-1c9c12a465d9] ORCHESTRATOR RAW OUTPUT:
+{
+  "decision": "call_tool",
+  "tool_name": "search_financial_playbook",
+  "arguments": {
+    "query": "latest interest rates"
+  }
+}
+INFO 2025-08-31 16:00:33,679 views 8244 3656 [ad1b00e4-9ee7-4b87-ba7b-1c9c12a465d9] Decision: Delegate to Agent -> 'Certified Financial Playbook Advisor'
+INFO 2025-08-31 16:00:33,679 views 8244 3656 [ad1b00e4-9ee7-4b87-ba7b-1c9c12a465d9] STEP 2: Agent 'Certified Financial Playbook Advisor' is handling the query.
+INFO 2025-08-31 16:00:33,679 views 8244 3656 [ad1b00e4-9ee7-4b87-ba7b-1c9c12a465d9] TOOL USED: 'search_financial_playbook' with arguments: {'query': 'latest interest rates'}
+INFO 2025-08-31 16:00:33,680 views 8244 3656 [ad1b00e4-9ee7-4b87-ba7b-1c9c12a465d9] TOOL OUTPUT (RAW): 'Error searching financial playbook: Cannot resolve keyword 'content' into field. Choices are: id, knowledge_text, title'
+INFO 2025-08-31 16:00:33,680 views 8244 3656 [ad1b00e4-9ee7-4b87-ba7b-1c9c12a465d9] STEP 3: Performing finalization call to Gemini to format the tool output...
+INFO 2025-08-31 16:00:34,455 views 8244 3656 [ad1b00e4-9ee7-4b87-ba7b-1c9c12a465d9] FINALIZER RAW OUTPUT:
+I apologize, but I was unable to retrieve the latest interest rates at this time. I'm still learning and working to access that information for you.
+INFO 2025-08-31 16:00:34,455 views 8244 3656 [ad1b00e4-9ee7-4b87-ba7b-1c9c12a465d9] FINAL RESPONSE to User: 'I apologize, but I was unable to retrieve the latest interest rates at this time. I'm still learning and working to access that information for you.'
+INFO 2025-08-31 16:00:34,456 views 8244 3656 ======== [END REQUEST: ad1b00e4-9ee7-4b87-ba7b-1c9c12a465d9] ========
+
+INFO 2025-08-31 16:00:34,457 basehttp 8244 3656 "POST /api/chat/ HTTP/1.1" 200 163
