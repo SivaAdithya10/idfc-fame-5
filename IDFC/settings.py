@@ -26,8 +26,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv("SECRET_KEY", "django-insecure-@0z#f#_ays&kgu!2!r5fxdj11fcb5)n$($0m!njgjxg7$k+%ex")
 
-GEMINI_API_KEY = "AlzaSyDTymyTvECXE8TOL6NSZ1qVTinRqO5Quzs"
-# GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+# GEMINI_API_KEY = "AlzaSyDTymyTvECXE8TOL6NSZ1qVTinRqO5Quzs"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True

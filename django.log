@@ -2916,3 +2916,252 @@ INFO 2025-08-31 12:05:24,677 autoreload 65108 72108 C:\Users\sivaa\OneDrive\Siva
 INFO 2025-08-31 12:05:26,202 autoreload 71664 71660 Watching for file changes with StatReloader
 INFO 2025-08-31 12:07:33,388 autoreload 71664 71660 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
 INFO 2025-08-31 12:07:35,287 autoreload 37868 50864 Watching for file changes with StatReloader
+INFO 2025-08-31 12:48:53,681 autoreload 72148 55076 Watching for file changes with StatReloader
+INFO 2025-08-31 12:50:55,126 autoreload 72148 55076 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 12:50:56,605 autoreload 70076 63032 Watching for file changes with StatReloader
+INFO 2025-08-31 12:51:49,723 autoreload 70076 63032 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 12:51:50,964 autoreload 71836 23688 Watching for file changes with StatReloader
+INFO 2025-08-31 12:51:59,290 basehttp 71836 66600 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 12:51:59,292 basehttp 71836 66860 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 12:51:59,293 basehttp 71836 64796 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 12:51:59,293 basehttp 71836 65272 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 12:51:59,309 basehttp 71836 65272 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 12:51:59,334 basehttp 71836 66600 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 12:51:59,354 basehttp 71836 66600 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 12:51:59,391 basehttp 71836 66600 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 12:52:00,724 basehttp 71836 66600 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 12:52:00,724 basehttp 71836 65272 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 12:52:00,758 basehttp 71836 66600 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 12:52:00,763 basehttp 71836 65272 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 12:52:00,782 basehttp 71836 65272 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 12:52:03,291 views 71836 65272 ======== [START REQUEST: 22bdd2d8-9c82-4013-a618-ebd6ef8000b7] ========
+INFO 2025-08-31 12:52:03,291 views 71836 65272 [22bdd2d8-9c82-4013-a618-ebd6ef8000b7] User Message: 'Hi'
+INFO 2025-08-31 12:52:03,294 views 71836 65272 [22bdd2d8-9c82-4013-a618-ebd6ef8000b7] STEP 1: Performing orchestration call to Gemini...
+ERROR 2025-08-31 12:52:05,555 views 71836 65272 [22bdd2d8-9c82-4013-a618-ebd6ef8000b7] A critical error occurred in ChatView for message: Hi
+Traceback (most recent call last):
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py", line 123, in post
+    orchestrator_response = model.generate_content(orchestrator_prompt)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 868, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.InvalidArgument: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+ERROR 2025-08-31 12:52:05,614 log 71836 65272 Internal Server Error: /api/chat/
+ERROR 2025-08-31 12:52:05,616 basehttp 71836 65272 "POST /api/chat/ HTTP/1.1" 500 87
+INFO 2025-08-31 12:56:16,982 autoreload 71836 23688 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\IDFC\settings.py changed, reloading.
+INFO 2025-08-31 12:56:20,465 autoreload 62712 69928 Watching for file changes with StatReloader
+INFO 2025-08-31 12:56:38,277 autoreload 62712 69928 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 12:56:39,747 autoreload 60232 68456 Watching for file changes with StatReloader
+INFO 2025-08-31 13:00:11,834 basehttp 60232 68964 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 13:00:11,852 basehttp 60232 72600 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 13:00:11,856 basehttp 60232 70652 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 13:00:11,867 basehttp 60232 70432 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 13:00:11,879 basehttp 60232 68964 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 13:00:11,880 basehttp 60232 65420 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 13:00:11,907 basehttp 60232 65420 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 13:00:11,934 basehttp 60232 65420 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 13:00:12,361 basehttp 60232 65420 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 13:00:12,381 basehttp 60232 65420 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 13:00:12,393 basehttp 60232 68964 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 13:00:12,410 basehttp 60232 65420 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 13:00:12,430 basehttp 60232 65420 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 13:00:13,722 basehttp 60232 65420 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 13:00:13,751 basehttp 60232 70652 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 13:00:13,753 basehttp 60232 65420 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 13:00:13,756 basehttp 60232 72600 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 13:00:13,756 basehttp 60232 70432 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 13:00:13,757 basehttp 60232 68964 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 13:00:13,775 basehttp 60232 68964 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 13:00:13,796 basehttp 60232 68964 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 13:00:14,502 basehttp 60232 68964 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 13:00:14,570 basehttp 60232 68964 "GET /static/assets/index-yBWfsfRc.js HTTP/1.1" 304 0
+INFO 2025-08-31 13:00:14,575 basehttp 60232 72600 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 13:00:15,193 basehttp 60232 65420 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 13:00:15,196 basehttp 60232 72600 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 13:00:15,198 basehttp 60232 68964 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 13:00:15,199 basehttp 60232 70432 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 13:00:15,210 basehttp 60232 72600 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 13:00:15,278 basehttp 60232 72600 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 13:00:15,294 basehttp 60232 72600 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 13:00:15,322 basehttp 60232 72600 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 13:00:15,946 basehttp 60232 72600 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 13:00:15,961 basehttp 60232 68964 "GET /api/chatbotknowledge/ HTTP/1.1" 200 282
+INFO 2025-08-31 13:00:15,973 basehttp 60232 72600 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 13:00:16,407 basehttp 60232 72600 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 13:00:16,409 basehttp 60232 68964 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 13:00:16,442 basehttp 60232 68964 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 13:00:16,442 basehttp 60232 72600 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 13:00:16,466 basehttp 60232 72600 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 13:00:18,327 views 60232 72600 ======== [START REQUEST: ce8b167d-2f71-4a7a-beb4-f7765dd422a9] ========
+INFO 2025-08-31 13:00:18,328 views 60232 72600 [ce8b167d-2f71-4a7a-beb4-f7765dd422a9] User Message: 'Hi'
+INFO 2025-08-31 13:00:18,329 views 60232 72600 [ce8b167d-2f71-4a7a-beb4-f7765dd422a9] STEP 1: Performing orchestration call to Gemini...
+ERROR 2025-08-31 13:00:20,430 views 60232 72600 [ce8b167d-2f71-4a7a-beb4-f7765dd422a9] A critical error occurred in ChatView for message: Hi
+Traceback (most recent call last):
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py", line 123, in post
+    orchestrator_response = model.generate_content(orchestrator_prompt)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\generativeai\generative_models.py", line 331, in generate_content
+    response = self._client.generate_content(
+        request,
+        **request_options,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\ai\generativelanguage_v1beta\services\generative_service\client.py", line 868, in generate_content
+    response = rpc(
+        request,
+    ...<2 lines>...
+        metadata=metadata,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\gapic_v1\method.py", line 131, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\retry\retry_unary.py", line 294, in retry_wrapped_func
+    return retry_target(
+        target,
+    ...<3 lines>...
+        on_error=on_error,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\retry\retry_unary.py", line 156, in retry_target
+    next_sleep = _retry_error_helper(
+        exc,
+    ...<6 lines>...
+        timeout,
+    )
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\retry\retry_base.py", line 214, in _retry_error_helper
+    raise final_exc from source_exc
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\retry\retry_unary.py", line 147, in retry_target
+    result = target()
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\timeout.py", line 130, in func_with_timeout
+    return func(*args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\google\api_core\grpc_helpers.py", line 78, in error_remapped_callable
+    raise exceptions.from_grpc_error(exc) from exc
+google.api_core.exceptions.InvalidArgument: 400 API key not valid. Please pass a valid API key. [reason: "API_KEY_INVALID"
+domain: "googleapis.com"
+metadata {
+  key: "service"
+  value: "generativelanguage.googleapis.com"
+}
+, locale: "en-US"
+message: "API key not valid. Please pass a valid API key."
+]
+ERROR 2025-08-31 13:00:20,436 log 60232 72600 Internal Server Error: /api/chat/
+ERROR 2025-08-31 13:00:20,437 basehttp 60232 72600 "POST /api/chat/ HTTP/1.1" 500 87
+INFO 2025-08-31 13:05:29,049 autoreload 60232 68456 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\IDFC\settings.py changed, reloading.
+INFO 2025-08-31 13:05:32,550 autoreload 72332 69876 Watching for file changes with StatReloader
+INFO 2025-08-31 13:05:42,957 basehttp 72332 70032 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 13:05:43,458 basehttp 72332 70032 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 13:05:43,460 basehttp 72332 69988 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 13:05:43,464 basehttp 72332 63096 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 13:05:43,466 basehttp 72332 70984 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 13:05:43,473 basehttp 72332 70032 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 13:05:43,541 basehttp 72332 70032 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 13:05:43,556 basehttp 72332 70032 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 13:05:43,609 basehttp 72332 70032 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 13:05:44,422 basehttp 72332 70032 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 13:05:44,435 basehttp 72332 70984 "GET /api/chatbotknowledge/ HTTP/1.1" 200 282
+INFO 2025-08-31 13:05:44,446 basehttp 72332 70032 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 13:05:44,985 basehttp 72332 70032 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 13:05:44,986 basehttp 72332 70984 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 13:05:45,007 basehttp 72332 70032 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 13:05:45,033 basehttp 72332 70032 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 13:05:45,036 basehttp 72332 70984 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 13:05:47,260 views 72332 70984 ======== [START REQUEST: c309c81e-eeed-41fa-ba29-21abd0d11c4b] ========
+INFO 2025-08-31 13:05:47,260 views 72332 70984 [c309c81e-eeed-41fa-ba29-21abd0d11c4b] User Message: 'hi'
+ERROR 2025-08-31 13:05:47,308 log 72332 70984 Internal Server Error: /api/chat/
+Traceback (most recent call last):
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py", line 77, in post
+    gemini_api_key = settings.GEMINI_API_KEY
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\conf\__init__.py", line 83, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'GEMINI_API_KEY'
+ERROR 2025-08-31 13:05:47,314 basehttp 72332 70984 "POST /api/chat/ HTTP/1.1" 500 111099
+INFO 2025-08-31 13:06:04,030 autoreload 72332 69876 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\IDFC\settings.py changed, reloading.
+INFO 2025-08-31 13:06:05,443 autoreload 68668 68336 Watching for file changes with StatReloader
+INFO 2025-08-31 13:06:08,636 basehttp 68668 52664 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 13:06:08,651 basehttp 68668 69000 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 13:06:08,670 basehttp 68668 69000 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 13:06:09,018 basehttp 68668 69804 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 13:06:09,018 basehttp 68668 69000 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 13:06:09,023 basehttp 68668 65096 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 13:06:09,044 basehttp 68668 69000 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 13:06:09,051 basehttp 68668 65096 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 13:06:09,052 basehttp 68668 63628 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 13:06:09,073 basehttp 68668 65096 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 13:06:09,108 basehttp 68668 65096 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 13:06:09,936 basehttp 68668 65096 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 13:06:09,936 basehttp 68668 63628 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 13:06:09,970 basehttp 68668 63628 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 13:06:09,971 basehttp 68668 65096 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 13:06:09,990 basehttp 68668 65096 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 13:06:13,049 views 68668 65096 ======== [START REQUEST: 4af9b409-28b4-412b-9d45-4a7589882d20] ========
+INFO 2025-08-31 13:06:13,050 views 68668 65096 [4af9b409-28b4-412b-9d45-4a7589882d20] User Message: 'Hi'
+INFO 2025-08-31 13:06:13,051 views 68668 65096 [4af9b409-28b4-412b-9d45-4a7589882d20] STEP 1: Performing orchestration call to Gemini...
+INFO 2025-08-31 13:06:15,650 views 68668 65096 [4af9b409-28b4-412b-9d45-4a7589882d20] ORCHESTRATOR RAW OUTPUT:
+{
+  "decision": "direct_answer",
+  "response": "Hi there! How can I help you today?"
+}
+INFO 2025-08-31 13:06:15,651 views 68668 65096 [4af9b409-28b4-412b-9d45-4a7589882d20] Decision: Direct Answer. No agent transfer needed.
+INFO 2025-08-31 13:06:15,652 views 68668 65096 [4af9b409-28b4-412b-9d45-4a7589882d20] FINAL RESPONSE to User: 'Hi there! How can I help you today?'
+INFO 2025-08-31 13:06:15,653 views 68668 65096 ======== [END REQUEST: 4af9b409-28b4-412b-9d45-4a7589882d20] ========
+
+INFO 2025-08-31 13:06:15,656 basehttp 68668 65096 "POST /api/chat/ HTTP/1.1" 200 50
+INFO 2025-08-31 13:20:30,108 autoreload 68668 68336 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\IDFC\settings.py changed, reloading.
+INFO 2025-08-31 13:20:33,378 autoreload 71236 63656 Watching for file changes with StatReloader

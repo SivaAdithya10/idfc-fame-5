@@ -1,3 +1,5 @@
+# chatbot/views.py
+
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.views import APIView
@@ -5,12 +7,15 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status, viewsets, permissions
 from django.conf import settings
-from crewai import Agent, Task, Crew, Process
-from crewai.llm import LLM
 import logging
 import os
+import json
+import uuid # Used for creating a unique request ID for tracing
 
-# --- Model and Serializer Imports ---
+# --- NEW: Import for Google Gemini API ---
+import google.generativeai as genai
+
+# --- Model and Serializer Imports (Unchanged) ---
 from .models import (
     UserProfile, InitialBotMessage, AIModel, SuggestedPrompt,
     ChatbotKnowledge, Notification, QuickStat, Account,
@@ -24,175 +29,170 @@ from .serializers import (
     UserSecuritySettingsSerializer, InstructionSerializer, DebitCardSettingsSerializer, CreditCardSettingsSerializer
 )
 
-# --- Importing tools ---
-from .tools import (
-    get_user_accounts,
-    get_account_balance,
-    list_recent_transactions,
-    get_credit_card_details,
-    block_credit_card,
-    update_card_transaction_limits,
-    toggle_international_transactions,
-    search_financial_playbook
-)
+# --- Importing tools (now without CrewAI decorators) ---
+from .tools import get_tool_descriptions, get_tool_by_name
 
 logger = logging.getLogger(__name__)
 
 # ==============================================================================
-# === UPDATED CHATBOT VIEW WITH MULTI-AGENT CREW ===============================
+# === ENHANCED LOGGING SETUP ===================================================
+# ==============================================================================
+
+# This map helps translate a tool call back to the conceptual "agent" for clearer logs.
+TOOL_TO_AGENT_MAP = {
+    'get_user_accounts': 'Account Data Retrieval Specialist',
+    'get_account_balance': 'Account Data Retrieval Specialist',
+    'list_recent_transactions': 'Account Data Retrieval Specialist',
+    'get_credit_card_details': 'Account Data Retrieval Specialist',
+    'block_credit_card': 'Card and Account Security Officer',
+    'update_card_transaction_limits': 'Card and Account Security Officer',
+    'toggle_international_transactions': 'Card and Account Security Officer',
+    'search_financial_playbook': 'Certified Financial Playbook Advisor'
+}
+
+
+# ==============================================================================
+# === UPDATED CHATBOT VIEW WITH PERFECT LOGGING ================================
 # ==============================================================================
 
 @method_decorator(csrf_exempt, name='dispatch')
 class ChatView(APIView):
     permission_classes = [permissions.AllowAny]
     authentication_classes = []
-    csrf_exempt = True
-
+    
     def post(self, request, *args, **kwargs):
+        # Generate a unique ID for this request to trace it in the logs
+        request_id = uuid.uuid4()
+        
         user_message = request.data.get('message')
         history = request.data.get('history', [])
-        selected_model = request.data.get('model', 'gemini-2.5-flash') # Default to a modern model
+        selected_model = request.data.get('model', 'gemini-1.5-flash')
+
+        logger.info(f"======== [START REQUEST: {request_id}] ========")
+        logger.info(f"[{request_id}] User Message: '{user_message}'")
 
         if not user_message:
             return Response({"error": "No message provided"}, status=status.HTTP_400_BAD_REQUEST)
 
         gemini_api_key = settings.GEMINI_API_KEY
         if not gemini_api_key:
-            logger.error("GEMINI_API_KEY is not set.")
+            logger.error(f"[{request_id}] GEMINI_API_KEY is not set.")
             return Response({"error": "Gemini API key not configured."}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
         try:
-            knowledge_titles = ["General", "Product Data", "Finance Advisory Playbook"]
-            knowledge_records = ChatbotKnowledge.objects.filter(title__in=knowledge_titles)
-            backstory_map = {record.title: record.knowledge_text for record in knowledge_records}
-        except Exception as e:
-            logger.error(f"Failed to fetch chatbot knowledge from DB: {e}")
-            backstory_map = {} # Use an empty map to fall back to defaults
+            # --- 1. Configure Gemini API ---
+            genai.configure(api_key=gemini_api_key)
+            model = genai.GenerativeModel(selected_model)
 
-        # --- 1. LLM Configuration ---
-        # Default LLM for most agents, based on user selection
-        llm_user_selected = LLM(
-            model=f"gemini/{selected_model}",
-            google_api_key=gemini_api_key
-        )
-        # A more powerful, hardcoded LLM for the main orchestrator agent
-        llm_powerful_orchestrator = LLM(
-            model=f"gemini/{selected_model}",
-            google_api_key=gemini_api_key
-        )
+            # --- 2. Build the Orchestrator Prompt ---
+            formatted_history = "\n".join([f"{msg.get('role', 'user').capitalize()}: {msg.get('content', '')}" for msg in history])
+            tool_descriptions = get_tool_descriptions()
 
-        # --- 2. Agent Definitions ---
-        orchestrator_agent = Agent(
-            role='Chief Customer Interaction Orchestrator',
-            goal='Understand the user\'s primary need, answer simple questions directly, and intelligently delegate complex tasks to the appropriate specialist agent. Also, identify contextual opportunities for cross-selling or financial advice.',
-            backstory=backstory_map.get(
-                'General', 
-                # Fallback backstory
-                'You are the highly experienced and perceptive head of customer service for a modern digital bank. You can instantly handle common queries but your real talent lies in listening to the customer\'s situation to know exactly when to transfer them to a data specialist, a security officer, or a product advisor. You are the central intelligence of the support team.'
-            ),
-            llm=llm_powerful_orchestrator, # Assign the powerful LLM
-            allow_delegation=True,
-            verbose=True
-        )
-
-        account_info_agent = Agent(
-            role='Account Data Retrieval Specialist',
-            goal='Handle all read-only requests related to a customer\'s accounts.',
-            backstory='You are a meticulous and secure data analyst with read-only access to the core banking database. Your sole function is to retrieve customer account information accurately and present it clearly.',
-            tools=[get_user_accounts, get_account_balance, list_recent_transactions, get_credit_card_details],
-            allow_delegation=False,
-            verbose=True
-        )
-
-        security_agent = Agent(
-            role='Card and Account Security Officer',
-            goal='Handle sensitive, non-transfer-related actions that affect the security and state of a user\'s card and account.',
-            backstory='You are a dedicated security officer in the bank\'s fraud prevention unit. You are authorised to execute urgent security protocols like blocking cards and updating account details. You operate with precision and require explicit user confirmation for every action.',
-            tools=[block_credit_card, update_card_transaction_limits, toggle_international_transactions],
-            allow_delegation=False,
-            verbose=True
-        )
-
-        recommender_agent = Agent(
-            role='Personalised Product Recommendation Specialist',
-            goal='Analyse the user\'s context and financial snapshot to offer relevant, timely, and personalised product recommendations.',
-            backstory=backstory_map.get(
-                'Product Data',
-                # Fallback backstory
-                'You are a smart and insightful product advisor. You don\'t just list products; you understand people\'s life moments. When a customer mentions buying a new car, you\'re ready to suggest the best car loan. Your recommendations are always helpful and never pushy.'
-            ),
-            tools=[get_user_accounts, list_recent_transactions],
-            allow_delegation=False,
-            verbose=True
-        )
-        
-        financial_advisor_agent = Agent(
-            role='Certified Financial Playbook Advisor',
-            goal='Provide sound financial advice to users by strictly adhering to the bank\'s approved internal financial playbook.',
-            backstory=backstory_map.get(
-                'Finance Advisory Playbook',
-                # Fallback backstory
-                'You are a certified financial advisor who provides guidance based on a comprehensive, pre-approved financial playbook. You don\'t give speculative opinions; you provide trusted, standardised advice from our experts on topics like saving, managing debt, and investing.'
-            ),
-            tools=[search_financial_playbook],
-            allow_delegation=False,
-            verbose=True
-        )
-
-        # --- 3. Task Definition ---
-        # Format history for context
-        formatted_history = "\n".join([f"{msg.get('role', 'user').capitalize()}: {msg.get('content', '')}" for msg in history])
-        
-        # The main task is given to the orchestrator agent
-        orchestration_task = Task(
-            description=(
-                f"Analyze the user's latest message based on the conversation history and delegate the task to the appropriate specialist agent if needed. If it's a simple greeting or question, answer it directly.\n\n"
-                f"Conversation History:\n{formatted_history}\n\n"
-                f"User's Latest Message: \"{user_message}\""
-            ),
-            agent=orchestrator_agent,
-            expected_output="The final, comprehensive, and user-friendly answer to the user's request. If you delegate, this should be the result from the specialist agent."
-        )
-
-        # --- 4. Crew Assembly and Execution ---
-        try:
-            logger.info(f"Kicking off multi-agent crew for user message: {user_message}")
+            orchestrator_prompt = f"""
+You are the Chief Customer Interaction Orchestrator for a modern digital bank. Your goal is to understand the user's needs and decide the best course of action.
+You have access to a set of tools to help you. Based on the user's message and the conversation history, you must decide what to do.
+Your available actions are:
+1.  **call_tool**: If the user's request requires fetching data or performing an action, choose the appropriate tool.
+2.  **direct_answer**: If the user's message is a simple greeting, a follow-up clarification, or a question that doesn't require a tool, answer it directly.
+**Conversation History:**
+{formatted_history}
+**User's Latest Message:**
+"{user_message}"
+**Available Tools:**
+{tool_descriptions}
+**Your Decision:**
+Respond with ONLY a JSON object in the following format. Do not add any other text before or after the JSON.
+If you decide to call a tool:
+{{
+  "decision": "call_tool",
+  "tool_name": "<name_of_the_tool_to_call>",
+  "arguments": {{
+    "arg1_name": "value1",
+    "arg2_name": "value2"
+  }}
+}}
+If you decide to answer directly:
+{{
+  "decision": "direct_answer",
+  "response": "<your_direct_and_helpful_answer>"
+}}
+"""
             
-            crew = Crew(
-                agents=[
-                    orchestrator_agent,
-                    account_info_agent,
-                    security_agent,
-                    recommender_agent,
-                    financial_advisor_agent
-                ],
-                tasks=[orchestration_task],
-                process=Process.hierarchical,
-                manager_llm=llm_powerful_orchestrator,
-                llm=llm_user_selected,
-                verbose=True
-            )
+            # --- 3. First LLM Call: Orchestration ---
+            logger.info(f"[{request_id}] STEP 1: Performing orchestration call to Gemini...")
+            orchestrator_response = model.generate_content(orchestrator_prompt)
+            
+            try:
+                decision_text = orchestrator_response.text.strip().replace("```json", "").replace("```", "")
+                logger.info(f"[{request_id}] ORCHESTRATOR RAW OUTPUT:\n{decision_text}")
+                decision_json = json.loads(decision_text)
+                decision = decision_json.get("decision")
+            except (json.JSONDecodeError, AttributeError) as e:
+                logger.error(f"[{request_id}] Failed to parse orchestrator JSON response: {e}. Raw response was: {orchestrator_response.text}")
+                return Response({"response": orchestrator_response.text}, status=status.HTTP_200_OK)
 
-            result = crew.kickoff()
-            # The result from a crew kickoff can be a string or a CrewOutput object.
-            # We check for a 'raw' attribute to get the string output.
-            if hasattr(result, 'raw') and isinstance(result.raw, str):
-                bot_response = result.raw
+            bot_response = ""
+
+            # --- 4. Execute Decision ---
+            if decision == "direct_answer":
+                bot_response = decision_json.get("response", "I'm sorry, I could not generate a response.")
+                logger.info(f"[{request_id}] Decision: Direct Answer. No agent transfer needed.")
+
+            elif decision == "call_tool":
+                tool_name = decision_json.get("tool_name")
+                arguments = decision_json.get("arguments", {})
+                
+                # LOGGING: Log agent transfer and tool usage
+                agent_name = TOOL_TO_AGENT_MAP.get(tool_name, "Unknown Agent")
+                logger.info(f"[{request_id}] Decision: Delegate to Agent -> '{agent_name}'")
+                logger.info(f"[{request_id}] STEP 2: Agent '{agent_name}' is handling the query.")
+                logger.info(f"[{request_id}] TOOL USED: '{tool_name}' with arguments: {arguments}")
+                
+                tool_function = get_tool_by_name(tool_name)
+
+                if not tool_function:
+                    logger.error(f"[{request_id}] Orchestrator decided to call an unknown tool: {tool_name}")
+                    bot_response = "I'm sorry, I tried to perform an action but couldn't find the right tool."
+                else:
+                    try:
+                        tool_result = tool_function(**arguments)
+                        logger.info(f"[{request_id}] TOOL OUTPUT (RAW): '{tool_result}'")
+
+                        # --- 5. Second LLM Call: Finalization ---
+                        finalizer_prompt = f"""
+The user asked the following question: "{user_message}"
+To answer this, I performed an internal action by calling the tool '{tool_name}' and got the following result:
+"{tool_result}"
+Based on this result, please formulate a final, comprehensive, and user-friendly answer.
+- If the result indicates success, confirm the action in a friendly way.
+- If the result is data, present it clearly.
+- If the result is an error, apologize and explain it simply.
+- Do not mention that you used a "tool" or "function". Speak naturally as a banking assistant.
+"""
+                        logger.info(f"[{request_id}] STEP 3: Performing finalization call to Gemini to format the tool output...")
+                        final_response = model.generate_content(finalizer_prompt)
+                        bot_response = final_response.text
+                        logger.info(f"[{request_id}] FINALIZER RAW OUTPUT:\n{bot_response}")
+
+                    except Exception as e:
+                        logger.exception(f"[{request_id}] Error executing tool '{tool_name}' or during finalization call.")
+                        bot_response = "I'm sorry, I encountered an error while trying to complete your request."
+            
             else:
-                bot_response = str(result)
-            
-            logger.info(f"CrewAI kickoff successful. Response: {bot_response[:100]}...")
+                 logger.warning(f"[{request_id}] Orchestrator returned an unknown decision: '{decision}'")
+                 bot_response = "I'm not sure how to handle that request. Please try rephrasing."
+
+            logger.info(f"[{request_id}] FINAL RESPONSE to User: '{bot_response}'")
+            logger.info(f"======== [END REQUEST: {request_id}] ========\n")
+            return Response({"response": bot_response}, status=status.HTTP_200_OK)
 
         except Exception as e:
-            logger.exception(f"Error during CrewAI kickoff for user message: {user_message}")
-            error_message = "I'm sorry, I encountered an issue while processing your request. Our technical team has been notified."
+            logger.exception(f"[{request_id}] A critical error occurred in ChatView for message: {user_message}")
+            error_message = "I'm sorry, a critical error occurred. Our technical team has been notified."
             return Response({"error": error_message}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-        return Response({"response": bot_response}, status=status.HTTP_200_OK)
-
-
 # ==============================================================================
-# === EXISTING MODEL VIEWSETS (Unchanged) ======================================
+# === MODEL VIEWSETS ======================================
 # ==============================================================================
 
 @method_decorator(csrf_exempt, name='dispatch')

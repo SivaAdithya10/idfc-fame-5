@@ -1,20 +1,82 @@
 # chatbot/tools.py
 
-from crewai.tools import tool
+import json
+import inspect
+from django.db.models import Q
 from .models import (
     Account,
     Transaction,
     CreditCard,
     CreditCardSettings,
     DebitCardSettings,
-    UserSecuritySettings,
     ChatbotKnowledge,
 )
-from django.db.models import Q
+
+# ==============================================================================
+# === HELPER FUNCTION TO DESCRIBE TOOLS FOR THE LLM ============================
+# ==============================================================================
+
+def get_tool_descriptions():
+    """
+    Inspects all tool functions in this module and returns their
+    descriptions in a structured format for the LLM.
+    """
+    tools = [
+        get_user_accounts, get_account_balance, list_recent_transactions,
+        get_credit_card_details, block_credit_card, update_card_transaction_limits,
+        toggle_international_transactions, search_financial_playbook
+    ]
+    
+    tool_specs = []
+    for func in tools:
+        spec = {
+            "name": func.__name__,
+            "description": inspect.getdoc(func),
+            "parameters": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        }
+        sig = inspect.signature(func)
+        for name, param in sig.parameters.items():
+            param_type = "string" # Default type
+            if param.annotation == int or param.annotation == float:
+                param_type = "number"
+            elif param.annotation == bool:
+                param_type = "boolean"
+            
+            spec["parameters"]["properties"][name] = {
+                "type": param_type,
+                "description": f"Parameter for {name}" # Basic description
+            }
+            if param.default is inspect.Parameter.empty:
+                spec["parameters"]["required"].append(name)
+        tool_specs.append(spec)
+    
+    return json.dumps(tool_specs, indent=2)
+
+def get_tool_by_name(name):
+    """Returns the actual tool function object from its name string."""
+    tools = {
+        "get_user_accounts": get_user_accounts,
+        "get_account_balance": get_account_balance,
+        "list_recent_transactions": list_recent_transactions,
+        "get_credit_card_details": get_credit_card_details,
+        "block_credit_card": block_credit_card,
+        "update_card_transaction_limits": update_card_transaction_limits,
+        "toggle_international_transactions": toggle_international_transactions,
+        "search_financial_playbook": search_financial_playbook
+    }
+    return tools.get(name)
+
+
+# ==============================================================================
+# === TOOLS (Functionality unchanged, CrewAI decorators removed) ===============
+# ==============================================================================
 
 # --- Category 1: Read-Only Data Retrieval Tools ---
 
-@tool("Get User Accounts")
 def get_user_accounts() -> str:
     """
     Use this tool to get a list of all bank accounts (Savings, Current, etc.)
@@ -31,13 +93,11 @@ def get_user_accounts() -> str:
         )
     return "Accounts: " + "; ".join(account_details)
 
-@tool("Get Account Balance")
 def get_account_balance(account_number: str) -> str:
     """
     Use this tool to get the current balance for a specific bank account number.
     """
     try:
-        # Assuming account_number can be matched by full number or last 4 digits
         account = Account.objects.filter(
             Q(account_number__icontains=account_number) |
             Q(account_number__endswith=account_number)
@@ -49,7 +109,6 @@ def get_account_balance(account_number: str) -> str:
     except Exception as e:
         return f"Error retrieving account balance: {e}"
 
-@tool("List Recent Transactions")
 def list_recent_transactions(account_number: str, limit: int = 10) -> str:
     """
     Use this tool to list the most recent transactions for a given account number.
@@ -76,7 +135,6 @@ def list_recent_transactions(account_number: str, limit: int = 10) -> str:
     except Exception as e:
         return f"Error listing recent transactions: {e}"
 
-@tool("Get Credit Card Details")
 def get_credit_card_details(credit_card_number_last_4_digits: str) -> str:
     """
     Use this tool to get details like outstanding balance, credit limit, and due date
@@ -96,7 +154,6 @@ def get_credit_card_details(credit_card_number_last_4_digits: str) -> str:
 
 # --- Category 2: Security & Action Tools ---
 
-@tool("Block Credit Card")
 def block_credit_card(credit_card_number_last_4_digits: str, reason: str) -> str:
     """
     Use this tool to permanently block a user's credit card for security reasons,
@@ -105,7 +162,7 @@ def block_credit_card(credit_card_number_last_4_digits: str, reason: str) -> str
     try:
         card = CreditCard.objects.filter(card_number__endswith=credit_card_number_last_4_digits).first()
         if card:
-            card.status = 'blocked'  # Assuming a 'status' field exists in CreditCard model
+            card.status = 'blocked'
             card.save()
             return f"Success: The credit card ending in {credit_card_number_last_4_digits} has been permanently blocked due to: {reason}. A new card will be issued."
         else:
@@ -113,18 +170,15 @@ def block_credit_card(credit_card_number_last_4_digits: str, reason: str) -> str
     except Exception as e:
         return f"Error blocking credit card: {e}"
 
-@tool("Update Card Transaction Limits")
 def update_card_transaction_limits(card_number_last_4_digits: str, limit_type: str, new_amount: float) -> str:
     """
     Use this tool to update daily transaction limits on a debit or credit card.
     Valid limit_type values are 'daily_limit', 'daily_pos_limit', or 'daily_international_limit'.
     """
     try:
-        # Try to find in CreditCardSettings first
         card_settings = CreditCardSettings.objects.filter(card__card_number__endswith=card_number_last_4_digits).first()
         card_type = "Credit Card"
         if not card_settings:
-            # If not found, try DebitCardSettings
             card_settings = DebitCardSettings.objects.filter(card__card_number__endswith=card_number_last_4_digits).first()
             card_type = "Debit Card"
 
@@ -140,17 +194,14 @@ def update_card_transaction_limits(card_number_last_4_digits: str, limit_type: s
     except Exception as e:
         return f"Error updating card transaction limits: {e}"
 
-@tool("Toggle International Transactions")
 def toggle_international_transactions(card_number_last_4_digits: str, enabled: bool) -> str:
     """
     Use this tool to enable or disable international transactions on a debit or credit card.
     """
     try:
-        # Try to find in CreditCardSettings first
         card_settings = CreditCardSettings.objects.filter(card__card_number__endswith=card_number_last_4_digits).first()
         card_type = "Credit Card"
         if not card_settings:
-            # If not found, try DebitCardSettings
             card_settings = DebitCardSettings.objects.filter(card__card_number__endswith=card_number_last_4_digits).first()
             card_type = "Debit Card"
 
@@ -169,14 +220,12 @@ def toggle_international_transactions(card_number_last_4_digits: str, enabled: b
 
 # --- Category 3: Knowledge & Advice Tools ---
 
-@tool("Search Financial Playbook")
 def search_financial_playbook(query: str) -> str:
     """
     Use this tool to search the bank's internal financial playbook for official advice
     on topics like saving, investment, debt management, and retirement.
     """
     try:
-        # Perform a simple keyword search in the content of ChatbotKnowledge entries
         knowledge_entries = ChatbotKnowledge.objects.filter(
             Q(title__icontains=query) | Q(content__icontains=query)
         ).distinct()
@@ -186,14 +235,7 @@ def search_financial_playbook(query: str) -> str:
 
         results = []
         for entry in knowledge_entries:
-            results.append(f"""Title: {entry.title}
-            Content: {entry.knowledge_text}
-            " + "
-            ---
-            """)
-        results.join(results)
-        return results
+            results.append(f"Title: {entry.title}\nContent: {entry.knowledge_text}\n---\n")
+        return "".join(results)
     except Exception as e:
         return f"Error searching financial playbook: {e}"
-
-
