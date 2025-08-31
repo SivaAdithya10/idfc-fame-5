@@ -34,3 +34,4 @@ admin.site.register(UserNotificationSettings)
 admin.site.register(UserSecuritySettings)
 admin.site.register(DebitCardSettings)
 admin.site.register(CreditCardSettings)
+
