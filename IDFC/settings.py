@@ -25,7 +25,6 @@ SECRET_KEY = os.getenv("SECRET_KEY", "django-insecure-@0z#f#_ays&kgu!2!r5fxdj11f
 
 dotenv_path = os.path.join(BASE_DIR, '.env')
 load_dotenv(dotenv_path)
-# GEMINI_API_KEY = "AlzaSyDTymyTvECXE8TOL6NSZ1qVTinRqO5Quzs"
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
