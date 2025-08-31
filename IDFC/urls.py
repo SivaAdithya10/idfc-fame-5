@@ -27,7 +27,7 @@ urlpatterns = [
     # Redirect direct access to chat, transactions, and instructions to the dashboard
     path("chat/", RedirectView.as_view(url='/', permanent=False), name='chat_redirect'),
     path("transactions", RedirectView.as_view(url='/', permanent=False), name='transactions_redirect'),
-    path("instructions", RedirectView.as_view(url='/', permanent=False), name='instructions_redirect'),
+    path("readme", RedirectView.as_view(url='/', permanent=False), name='readme_redirect'),
     path("settings", RedirectView.as_view(url='/', permanent=False), name='settings_redirect'),
     path('api/', include('chatbot.urls')),
 ]

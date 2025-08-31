@@ -713,3 +713,1074 @@ INFO 2025-08-30 19:57:27,795 views 60284 38068 Attempting to kickoff CrewAI for 
 INFO 2025-08-30 19:57:27,796 views 60284 38068 Conversation history contains 7 messages.
 INFO 2025-08-30 19:57:30,152 views 60284 38068 CrewAI kickoff successful. Response: You said "hi". Is there anything else I can help you with today, Siva?...
 INFO 2025-08-30 19:57:30,153 basehttp 60284 38068 "POST /api/chat/ HTTP/1.1" 200 87
+INFO 2025-08-30 21:29:20,378 autoreload 44508 61616 Watching for file changes with StatReloader
+INFO 2025-08-30 21:32:27,911 autoreload 51004 50956 Watching for file changes with StatReloader
+INFO 2025-08-30 21:32:32,158 autoreload 36772 40160 Watching for file changes with StatReloader
+INFO 2025-08-30 21:34:42,238 autoreload 43968 60116 Watching for file changes with StatReloader
+INFO 2025-08-30 21:35:26,485 autoreload 43968 60116 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\urls.py changed, reloading.
+INFO 2025-08-30 21:35:27,522 autoreload 60760 56420 Watching for file changes with StatReloader
+INFO 2025-08-30 21:35:43,872 basehttp 60760 59360 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 21:35:43,924 basehttp 60760 59360 "GET /static/assets/index-TzoQqQR4.js HTTP/1.1" 304 0
+INFO 2025-08-30 21:35:43,930 basehttp 60760 50752 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+INFO 2025-08-30 21:35:54,373 basehttp 60760 50752 "GET /admin HTTP/1.1" 301 0
+INFO 2025-08-30 21:35:54,390 basehttp 60760 59360 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-08-30 21:35:54,481 basehttp 60760 59360 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+INFO 2025-08-30 21:35:54,655 basehttp 60760 59360 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-08-30 21:35:54,688 basehttp 60760 56340 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-08-30 21:35:54,689 basehttp 60760 50144 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-08-30 21:35:54,690 basehttp 60760 27884 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-08-30 21:35:54,693 basehttp 60760 9488 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-08-30 21:35:54,700 basehttp 60760 40440 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-08-30 21:35:54,715 basehttp 60760 9488 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-08-30 21:37:37,986 autoreload 59164 25876 Watching for file changes with StatReloader
+INFO 2025-08-30 21:38:40,073 basehttp 59164 61392 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4173
+INFO 2025-08-30 21:38:46,895 basehttp 59164 61392 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-08-30 21:38:46,927 basehttp 59164 61392 "GET /admin/ HTTP/1.1" 200 6096
+INFO 2025-08-30 21:38:47,058 basehttp 59164 56904 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-08-30 21:38:47,059 basehttp 59164 61392 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-08-30 21:38:47,062 basehttp 59164 62044 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-08-30 21:39:18,270 autoreload 59164 25876 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\admin.py changed, reloading.
+INFO 2025-08-30 21:39:19,387 autoreload 53992 51212 Watching for file changes with StatReloader
+INFO 2025-08-30 21:39:26,148 basehttp 53992 61784 "GET /admin/ HTTP/1.1" 200 12961
+INFO 2025-08-30 21:39:28,774 basehttp 53992 61784 "GET /admin/chatbot/account/ HTTP/1.1" 200 12428
+INFO 2025-08-30 21:39:28,858 basehttp 53992 58660 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-30 21:39:28,955 basehttp 53992 61784 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-08-30 21:39:28,969 basehttp 53992 61784 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-08-30 21:39:28,976 basehttp 53992 39444 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-08-30 21:39:28,977 basehttp 53992 49212 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-08-30 21:39:28,984 basehttp 53992 45308 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-08-30 21:39:28,995 basehttp 53992 58660 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-08-30 21:39:28,995 basehttp 53992 39444 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-08-30 21:39:29,001 basehttp 53992 63244 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-08-30 21:39:29,004 basehttp 53992 61784 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-08-30 21:39:29,070 basehttp 53992 63244 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-08-30 21:39:29,103 basehttp 53992 61784 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-08-30 21:39:30,794 basehttp 53992 61784 "GET /admin/ HTTP/1.1" 200 12961
+INFO 2025-08-30 21:39:32,277 basehttp 53992 61784 "GET /admin/chatbot/aimodel/ HTTP/1.1" 200 12433
+INFO 2025-08-30 21:39:32,325 basehttp 53992 61784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-30 21:39:34,430 basehttp 53992 61784 "GET /admin/ HTTP/1.1" 200 12961
+INFO 2025-08-30 21:39:35,402 basehttp 53992 61784 "GET /admin/chatbot/chatbotknowledge/ HTTP/1.1" 200 12504
+INFO 2025-08-30 21:39:35,456 basehttp 53992 61784 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-30 21:39:36,897 basehttp 53992 61784 "GET /admin/ HTTP/1.1" 200 12961
+INFO 2025-08-30 21:39:38,993 basehttp 53992 61784 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-30 21:39:40,916 basehttp 53992 61784 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 00:04:14,386 autoreload 53992 51212 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 00:04:15,566 autoreload 55716 44216 Watching for file changes with StatReloader
+INFO 2025-08-31 00:05:32,898 autoreload 55716 44216 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 00:05:33,976 autoreload 1832 59432 Watching for file changes with StatReloader
+INFO 2025-08-31 00:14:19,726 basehttp 1832 63664 "GET /admin/ HTTP/1.1" 200 12961
+INFO 2025-08-31 00:14:21,717 basehttp 1832 63664 "GET /admin/chatbot/account/ HTTP/1.1" 200 12428
+INFO 2025-08-31 00:14:21,763 basehttp 1832 63664 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:14:23,672 basehttp 1832 63664 "GET /admin/chatbot/account/add/ HTTP/1.1" 200 18277
+INFO 2025-08-31 00:14:23,727 basehttp 1832 53088 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:14:23,783 basehttp 1832 63664 "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-08-31 00:14:23,784 basehttp 1832 57760 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-08-31 00:14:23,800 basehttp 1832 57760 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-08-31 00:14:23,800 basehttp 1832 63664 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11991
+INFO 2025-08-31 00:14:23,819 basehttp 1832 63664 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-08-31 00:14:32,912 basehttp 1832 63664 "GET /admin/chatbot/account/ HTTP/1.1" 200 12428
+INFO 2025-08-31 00:14:32,956 basehttp 1832 63664 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:14:33,745 basehttp 1832 63664 "GET /admin/chatbot/account/ HTTP/1.1" 200 12428
+INFO 2025-08-31 00:14:33,783 basehttp 1832 63664 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:14:34,885 basehttp 1832 63664 "GET /admin/chatbot/account/add/ HTTP/1.1" 200 18277
+INFO 2025-08-31 00:14:34,928 basehttp 1832 63664 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:15:24,380 basehttp 1832 63664 "GET /admin/auth/user/ HTTP/1.1" 200 16346
+INFO 2025-08-31 00:15:24,442 basehttp 1832 63664 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:15:24,443 basehttp 1832 53088 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-08-31 00:15:24,446 basehttp 1832 57760 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-08-31 00:15:24,483 basehttp 1832 57760 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-08-31 00:15:25,621 basehttp 1832 57760 "GET /admin/auth/user/1/change/ HTTP/1.1" 200 30804
+INFO 2025-08-31 00:15:25,676 basehttp 1832 53088 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-08-31 00:15:25,683 basehttp 1832 63664 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-08-31 00:15:25,684 basehttp 1832 57760 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:15:25,686 basehttp 1832 62664 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-08-31 00:15:25,686 basehttp 1832 36448 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15845
+INFO 2025-08-31 00:15:25,813 basehttp 1832 63664 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2025-08-31 00:15:25,813 basehttp 1832 53088 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-08-31 00:15:25,815 basehttp 1832 36448 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-08-31 00:15:36,735 basehttp 1832 53088 "GET /admin/auth/user/ HTTP/1.1" 200 16346
+INFO 2025-08-31 00:15:38,268 basehttp 1832 53088 "GET /admin/auth/user/ HTTP/1.1" 200 16346
+INFO 2025-08-31 00:15:38,310 basehttp 1832 53088 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:16:03,646 basehttp 1832 53088 "GET /admin/chatbot/account/ HTTP/1.1" 200 12428
+INFO 2025-08-31 00:16:03,701 basehttp 1832 53088 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:17:37,367 autoreload 1832 59432 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 00:17:38,589 autoreload 65320 63580 Watching for file changes with StatReloader
+INFO 2025-08-31 00:19:10,334 basehttp 65320 63692 "GET /admin/chatbot/account/ HTTP/1.1" 200 12428
+INFO 2025-08-31 00:19:10,388 basehttp 65320 63692 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:19:11,007 basehttp 65320 63692 "GET /admin/chatbot/account/ HTTP/1.1" 200 12428
+INFO 2025-08-31 00:19:11,045 basehttp 65320 63692 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:19:11,779 basehttp 65320 63692 "GET /admin/chatbot/account/ HTTP/1.1" 200 12428
+INFO 2025-08-31 00:19:11,820 basehttp 65320 63692 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:19:13,706 basehttp 65320 63692 "GET /admin/chatbot/account/ HTTP/1.1" 200 12428
+INFO 2025-08-31 00:19:13,742 basehttp 65320 63692 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:19:14,468 basehttp 65320 63692 "GET /admin/chatbot/account/add/ HTTP/1.1" 200 16622
+INFO 2025-08-31 00:19:14,514 basehttp 65320 63692 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2025-08-31 00:19:55,507 log 65320 63692 Internal Server Error: /admin/chatbot/account/add/
+Traceback (most recent call last):
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\contrib\admin\options.py", line 1984, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\contrib\admin\options.py", line 1843, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\contrib\admin\options.py", line 1900, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\contrib\admin\options.py", line 953, in log_addition
+    return LogEntry.objects.log_actions(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user_id=request.user.pk,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        single_object=True,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\contrib\admin\models.py", line 89, in log_actions
+    object_repr=str(obj)[:200],
+                ~~~^^^^^
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py", line 96, in __str__
+    return f"{self.user.username} - {self.account_type} ({self.account_number})"
+              ^^^^^^^^^
+AttributeError: 'Account' object has no attribute 'user'
+ERROR 2025-08-31 00:19:55,512 basehttp 65320 63692 "POST /admin/chatbot/account/add/ HTTP/1.1" 500 137881
+INFO 2025-08-31 00:21:50,732 basehttp 65320 63692 "GET /admin/chatbot/account/add/ HTTP/1.1" 200 16622
+ERROR 2025-08-31 00:21:52,587 log 65320 63692 Internal Server Error: /admin/chatbot/account/add/
+Traceback (most recent call last):
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\contrib\admin\options.py", line 1984, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\contrib\admin\options.py", line 1843, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\contrib\admin\options.py", line 1900, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\contrib\admin\options.py", line 953, in log_addition
+    return LogEntry.objects.log_actions(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user_id=request.user.pk,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        single_object=True,
+        ^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\sivaa\anaconda3\Lib\site-packages\django\contrib\admin\models.py", line 89, in log_actions
+    object_repr=str(obj)[:200],
+                ~~~^^^^^
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py", line 96, in __str__
+    return f"{self.user.username} - {self.account_type} ({self.account_number})"
+              ^^^^^^^^^
+AttributeError: 'Account' object has no attribute 'user'
+ERROR 2025-08-31 00:21:52,590 basehttp 65320 63692 "POST /admin/chatbot/account/add/ HTTP/1.1" 500 137881
+INFO 2025-08-31 00:22:12,007 autoreload 65320 63580 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 00:22:13,089 autoreload 54396 59864 Watching for file changes with StatReloader
+INFO 2025-08-31 00:22:19,931 basehttp 54396 56096 "GET /admin/chatbot/account/add/ HTTP/1.1" 200 16622
+INFO 2025-08-31 00:22:46,340 basehttp 54396 56096 "POST /admin/chatbot/account/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 00:22:46,373 basehttp 54396 56096 "GET /admin/chatbot/account/ HTTP/1.1" 200 13956
+INFO 2025-08-31 00:22:46,430 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:22:49,052 basehttp 54396 56096 "GET /admin/chatbot/account/add/ HTTP/1.1" 200 16622
+INFO 2025-08-31 00:22:49,093 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:23:23,821 basehttp 54396 56096 "POST /admin/chatbot/account/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 00:23:23,847 basehttp 54396 56096 "GET /admin/chatbot/account/ HTTP/1.1" 200 14243
+INFO 2025-08-31 00:23:23,903 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:23:25,766 basehttp 54396 56096 "GET /admin/chatbot/account/add/ HTTP/1.1" 200 16622
+INFO 2025-08-31 00:23:25,807 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:24:01,901 basehttp 54396 56096 "POST /admin/chatbot/account/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 00:24:01,929 basehttp 54396 56096 "GET /admin/chatbot/account/ HTTP/1.1" 200 14523
+INFO 2025-08-31 00:24:01,983 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:24:03,133 basehttp 54396 56096 "GET /admin/chatbot/aimodel/ HTTP/1.1" 200 12433
+INFO 2025-08-31 00:24:03,174 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:24:18,523 basehttp 54396 56096 "GET /admin/auth/user/ HTTP/1.1" 200 16346
+INFO 2025-08-31 00:24:18,580 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:24:19,566 basehttp 54396 56096 "GET /admin/auth/user/1/change/ HTTP/1.1" 200 30804
+INFO 2025-08-31 00:24:19,614 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:24:33,143 basehttp 54396 56096 "GET /admin/auth/user/ HTTP/1.1" 200 16346
+INFO 2025-08-31 00:24:40,263 basehttp 54396 56096 "GET /admin/chatbot/initialbotmessage/ HTTP/1.1" 200 12506
+INFO 2025-08-31 00:24:40,304 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:24:42,104 basehttp 54396 56096 "GET /admin/chatbot/initialbotmessage/add/ HTTP/1.1" 200 13310
+INFO 2025-08-31 00:24:42,141 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:24:52,570 basehttp 54396 56096 "POST /admin/chatbot/initialbotmessage/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 00:24:52,595 basehttp 54396 56096 "GET /admin/chatbot/initialbotmessage/ HTTP/1.1" 200 14081
+INFO 2025-08-31 00:24:52,646 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:24:58,752 basehttp 54396 56096 "GET /admin/chatbot/aimodel/ HTTP/1.1" 200 12433
+INFO 2025-08-31 00:24:58,793 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:24:59,860 basehttp 54396 56096 "GET /admin/chatbot/aimodel/add/ HTTP/1.1" 200 13858
+INFO 2025-08-31 00:24:59,901 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:25:13,986 basehttp 54396 56096 "POST /admin/chatbot/aimodel/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 00:25:14,012 basehttp 54396 56096 "GET /admin/chatbot/aimodel/ HTTP/1.1" 200 13961
+INFO 2025-08-31 00:25:14,052 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:25:15,529 basehttp 54396 56096 "GET /admin/chatbot/aimodel/add/ HTTP/1.1" 200 13858
+INFO 2025-08-31 00:25:15,570 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:25:29,615 basehttp 54396 56096 "POST /admin/chatbot/aimodel/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 00:25:29,641 basehttp 54396 56096 "GET /admin/chatbot/aimodel/ HTTP/1.1" 200 14240
+INFO 2025-08-31 00:25:29,682 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:25:30,641 basehttp 54396 56096 "GET /admin/chatbot/aimodel/add/ HTTP/1.1" 200 13858
+INFO 2025-08-31 00:25:30,688 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:25:44,267 basehttp 54396 56096 "POST /admin/chatbot/aimodel/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 00:25:44,293 basehttp 54396 56096 "GET /admin/chatbot/aimodel/ HTTP/1.1" 200 14517
+INFO 2025-08-31 00:25:44,331 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:25:51,035 basehttp 54396 56096 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 12489
+INFO 2025-08-31 00:25:51,072 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:25:52,010 basehttp 54396 56096 "GET /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 200 13264
+INFO 2025-08-31 00:25:52,053 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:26:00,180 basehttp 54396 56096 "POST /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 00:26:00,203 basehttp 54396 56096 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 14075
+INFO 2025-08-31 00:26:00,244 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:26:15,798 basehttp 54396 56096 "GET /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 200 13264
+INFO 2025-08-31 00:26:15,854 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:26:19,875 basehttp 54396 56096 "POST /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 00:26:19,901 basehttp 54396 56096 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 14413
+INFO 2025-08-31 00:26:19,941 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:26:20,907 basehttp 54396 56096 "GET /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 200 13264
+INFO 2025-08-31 00:26:20,954 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:26:27,074 basehttp 54396 56096 "POST /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 00:26:27,099 basehttp 54396 56096 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 14718
+INFO 2025-08-31 00:26:27,140 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:26:32,860 basehttp 54396 56096 "GET /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 200 13264
+INFO 2025-08-31 00:26:32,914 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:26:34,372 basehttp 54396 56096 "POST /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 00:26:34,397 basehttp 54396 56096 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 15064
+INFO 2025-08-31 00:26:34,439 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:26:59,979 basehttp 54396 56096 "GET /admin/chatbot/notification/ HTTP/1.1" 200 12463
+INFO 2025-08-31 00:27:00,032 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 00:27:02,371 basehttp 54396 56096 "GET /admin/chatbot/notification/add/ HTTP/1.1" 200 15674
+INFO 2025-08-31 00:27:02,420 basehttp 54396 56096 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:11:18,242 autoreload 54396 59864 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 01:11:19,347 autoreload 58768 35424 Watching for file changes with StatReloader
+INFO 2025-08-31 01:13:18,801 autoreload 58768 35424 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 01:13:19,853 autoreload 58668 56288 Watching for file changes with StatReloader
+INFO 2025-08-31 01:13:29,653 autoreload 58668 56288 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 01:13:30,703 autoreload 43140 56640 Watching for file changes with StatReloader
+INFO 2025-08-31 01:13:44,908 autoreload 43140 56640 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 01:13:45,979 autoreload 63012 35212 Watching for file changes with StatReloader
+INFO 2025-08-31 01:13:55,570 autoreload 63012 35212 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 01:13:56,617 autoreload 46464 58848 Watching for file changes with StatReloader
+INFO 2025-08-31 01:14:08,459 autoreload 46464 58848 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 01:14:09,574 autoreload 61428 40208 Watching for file changes with StatReloader
+INFO 2025-08-31 01:15:14,496 basehttp 61428 63480 "GET /admin/chatbot/notification/add/ HTTP/1.1" 200 14019
+INFO 2025-08-31 01:15:14,553 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:15:25,471 basehttp 61428 63480 "POST /admin/chatbot/notification/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 01:15:25,496 basehttp 61428 63480 "GET /admin/chatbot/notification/add/ HTTP/1.1" 200 14331
+INFO 2025-08-31 01:15:25,546 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:15:42,140 basehttp 61428 63480 "POST /admin/chatbot/notification/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 01:15:42,186 basehttp 61428 63480 "GET /admin/chatbot/notification/ HTTP/1.1" 200 14515
+INFO 2025-08-31 01:15:42,255 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:15:50,161 basehttp 61428 63480 "GET /admin/chatbot/quickstat/ HTTP/1.1" 200 12447
+INFO 2025-08-31 01:15:50,204 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:15:51,783 basehttp 61428 63480 "GET /admin/chatbot/quickstat/add/ HTTP/1.1" 200 15840
+INFO 2025-08-31 01:15:51,826 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:16:23,501 basehttp 61428 63480 "POST /admin/chatbot/quickstat/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 01:16:23,526 basehttp 61428 63480 "GET /admin/chatbot/quickstat/ HTTP/1.1" 200 14003
+INFO 2025-08-31 01:16:23,584 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:16:24,724 basehttp 61428 63480 "GET /admin/chatbot/quickstat/add/ HTTP/1.1" 200 15840
+INFO 2025-08-31 01:16:24,775 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:16:49,455 basehttp 61428 63480 "POST /admin/chatbot/quickstat/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 01:16:49,480 basehttp 61428 63480 "GET /admin/chatbot/quickstat/add/ HTTP/1.1" 200 16107
+INFO 2025-08-31 01:16:49,531 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:17:21,448 basehttp 61428 63480 "POST /admin/chatbot/quickstat/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 01:17:21,472 basehttp 61428 63480 "GET /admin/chatbot/quickstat/ HTTP/1.1" 200 14613
+INFO 2025-08-31 01:17:21,530 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:17:26,099 basehttp 61428 63480 "GET /admin/chatbot/account/ HTTP/1.1" 200 14312
+INFO 2025-08-31 01:17:26,137 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:17:37,041 basehttp 61428 63480 "GET /admin/chatbot/transaction/ HTTP/1.1" 200 12456
+INFO 2025-08-31 01:17:37,083 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:17:37,994 basehttp 61428 63480 "GET /admin/chatbot/transaction/add/ HTTP/1.1" 200 16866
+INFO 2025-08-31 01:17:38,042 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:17:41,906 basehttp 61428 63480 "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 2455
+INFO 2025-08-31 01:18:22,908 basehttp 61428 63480 "POST /admin/chatbot/transaction/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 01:18:22,934 basehttp 61428 63480 "GET /admin/chatbot/transaction/add/ HTTP/1.1" 200 17143
+INFO 2025-08-31 01:18:23,002 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:18:25,685 basehttp 61428 63480 "POST /admin/chatbot/transaction/add/ HTTP/1.1" 200 17836
+INFO 2025-08-31 01:18:25,726 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:18:50,804 basehttp 61428 63480 "POST /admin/chatbot/transaction/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 01:18:50,831 basehttp 61428 63480 "GET /admin/chatbot/transaction/ HTTP/1.1" 200 14378
+INFO 2025-08-31 01:18:50,889 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:18:52,450 basehttp 61428 63480 "GET /admin/chatbot/transaction/add/ HTTP/1.1" 200 16866
+INFO 2025-08-31 01:18:52,492 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:19:17,240 basehttp 61428 63480 "POST /admin/chatbot/transaction/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 01:19:17,264 basehttp 61428 63480 "GET /admin/chatbot/transaction/ HTTP/1.1" 200 14685
+INFO 2025-08-31 01:19:17,320 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:19:24,662 basehttp 61428 63480 "GET /admin/chatbot/creditcard/ HTTP/1.1" 200 12454
+INFO 2025-08-31 01:19:24,704 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:19:25,798 basehttp 61428 63480 "GET /admin/chatbot/creditcard/add/ HTTP/1.1" 200 17248
+INFO 2025-08-31 01:19:25,841 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:19:59,678 basehttp 61428 63480 "POST /admin/chatbot/creditcard/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 01:19:59,702 basehttp 61428 63480 "GET /admin/chatbot/creditcard/ HTTP/1.1" 200 14036
+INFO 2025-08-31 01:19:59,760 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:20:14,360 basehttp 61428 63480 "GET /admin/chatbot/userprofile/ HTTP/1.1" 200 12461
+INFO 2025-08-31 01:20:14,404 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:20:16,604 basehttp 61428 63480 "GET /admin/chatbot/userprofile/add/ HTTP/1.1" 200 16158
+INFO 2025-08-31 01:20:16,646 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:20:44,456 basehttp 61428 63480 "POST /admin/chatbot/userprofile/add/ HTTP/1.1" 200 16428
+INFO 2025-08-31 01:20:44,511 basehttp 61428 63480 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:20:56,843 autoreload 61428 40208 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 01:20:58,217 autoreload 55576 59420 Watching for file changes with StatReloader
+INFO 2025-08-31 01:21:24,543 autoreload 37496 57476 Watching for file changes with StatReloader
+INFO 2025-08-31 01:21:54,882 basehttp 37496 39928 "GET /admin/chatbot/userprofile HTTP/1.1" 301 0
+INFO 2025-08-31 01:21:54,942 basehttp 37496 39928 "GET /admin/chatbot/userprofile/ HTTP/1.1" 200 12461
+INFO 2025-08-31 01:21:55,002 basehttp 37496 39928 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:21:56,510 basehttp 37496 39928 "GET /admin/chatbot/userprofile/add/ HTTP/1.1" 200 14503
+INFO 2025-08-31 01:21:56,554 basehttp 37496 39928 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:22:04,179 basehttp 37496 39928 "POST /admin/chatbot/userprofile/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 01:22:04,209 basehttp 37496 39928 "GET /admin/chatbot/userprofile/ HTTP/1.1" 200 13979
+INFO 2025-08-31 01:22:04,253 basehttp 37496 39928 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:22:10,557 basehttp 37496 39928 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:22:10,603 basehttp 37496 39928 "GET /static/assets/index-TzoQqQR4.js HTTP/1.1" 304 0
+INFO 2025-08-31 01:22:10,606 basehttp 37496 56288 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 304 0
+INFO 2025-08-31 01:22:12,904 basehttp 37496 56288 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:22:14,008 basehttp 37496 56288 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:22:14,459 basehttp 37496 56288 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:22:16,922 basehttp 37496 56288 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:28:48,052 autoreload 37496 57476 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 01:28:49,283 autoreload 64736 59784 Watching for file changes with StatReloader
+INFO 2025-08-31 01:34:44,288 basehttp 64736 47520 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:34:46,285 basehttp 64736 47520 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:34:47,140 basehttp 64736 47520 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:34:47,438 basehttp 64736 47520 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:34:50,089 basehttp 64736 47520 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:34:50,422 basehttp 64736 47520 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:34:50,727 basehttp 64736 47520 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:34:51,040 basehttp 64736 47520 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:34:54,611 basehttp 64736 37496 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:34:54,815 basehttp 64736 64864 "GET /static/assets/index-zkJNRQHi.css HTTP/1.1" 200 65290
+INFO 2025-08-31 01:34:54,854 basehttp 64736 37496 "GET /static/assets/index-TzoQqQR4.js HTTP/1.1" 200 1382600
+INFO 2025-08-31 01:35:05,702 basehttp 64736 47520 "GET /static/instructions.md HTTP/1.1" 304 0
+INFO 2025-08-31 01:43:49,911 autoreload 63748 66408 Watching for file changes with StatReloader
+INFO 2025-08-31 01:44:03,764 basehttp 63748 58932 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:44:03,908 basehttp 63748 66272 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 200 65778
+INFO 2025-08-31 01:44:03,939 basehttp 63748 58932 "GET /static/assets/index-DBsABgVP.js HTTP/1.1" 200 1390304
+INFO 2025-08-31 01:44:04,254 basehttp 63748 66272 "GET /api/accounts/ HTTP/1.1" 200 415
+INFO 2025-08-31 01:44:04,256 basehttp 63748 58932 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:44:04,261 basehttp 63748 65636 "GET /api/creditcards/ HTTP/1.1" 200 203
+INFO 2025-08-31 01:44:04,282 basehttp 63748 63040 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 01:44:04,294 basehttp 63748 58932 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:44:04,323 basehttp 63748 58932 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:44:04,366 basehttp 63748 58932 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:44:04,388 basehttp 63748 58932 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 01:45:14,787 autoreload 63748 66408 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 01:45:16,218 autoreload 39236 32732 Watching for file changes with StatReloader
+INFO 2025-08-31 01:45:43,206 autoreload 33052 37828 Watching for file changes with StatReloader
+INFO 2025-08-31 01:45:54,896 basehttp 33052 38576 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:45:54,941 basehttp 33052 38576 "GET /static/assets/index-DBsABgVP.js HTTP/1.1" 304 0
+INFO 2025-08-31 01:45:54,947 basehttp 33052 59828 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 304 0
+INFO 2025-08-31 01:45:55,207 basehttp 33052 59828 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:45:55,208 basehttp 33052 38576 "GET /api/accounts/ HTTP/1.1" 200 415
+INFO 2025-08-31 01:45:55,213 basehttp 33052 62100 "GET /api/creditcards/ HTTP/1.1" 200 203
+INFO 2025-08-31 01:45:55,223 basehttp 33052 65456 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 01:45:55,233 basehttp 33052 59828 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:45:55,257 basehttp 33052 59828 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:45:55,281 basehttp 33052 59828 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:45:55,315 basehttp 33052 59828 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 01:45:58,709 basehttp 33052 59828 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:45:58,953 basehttp 33052 62100 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 01:45:58,953 basehttp 33052 38576 "GET /api/creditcards/ HTTP/1.1" 200 203
+INFO 2025-08-31 01:45:58,954 basehttp 33052 65456 "GET /api/accounts/ HTTP/1.1" 200 415
+INFO 2025-08-31 01:45:58,954 basehttp 33052 59828 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:45:59,011 basehttp 33052 59828 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:45:59,020 basehttp 33052 65456 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:45:59,041 basehttp 33052 65456 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:45:59,058 basehttp 33052 65456 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 01:45:59,598 basehttp 33052 65456 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:45:59,841 basehttp 33052 38576 "GET /api/creditcards/ HTTP/1.1" 200 203
+INFO 2025-08-31 01:45:59,850 basehttp 33052 65456 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:45:59,864 basehttp 33052 62100 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 01:45:59,866 basehttp 33052 59828 "GET /api/accounts/ HTTP/1.1" 200 415
+INFO 2025-08-31 01:45:59,885 basehttp 33052 38576 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:45:59,900 basehttp 33052 65456 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:45:59,926 basehttp 33052 65456 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:45:59,946 basehttp 33052 65456 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 01:46:00,472 basehttp 33052 65456 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:46:00,723 basehttp 33052 38576 "GET /api/accounts/ HTTP/1.1" 200 415
+INFO 2025-08-31 01:46:00,723 basehttp 33052 62100 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 01:46:00,724 basehttp 33052 59828 "GET /api/creditcards/ HTTP/1.1" 200 203
+INFO 2025-08-31 01:46:00,724 basehttp 33052 65456 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:46:00,743 basehttp 33052 65456 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:46:00,757 basehttp 33052 59828 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:46:00,786 basehttp 33052 59828 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:46:00,803 basehttp 33052 59828 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 01:46:11,168 basehttp 33052 59828 "GET /admin/ HTTP/1.1" 200 16832
+INFO 2025-08-31 01:46:12,854 basehttp 33052 59828 "GET /admin/chatbot/account/ HTTP/1.1" 200 14312
+INFO 2025-08-31 01:46:12,913 basehttp 33052 59828 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:46:14,735 basehttp 33052 59828 "GET /admin/chatbot/account/3/change/ HTTP/1.1" 200 16903
+INFO 2025-08-31 01:46:14,781 basehttp 33052 59828 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:46:26,878 basehttp 33052 59828 "GET /admin/chatbot/account/ HTTP/1.1" 200 14312
+INFO 2025-08-31 01:46:28,018 basehttp 33052 59828 "GET /admin/chatbot/account/3/change/ HTTP/1.1" 200 16903
+INFO 2025-08-31 01:46:28,063 basehttp 33052 59828 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:46:33,082 basehttp 33052 59828 "GET /admin/chatbot/account/ HTTP/1.1" 200 14312
+INFO 2025-08-31 01:46:53,871 autoreload 33052 37828 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 01:46:55,471 autoreload 56488 64092 Watching for file changes with StatReloader
+INFO 2025-08-31 01:47:19,445 autoreload 55560 57856 Watching for file changes with StatReloader
+INFO 2025-08-31 01:47:29,617 basehttp 55560 61052 "GET /admin/chatbot/account/ HTTP/1.1" 200 14312
+INFO 2025-08-31 01:47:29,673 basehttp 55560 61052 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:47:31,000 basehttp 55560 61052 "GET /admin/chatbot/account/3/change/ HTTP/1.1" 200 16946
+INFO 2025-08-31 01:47:31,041 basehttp 55560 61052 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:47:35,536 basehttp 55560 61052 "POST /admin/chatbot/account/3/change/ HTTP/1.1" 302 0
+INFO 2025-08-31 01:47:35,562 basehttp 55560 61052 "GET /admin/chatbot/account/ HTTP/1.1" 200 14582
+INFO 2025-08-31 01:47:35,610 basehttp 55560 61052 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:47:37,050 basehttp 55560 61052 "GET /admin/chatbot/account/2/change/ HTTP/1.1" 200 16956
+INFO 2025-08-31 01:47:37,097 basehttp 55560 61052 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:47:39,571 basehttp 55560 61052 "POST /admin/chatbot/account/2/change/ HTTP/1.1" 302 0
+INFO 2025-08-31 01:47:39,604 basehttp 55560 61052 "GET /admin/chatbot/account/ HTTP/1.1" 200 14590
+INFO 2025-08-31 01:47:39,648 basehttp 55560 61052 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:47:40,586 basehttp 55560 61052 "GET /admin/chatbot/account/1/change/ HTTP/1.1" 200 16965
+INFO 2025-08-31 01:47:40,631 basehttp 55560 61052 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:47:43,743 basehttp 55560 61052 "POST /admin/chatbot/account/1/change/ HTTP/1.1" 302 0
+INFO 2025-08-31 01:47:43,770 basehttp 55560 61052 "GET /admin/chatbot/account/ HTTP/1.1" 200 14609
+INFO 2025-08-31 01:47:43,825 basehttp 55560 61052 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:47:46,167 basehttp 55560 61052 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:47:46,200 basehttp 55560 61052 "GET /static/assets/index-DBsABgVP.js HTTP/1.1" 304 0
+INFO 2025-08-31 01:47:46,208 basehttp 55560 31164 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 304 0
+INFO 2025-08-31 01:47:46,542 basehttp 55560 31164 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:47:46,558 basehttp 55560 66332 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 01:47:46,558 basehttp 55560 66188 "GET /api/creditcards/ HTTP/1.1" 200 203
+INFO 2025-08-31 01:47:46,565 basehttp 55560 61052 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 01:47:46,569 basehttp 55560 31164 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:47:46,609 basehttp 55560 61052 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:47:46,628 basehttp 55560 61052 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:47:46,664 basehttp 55560 61052 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 01:48:07,034 basehttp 55560 61052 "GET /admin/chatbot/creditcard/ HTTP/1.1" 200 13800
+INFO 2025-08-31 01:48:07,089 basehttp 55560 61052 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:48:08,346 basehttp 55560 61052 "GET /admin/chatbot/creditcard/1/change/ HTTP/1.1" 200 17676
+INFO 2025-08-31 01:48:08,394 basehttp 55560 61052 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:48:16,796 basehttp 55560 61052 "POST /admin/chatbot/creditcard/1/change/ HTTP/1.1" 302 0
+INFO 2025-08-31 01:48:16,821 basehttp 55560 61052 "GET /admin/chatbot/creditcard/ HTTP/1.1" 200 14038
+INFO 2025-08-31 01:48:16,872 basehttp 55560 61052 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:48:18,981 basehttp 55560 61052 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:48:19,010 basehttp 55560 61052 "GET /static/assets/index-DBsABgVP.js HTTP/1.1" 304 0
+INFO 2025-08-31 01:48:19,010 basehttp 55560 31164 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 304 0
+INFO 2025-08-31 01:48:19,195 basehttp 55560 61052 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:48:19,197 basehttp 55560 66332 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 01:48:19,202 basehttp 55560 66188 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 01:48:19,203 basehttp 55560 31164 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 01:48:19,211 basehttp 55560 61052 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:48:19,236 basehttp 55560 61052 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:48:19,256 basehttp 55560 61052 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:48:19,277 basehttp 55560 61052 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 01:48:25,377 basehttp 55560 61052 "GET /admin/chatbot/creditcard/1/change/ HTTP/1.1" 200 17679
+INFO 2025-08-31 01:48:25,422 basehttp 55560 61052 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 01:48:28,552 basehttp 55560 61052 "GET /admin/chatbot/creditcard/ HTTP/1.1" 200 13800
+INFO 2025-08-31 01:48:51,335 basehttp 55560 61052 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:48:51,349 basehttp 55560 31164 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 01:48:51,369 basehttp 55560 31164 "GET /api/notifications/ HTTP/1.1" 200 258
+WARNING 2025-08-31 01:49:12,729 log 55560 31164 Forbidden: /api/transactions/
+WARNING 2025-08-31 01:49:12,730 basehttp 55560 31164 "POST /api/transactions/ HTTP/1.1" 403 45
+INFO 2025-08-31 01:51:34,580 autoreload 55560 57856 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 01:51:35,902 autoreload 64048 64992 Watching for file changes with StatReloader
+WARNING 2025-08-31 01:51:52,564 log 64048 24752 Forbidden: /api/transactions/
+WARNING 2025-08-31 01:51:52,565 basehttp 64048 24752 "POST /api/transactions/ HTTP/1.1" 403 45
+INFO 2025-08-31 01:52:26,821 autoreload 64048 64992 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 01:52:28,029 autoreload 65840 32724 Watching for file changes with StatReloader
+INFO 2025-08-31 01:52:41,644 autoreload 47128 64480 Watching for file changes with StatReloader
+WARNING 2025-08-31 01:52:51,529 log 47128 65676 Forbidden: /api/transactions/
+WARNING 2025-08-31 01:52:51,530 basehttp 47128 65676 "POST /api/transactions/ HTTP/1.1" 403 45
+INFO 2025-08-31 01:53:00,164 basehttp 47128 65676 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:53:00,201 basehttp 47128 55720 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 01:53:00,206 basehttp 47128 66336 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 01:53:00,206 basehttp 47128 65676 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:53:00,209 basehttp 47128 55092 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 01:53:00,218 basehttp 47128 63772 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:53:00,260 basehttp 47128 63772 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:53:00,291 basehttp 47128 63772 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 01:53:00,972 basehttp 47128 63772 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:53:00,975 basehttp 47128 55092 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 01:53:00,995 basehttp 47128 55092 "GET /api/notifications/ HTTP/1.1" 200 258
+WARNING 2025-08-31 01:53:17,388 log 47128 55092 Forbidden: /api/transactions/
+WARNING 2025-08-31 01:53:17,388 basehttp 47128 55092 "POST /api/transactions/ HTTP/1.1" 403 45
+INFO 2025-08-31 01:53:32,711 autoreload 47128 64480 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 01:53:33,777 autoreload 62144 59028 Watching for file changes with StatReloader
+INFO 2025-08-31 01:53:42,334 autoreload 62144 59028 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 01:53:43,386 autoreload 41744 65516 Watching for file changes with StatReloader
+INFO 2025-08-31 01:53:56,311 autoreload 63736 61172 Watching for file changes with StatReloader
+INFO 2025-08-31 01:54:13,998 autoreload 63736 61172 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 01:54:14,505 autoreload 66136 65816 Watching for file changes with StatReloader
+INFO 2025-08-31 01:54:17,456 autoreload 66136 65816 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 01:54:17,941 autoreload 58256 64080 Watching for file changes with StatReloader
+INFO 2025-08-31 01:54:37,961 basehttp 58256 61308 "GET /transactions HTTP/1.1" 302 0
+INFO 2025-08-31 01:54:37,979 basehttp 58256 61308 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 01:54:38,036 basehttp 58256 61308 "GET /static/assets/index-DBsABgVP.js HTTP/1.1" 304 0
+INFO 2025-08-31 01:54:38,041 basehttp 58256 55576 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 304 0
+INFO 2025-08-31 01:54:38,366 basehttp 58256 55576 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:54:38,367 basehttp 58256 61308 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 01:54:38,374 basehttp 58256 58272 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 01:54:38,382 basehttp 58256 43640 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 01:54:38,388 basehttp 58256 55576 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:54:38,426 basehttp 58256 55576 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:54:38,450 basehttp 58256 55576 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 01:54:38,473 basehttp 58256 55576 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 01:54:40,037 basehttp 58256 43640 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 01:54:40,039 basehttp 58256 55576 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 01:54:40,060 basehttp 58256 55576 "GET /api/notifications/ HTTP/1.1" 200 258
+WARNING 2025-08-31 01:54:51,190 log 58256 55576 Forbidden: /api/transactions/
+WARNING 2025-08-31 01:54:51,191 basehttp 58256 55576 "POST /api/transactions/ HTTP/1.1" 403 45
+INFO 2025-08-31 01:58:50,347 autoreload 58256 64080 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 01:58:51,573 autoreload 65800 65544 Watching for file changes with StatReloader
+WARNING 2025-08-31 01:59:08,772 log 65800 66072 Forbidden: /api/transactions/
+WARNING 2025-08-31 01:59:08,773 basehttp 65800 66072 "POST /api/transactions/ HTTP/1.1" 403 45
+INFO 2025-08-31 01:59:52,754 autoreload 65800 65544 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 01:59:53,876 autoreload 30316 47448 Watching for file changes with StatReloader
+WARNING 2025-08-31 02:00:09,269 log 30316 50752 Forbidden: /api/transactions/
+WARNING 2025-08-31 02:00:09,269 basehttp 30316 50752 "POST /api/transactions/ HTTP/1.1" 403 45
+INFO 2025-08-31 02:00:14,490 autoreload 60760 65924 Watching for file changes with StatReloader
+INFO 2025-08-31 02:00:22,484 basehttp 60760 43140 "GET /transactions HTTP/1.1" 302 0
+INFO 2025-08-31 02:00:22,498 basehttp 60760 43140 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:00:22,545 basehttp 60760 43140 "GET /static/assets/index-DBsABgVP.js HTTP/1.1" 304 0
+INFO 2025-08-31 02:00:22,553 basehttp 60760 66360 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 304 0
+INFO 2025-08-31 02:00:22,911 basehttp 60760 43140 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:00:22,926 basehttp 60760 66360 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:00:22,927 basehttp 60760 35968 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:00:22,928 basehttp 60760 58272 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:00:22,944 basehttp 60760 66360 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:00:22,979 basehttp 60760 66360 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:00:22,999 basehttp 60760 66360 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:00:23,037 basehttp 60760 66360 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:00:23,957 basehttp 60760 58272 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:00:23,957 basehttp 60760 66360 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:00:23,978 basehttp 60760 58272 "GET /api/notifications/ HTTP/1.1" 200 258
+WARNING 2025-08-31 02:00:35,621 log 60760 58272 Forbidden: /api/transactions/
+WARNING 2025-08-31 02:00:35,622 basehttp 60760 58272 "POST /api/transactions/ HTTP/1.1" 403 45
+WARNING 2025-08-31 02:00:37,604 log 60760 58272 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-31 02:00:37,605 basehttp 60760 58272 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3508
+WARNING 2025-08-31 02:00:58,634 log 60760 58272 Forbidden: /api/transactions/
+WARNING 2025-08-31 02:00:58,635 basehttp 60760 58272 "POST /api/transactions/ HTTP/1.1" 403 45
+INFO 2025-08-31 02:01:23,149 autoreload 60760 65924 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 02:01:24,334 autoreload 63560 63384 Watching for file changes with StatReloader
+INFO 2025-08-31 02:01:45,159 autoreload 63560 63384 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 02:01:46,276 autoreload 49472 64808 Watching for file changes with StatReloader
+WARNING 2025-08-31 02:01:56,753 log 49472 66276 Forbidden: /api/transactions/
+WARNING 2025-08-31 02:01:56,754 basehttp 49472 66276 "POST /api/transactions/ HTTP/1.1" 403 45
+INFO 2025-08-31 02:02:20,902 autoreload 49472 64808 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 02:02:22,010 autoreload 63996 64624 Watching for file changes with StatReloader
+WARNING 2025-08-31 02:02:28,801 log 63996 64416 Bad Request: /api/transactions/
+WARNING 2025-08-31 02:02:28,802 basehttp 63996 64416 "POST /api/transactions/ HTTP/1.1" 400 45
+WARNING 2025-08-31 02:02:33,250 log 63996 64416 Bad Request: /api/transactions/
+WARNING 2025-08-31 02:02:33,251 basehttp 63996 64416 "POST /api/transactions/ HTTP/1.1" 400 45
+WARNING 2025-08-31 02:04:11,901 log 63996 64416 Bad Request: /api/transactions/
+WARNING 2025-08-31 02:04:11,901 basehttp 63996 64416 "POST /api/transactions/ HTTP/1.1" 400 45
+INFO 2025-08-31 02:04:29,709 basehttp 63996 64416 "GET /transactions HTTP/1.1" 302 0
+INFO 2025-08-31 02:04:29,723 basehttp 63996 64416 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:04:29,767 basehttp 63996 64416 "GET /static/assets/index-DBsABgVP.js HTTP/1.1" 304 0
+INFO 2025-08-31 02:04:29,774 basehttp 63996 64904 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 304 0
+INFO 2025-08-31 02:04:30,107 basehttp 63996 10688 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:04:30,110 basehttp 63996 64416 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:04:30,110 basehttp 63996 64904 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:04:30,116 basehttp 63996 64704 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:04:30,133 basehttp 63996 64904 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:04:30,190 basehttp 63996 64904 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:04:30,207 basehttp 63996 64904 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:04:30,233 basehttp 63996 64904 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:04:30,999 basehttp 63996 10688 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:04:31,004 basehttp 63996 64904 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:04:31,035 basehttp 63996 64904 "GET /api/notifications/ HTTP/1.1" 200 258
+WARNING 2025-08-31 02:04:42,860 log 63996 64904 Bad Request: /api/transactions/
+WARNING 2025-08-31 02:04:42,861 basehttp 63996 64904 "POST /api/transactions/ HTTP/1.1" 400 45
+WARNING 2025-08-31 02:04:47,756 log 63996 64904 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-31 02:04:47,757 basehttp 63996 64904 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3508
+INFO 2025-08-31 02:05:21,985 autoreload 63996 64624 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\serializers.py changed, reloading.
+INFO 2025-08-31 02:05:23,070 autoreload 38144 66224 Watching for file changes with StatReloader
+WARNING 2025-08-31 02:05:34,579 log 38144 66204 Bad Request: /api/transactions/
+WARNING 2025-08-31 02:05:34,580 basehttp 38144 66204 "POST /api/transactions/ HTTP/1.1" 400 45
+WARNING 2025-08-31 02:05:41,925 log 38144 66204 Bad Request: /api/transactions/
+WARNING 2025-08-31 02:05:41,926 basehttp 38144 66204 "POST /api/transactions/ HTTP/1.1" 400 45
+INFO 2025-08-31 02:06:10,750 autoreload 38144 66224 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 02:06:11,863 autoreload 65972 60688 Watching for file changes with StatReloader
+ERROR 2025-08-31 02:06:30,696 views 65972 38684 Transaction creation failed: {'method': [ErrorDetail(string='"UPI" is not a valid choice.', code='invalid_choice')]}
+WARNING 2025-08-31 02:06:30,697 log 65972 38684 Bad Request: /api/transactions/
+WARNING 2025-08-31 02:06:30,697 basehttp 65972 38684 "POST /api/transactions/ HTTP/1.1" 400 45
+INFO 2025-08-31 02:08:10,568 autoreload 65972 60688 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 02:08:12,122 autoreload 35916 33476 Watching for file changes with StatReloader
+INFO 2025-08-31 02:08:44,242 autoreload 35916 33476 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 02:08:45,628 autoreload 66108 65612 Watching for file changes with StatReloader
+INFO 2025-08-31 02:09:10,278 autoreload 66384 63688 Watching for file changes with StatReloader
+INFO 2025-08-31 02:09:20,021 basehttp 66384 62296 "GET /transactions HTTP/1.1" 302 0
+INFO 2025-08-31 02:09:20,034 basehttp 66384 62296 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:09:20,080 basehttp 66384 62296 "GET /static/assets/index-DBsABgVP.js HTTP/1.1" 304 0
+INFO 2025-08-31 02:09:20,087 basehttp 66384 54300 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 304 0
+INFO 2025-08-31 02:09:20,340 basehttp 66384 50292 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:09:20,351 basehttp 66384 62296 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:09:20,351 basehttp 66384 54300 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:09:20,357 basehttp 66384 13352 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:09:20,369 basehttp 66384 54300 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:09:20,403 basehttp 66384 54300 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:09:20,420 basehttp 66384 54300 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:09:20,444 basehttp 66384 54300 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:09:22,017 basehttp 66384 13352 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:09:22,019 basehttp 66384 54300 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:09:22,038 basehttp 66384 54300 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:12:20,819 autoreload 66384 63688 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 02:12:22,012 autoreload 65652 60472 Watching for file changes with StatReloader
+INFO 2025-08-31 02:13:19,048 autoreload 65652 60472 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 02:13:20,100 autoreload 62296 54300 Watching for file changes with StatReloader
+INFO 2025-08-31 02:13:50,166 autoreload 38368 40028 Watching for file changes with StatReloader
+INFO 2025-08-31 02:14:01,104 basehttp 38368 60352 "GET /transactions HTTP/1.1" 302 0
+INFO 2025-08-31 02:14:01,117 basehttp 38368 60352 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:14:01,160 basehttp 38368 60352 "GET /static/assets/index-DBsABgVP.js HTTP/1.1" 304 0
+INFO 2025-08-31 02:14:01,169 basehttp 38368 43408 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 304 0
+INFO 2025-08-31 02:14:01,510 basehttp 38368 43408 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:14:01,510 basehttp 38368 60352 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:14:01,522 basehttp 38368 7476 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:14:01,522 basehttp 38368 57492 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:14:01,529 basehttp 38368 43408 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:14:01,569 basehttp 38368 43408 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:14:01,587 basehttp 38368 43408 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:14:01,625 basehttp 38368 43408 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:14:02,586 basehttp 38368 7476 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:14:02,589 basehttp 38368 43408 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:14:02,618 basehttp 38368 43408 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:14:39,391 autoreload 65528 64100 Watching for file changes with StatReloader
+INFO 2025-08-31 02:14:47,750 basehttp 65528 60764 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:14:47,757 basehttp 65528 44608 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:14:47,772 basehttp 65528 63380 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:14:47,778 basehttp 65528 60764 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:14:47,786 basehttp 65528 50428 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:14:47,802 basehttp 65528 41380 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:14:47,828 basehttp 65528 41380 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:14:47,845 basehttp 65528 41380 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:14:48,745 basehttp 65528 41380 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:14:48,847 basehttp 65528 41380 "GET /static/assets/index-NK88w_RN.js HTTP/1.1" 200 1390571
+INFO 2025-08-31 02:14:49,125 basehttp 65528 60764 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:14:49,128 basehttp 65528 63380 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:14:49,131 basehttp 65528 41380 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:14:49,132 basehttp 65528 50428 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:14:49,147 basehttp 65528 41380 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:14:49,155 basehttp 65528 50428 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:14:49,171 basehttp 65528 50428 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:14:49,208 basehttp 65528 50428 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:14:49,597 basehttp 65528 50428 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:14:49,826 basehttp 65528 63380 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:14:49,831 basehttp 65528 41380 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:14:49,836 basehttp 65528 50428 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:14:49,836 basehttp 65528 60764 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:14:49,852 basehttp 65528 50428 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:14:49,886 basehttp 65528 50428 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:14:49,907 basehttp 65528 50428 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:14:49,940 basehttp 65528 50428 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:14:50,363 basehttp 65528 60764 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:14:50,367 basehttp 65528 50428 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:14:50,380 basehttp 65528 50428 "GET /api/transactions/choices/ HTTP/1.1" 200 282
+INFO 2025-08-31 02:14:50,396 basehttp 65528 60764 "GET /api/notifications/ HTTP/1.1" 200 258
+ERROR 2025-08-31 02:15:03,382 views 65528 60764 Transaction creation failed: {'transaction_type': [ErrorDetail(string='"debit" is not a valid choice.', code='invalid_choice')]}
+WARNING 2025-08-31 02:15:03,383 log 65528 60764 Bad Request: /api/transactions/
+WARNING 2025-08-31 02:15:03,384 basehttp 65528 60764 "POST /api/transactions/ HTTP/1.1" 400 57
+INFO 2025-08-31 02:15:28,382 autoreload 65528 64100 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 02:15:29,784 autoreload 65760 65916 Watching for file changes with StatReloader
+INFO 2025-08-31 02:15:49,901 autoreload 61604 65288 Watching for file changes with StatReloader
+INFO 2025-08-31 02:15:59,624 basehttp 61604 66224 "POST /api/transactions/ HTTP/1.1" 201 126
+INFO 2025-08-31 02:16:07,688 basehttp 61604 66224 "GET /admin/chatbot/account/ HTTP/1.1" 200 14382
+INFO 2025-08-31 02:16:07,751 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:08,836 basehttp 61604 66224 "GET /admin/chatbot/account/3/change/ HTTP/1.1" 200 17012
+INFO 2025-08-31 02:16:08,888 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:12,416 basehttp 61604 66224 "GET /admin/chatbot/aimodel/ HTTP/1.1" 200 14307
+INFO 2025-08-31 02:16:12,458 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:13,258 basehttp 61604 66224 "GET /admin/chatbot/aimodel/3/change/ HTTP/1.1" 200 14134
+INFO 2025-08-31 02:16:13,301 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:14,779 basehttp 61604 66224 "GET /admin/chatbot/creditcard/ HTTP/1.1" 200 13800
+INFO 2025-08-31 02:16:14,819 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:15,438 basehttp 61604 66224 "GET /admin/chatbot/chatbotknowledge/ HTTP/1.1" 200 12504
+INFO 2025-08-31 02:16:15,480 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:17,411 basehttp 61604 66224 "GET /admin/chatbot/creditcard/ HTTP/1.1" 200 13800
+INFO 2025-08-31 02:16:17,449 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:20,140 basehttp 61604 66224 "GET /admin/chatbot/creditcard/1/change/ HTTP/1.1" 200 17679
+INFO 2025-08-31 02:16:20,183 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:22,424 basehttp 61604 66224 "GET /admin/chatbot/initialbotmessage/ HTTP/1.1" 200 13845
+INFO 2025-08-31 02:16:22,466 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:23,505 basehttp 61604 66224 "GET /admin/chatbot/initialbotmessage/1/change/ HTTP/1.1" 200 13624
+INFO 2025-08-31 02:16:23,550 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:25,143 basehttp 61604 66224 "GET /admin/chatbot/notification/ HTTP/1.1" 200 14252
+INFO 2025-08-31 02:16:25,185 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:26,294 basehttp 61604 66224 "GET /admin/chatbot/notification/2/change/ HTTP/1.1" 200 14425
+INFO 2025-08-31 02:16:26,336 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:28,086 basehttp 61604 66224 "GET /admin/chatbot/quickstat/ HTTP/1.1" 200 14389
+INFO 2025-08-31 02:16:28,126 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:29,171 basehttp 61604 66224 "GET /admin/chatbot/quickstat/3/change/ HTTP/1.1" 200 16171
+INFO 2025-08-31 02:16:29,213 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:31,261 basehttp 61604 66224 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 14814
+INFO 2025-08-31 02:16:31,306 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:32,364 basehttp 61604 66224 "GET /admin/chatbot/suggestedprompt/3/change/ HTTP/1.1" 200 13569
+INFO 2025-08-31 02:16:32,407 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:33,669 basehttp 61604 66224 "GET /admin/chatbot/transaction/ HTTP/1.1" 200 14765
+INFO 2025-08-31 02:16:33,704 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:34,815 basehttp 61604 66224 "GET /admin/chatbot/transaction/4/change/ HTTP/1.1" 200 17409
+INFO 2025-08-31 02:16:34,856 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:40,654 basehttp 61604 66224 "GET /admin/chatbot/transaction/ HTTP/1.1" 200 14765
+INFO 2025-08-31 02:16:40,693 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:41,554 basehttp 61604 66224 "GET /admin/chatbot/transaction/2/change/ HTTP/1.1" 200 17436
+INFO 2025-08-31 02:16:41,595 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:49,755 basehttp 61604 66224 "GET /admin/chatbot/transaction/ HTTP/1.1" 200 14765
+INFO 2025-08-31 02:16:50,985 basehttp 61604 66224 "GET /admin/chatbot/transaction/3/change/ HTTP/1.1" 200 17404
+INFO 2025-08-31 02:16:51,029 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:54,050 basehttp 61604 66224 "POST /admin/chatbot/transaction/3/change/ HTTP/1.1" 302 0
+INFO 2025-08-31 02:16:54,074 basehttp 61604 66224 "GET /admin/chatbot/transaction/ HTTP/1.1" 200 15000
+INFO 2025-08-31 02:16:54,117 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:16:55,661 basehttp 61604 66224 "GET /admin/chatbot/transaction/1/change/ HTTP/1.1" 200 17424
+INFO 2025-08-31 02:16:55,703 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:17:00,719 basehttp 61604 66224 "POST /admin/chatbot/transaction/1/change/ HTTP/1.1" 302 0
+INFO 2025-08-31 02:17:00,745 basehttp 61604 66224 "GET /admin/chatbot/transaction/ HTTP/1.1" 200 15005
+INFO 2025-08-31 02:17:00,789 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:17:01,865 basehttp 61604 66224 "GET /admin/chatbot/transaction/2/change/ HTTP/1.1" 200 17436
+INFO 2025-08-31 02:17:01,908 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:17:04,904 basehttp 61604 66224 "POST /admin/chatbot/transaction/2/change/ HTTP/1.1" 302 0
+INFO 2025-08-31 02:17:04,932 basehttp 61604 66224 "GET /admin/chatbot/transaction/ HTTP/1.1" 200 15008
+INFO 2025-08-31 02:17:04,975 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:17:06,345 basehttp 61604 66224 "GET /admin/chatbot/userprofile/ HTTP/1.1" 200 13764
+INFO 2025-08-31 02:17:06,386 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:17:07,190 basehttp 61604 66224 "GET /admin/chatbot/userprofile/1/change/ HTTP/1.1" 200 14772
+INFO 2025-08-31 02:17:07,233 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:17:09,112 basehttp 61604 66224 "GET /admin/chatbot/account/ HTTP/1.1" 200 14382
+INFO 2025-08-31 02:17:09,163 basehttp 61604 66224 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:17:13,779 basehttp 61604 66224 "GET /transactions HTTP/1.1" 302 0
+INFO 2025-08-31 02:17:13,791 basehttp 61604 66224 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:17:13,819 basehttp 61604 66224 "GET /static/assets/index-NK88w_RN.js HTTP/1.1" 304 0
+INFO 2025-08-31 02:17:13,861 basehttp 61604 65788 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 200 65778
+INFO 2025-08-31 02:17:14,234 basehttp 61604 66224 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:17:14,235 basehttp 61604 61052 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:17:14,236 basehttp 61604 65788 "GET /api/transactions/ HTTP/1.1" 200 534
+INFO 2025-08-31 02:17:14,243 basehttp 61604 60152 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:17:14,257 basehttp 61604 61052 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:17:14,260 basehttp 61604 66224 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:17:14,291 basehttp 61604 66224 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:17:14,316 basehttp 61604 66224 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:17:15,512 basehttp 61604 61052 "GET /api/transactions/ HTTP/1.1" 200 534
+INFO 2025-08-31 02:17:15,519 basehttp 61604 66224 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:17:15,528 basehttp 61604 61052 "GET /api/transactions/choices/ HTTP/1.1" 200 282
+INFO 2025-08-31 02:17:15,546 basehttp 61604 66224 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:17:29,359 basehttp 61604 66224 "DELETE /api/transactions/4/ HTTP/1.1" 204 0
+ERROR 2025-08-31 02:17:41,267 views 61604 66224 Transaction creation failed: {'category': [ErrorDetail(string='"Other" is not a valid choice.', code='invalid_choice')]}
+WARNING 2025-08-31 02:17:41,268 log 61604 66224 Bad Request: /api/transactions/
+WARNING 2025-08-31 02:17:41,268 basehttp 61604 66224 "POST /api/transactions/ HTTP/1.1" 400 49
+INFO 2025-08-31 02:17:53,684 basehttp 61604 66224 "POST /api/transactions/ HTTP/1.1" 201 129
+INFO 2025-08-31 02:18:01,438 basehttp 61604 66224 "DELETE /api/transactions/5/ HTTP/1.1" 204 0
+INFO 2025-08-31 02:18:14,417 basehttp 61604 66224 "POST /api/transactions/ HTTP/1.1" 201 128
+INFO 2025-08-31 02:18:31,059 basehttp 61604 66224 "DELETE /api/transactions/6/ HTTP/1.1" 204 0
+INFO 2025-08-31 02:18:44,236 autoreload 61604 65288 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 02:18:45,611 autoreload 52272 59708 Watching for file changes with StatReloader
+INFO 2025-08-31 02:19:11,375 autoreload 39572 63924 Watching for file changes with StatReloader
+INFO 2025-08-31 02:19:19,422 basehttp 39572 65156 "GET /transactions HTTP/1.1" 302 0
+INFO 2025-08-31 02:19:19,436 basehttp 39572 65156 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:19:19,561 basehttp 39572 61268 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 200 65778
+INFO 2025-08-31 02:19:19,583 basehttp 39572 65156 "GET /static/assets/index-NK88w_RN.js HTTP/1.1" 200 1390571
+INFO 2025-08-31 02:19:19,892 basehttp 39572 65156 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:19:19,902 basehttp 39572 60916 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:19:19,903 basehttp 39572 60664 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:19:19,907 basehttp 39572 61268 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:19:19,929 basehttp 39572 61268 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:19:19,955 basehttp 39572 61268 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:19:19,987 basehttp 39572 61268 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:19:20,034 basehttp 39572 61268 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:19:20,665 basehttp 39572 60664 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:19:20,669 basehttp 39572 61268 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:19:20,692 basehttp 39572 61268 "GET /api/transactions/choices/ HTTP/1.1" 200 282
+INFO 2025-08-31 02:19:20,701 basehttp 39572 60664 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:19:23,678 basehttp 39572 60664 "GET /transactions HTTP/1.1" 302 0
+INFO 2025-08-31 02:19:23,688 basehttp 39572 60664 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:19:23,724 basehttp 39572 60664 "GET /static/assets/index-NK88w_RN.js HTTP/1.1" 304 0
+INFO 2025-08-31 02:19:23,727 basehttp 39572 61268 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 304 0
+INFO 2025-08-31 02:19:23,936 basehttp 39572 61268 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:19:23,940 basehttp 39572 60916 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:19:23,940 basehttp 39572 60664 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:19:23,947 basehttp 39572 65156 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:19:23,951 basehttp 39572 61268 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:19:24,003 basehttp 39572 61268 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:19:24,023 basehttp 39572 61268 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:19:24,046 basehttp 39572 61268 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:19:26,187 basehttp 39572 65156 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:19:26,189 basehttp 39572 61268 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:19:26,202 basehttp 39572 61268 "GET /api/transactions/choices/ HTTP/1.1" 200 282
+INFO 2025-08-31 02:19:26,222 basehttp 39572 61268 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:20:20,075 autoreload 65864 65404 Watching for file changes with StatReloader
+INFO 2025-08-31 02:20:26,523 basehttp 65864 64756 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:20:26,543 basehttp 65864 65636 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:20:26,545 basehttp 65864 64756 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:20:26,561 basehttp 65864 65636 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:20:26,561 basehttp 65864 64756 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:20:26,581 basehttp 65864 64756 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:20:26,600 basehttp 65864 64756 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:20:26,615 basehttp 65864 64756 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:20:27,987 basehttp 65864 65636 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:20:27,990 basehttp 65864 64756 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:20:28,003 basehttp 65864 64756 "GET /api/transactions/choices/ HTTP/1.1" 200 282
+INFO 2025-08-31 02:20:28,016 basehttp 65864 65636 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:20:48,665 basehttp 65864 57124 "GET /transactions HTTP/1.1" 302 0
+INFO 2025-08-31 02:20:48,679 basehttp 65864 57124 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:20:48,802 basehttp 65864 35236 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 200 65778
+INFO 2025-08-31 02:20:48,823 basehttp 65864 57124 "GET /static/assets/index-DpRWih9G.js HTTP/1.1" 200 1390586
+INFO 2025-08-31 02:20:49,128 basehttp 65864 64932 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:20:49,131 basehttp 65864 35236 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:20:49,132 basehttp 65864 26236 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:20:49,133 basehttp 65864 57124 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:20:49,149 basehttp 65864 57124 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:20:49,167 basehttp 65864 57124 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:20:49,194 basehttp 65864 57124 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:20:49,214 basehttp 65864 57124 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:20:49,722 basehttp 65864 57124 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:20:49,961 basehttp 65864 26236 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:20:49,975 basehttp 65864 57124 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:20:49,975 basehttp 65864 35236 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:20:49,976 basehttp 65864 64932 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:20:49,994 basehttp 65864 57124 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:20:50,053 basehttp 65864 57124 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:20:50,072 basehttp 65864 57124 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:20:50,093 basehttp 65864 57124 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:20:50,523 basehttp 65864 64932 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:20:50,541 basehttp 65864 64932 "GET /api/transactions/choices/ HTTP/1.1" 200 282
+INFO 2025-08-31 02:20:50,541 basehttp 65864 57124 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:20:50,561 basehttp 65864 64932 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:21:08,290 basehttp 65864 64932 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 304 0
+WARNING 2025-08-31 02:21:08,316 log 65864 64932 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-31 02:21:08,317 basehttp 65864 64932 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3508
+INFO 2025-08-31 02:21:44,597 autoreload 65864 65404 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 02:21:45,897 autoreload 38700 63384 Watching for file changes with StatReloader
+INFO 2025-08-31 02:22:32,055 autoreload 35236 26236 Watching for file changes with StatReloader
+INFO 2025-08-31 02:22:42,889 basehttp 35236 61708 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:22:42,981 basehttp 35236 66204 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 200 65778
+INFO 2025-08-31 02:22:43,001 basehttp 35236 61708 "GET /static/assets/index-DpRWih9G.js HTTP/1.1" 200 1390586
+INFO 2025-08-31 02:22:43,302 basehttp 35236 61708 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:22:43,304 basehttp 35236 66204 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:22:43,305 basehttp 35236 55412 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:22:43,309 basehttp 35236 65056 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:22:43,318 basehttp 35236 61708 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:22:43,364 basehttp 35236 61708 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:22:43,381 basehttp 35236 61708 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:22:43,415 basehttp 35236 61708 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:22:44,228 basehttp 35236 65056 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:22:44,230 basehttp 35236 61708 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:22:44,244 basehttp 35236 61708 "GET /api/transactions/choices/ HTTP/1.1" 200 481
+INFO 2025-08-31 02:22:44,262 basehttp 35236 65056 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:22:50,217 basehttp 35236 65056 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:22:50,236 basehttp 35236 65056 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:23:35,473 basehttp 35236 65056 "GET /instructions HTTP/1.1" 302 0
+INFO 2025-08-31 02:23:35,486 basehttp 35236 65056 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:23:35,527 basehttp 35236 65056 "GET /static/assets/index-DpRWih9G.js HTTP/1.1" 304 0
+INFO 2025-08-31 02:23:35,531 basehttp 35236 61708 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 304 0
+INFO 2025-08-31 02:23:35,781 basehttp 35236 55412 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:23:35,788 basehttp 35236 65056 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:23:35,788 basehttp 35236 61708 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:23:35,788 basehttp 35236 66204 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:23:35,802 basehttp 35236 61708 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:23:35,830 basehttp 35236 61708 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:23:35,847 basehttp 35236 61708 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:23:35,877 basehttp 35236 61708 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:23:36,435 basehttp 35236 61708 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:23:36,460 basehttp 35236 61708 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:23:37,885 basehttp 35236 61708 "GET /instructions HTTP/1.1" 302 0
+INFO 2025-08-31 02:23:37,896 basehttp 35236 61708 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:23:38,138 basehttp 35236 65056 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:23:38,143 basehttp 35236 61708 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:23:38,143 basehttp 35236 55412 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:23:38,144 basehttp 35236 66204 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:23:38,173 basehttp 35236 55412 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:23:38,182 basehttp 35236 66204 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:23:38,199 basehttp 35236 66204 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:23:38,220 basehttp 35236 66204 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:23:38,735 basehttp 35236 66204 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:23:38,759 basehttp 35236 66204 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:23:39,663 basehttp 35236 66204 "GET /instructions HTTP/1.1" 302 0
+INFO 2025-08-31 02:23:39,673 basehttp 35236 66204 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:23:39,912 basehttp 35236 61708 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:23:39,920 basehttp 35236 55412 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:23:39,925 basehttp 35236 65056 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:23:39,931 basehttp 35236 66204 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:23:39,964 basehttp 35236 66204 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:23:39,972 basehttp 35236 65056 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:23:39,990 basehttp 35236 65056 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:23:40,014 basehttp 35236 65056 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:23:40,429 basehttp 35236 65056 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:23:40,452 basehttp 35236 65056 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:25:21,046 autoreload 35236 26236 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\models.py changed, reloading.
+INFO 2025-08-31 02:25:22,135 autoreload 50512 56656 Watching for file changes with StatReloader
+INFO 2025-08-31 02:36:01,641 autoreload 59760 65192 Watching for file changes with StatReloader
+INFO 2025-08-31 02:36:10,521 basehttp 59760 61204 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:36:10,530 basehttp 59760 37188 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:36:10,547 basehttp 59760 63600 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:36:10,552 basehttp 59760 61136 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:36:10,559 basehttp 59760 61204 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:36:10,564 basehttp 59760 65824 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:36:10,592 basehttp 59760 65824 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:36:10,612 basehttp 59760 65824 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:36:11,051 basehttp 59760 65824 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:36:11,054 basehttp 59760 61204 "GET /static/instructions.md HTTP/1.1" 304 0
+INFO 2025-08-31 02:36:11,074 basehttp 59760 61204 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:36:18,945 basehttp 59760 61204 "GET /admin/chatbot/account/ HTTP/1.1" 200 14382
+INFO 2025-08-31 02:36:18,986 basehttp 59760 61204 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:36:44,559 autoreload 59760 65192 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\admin.py changed, reloading.
+INFO 2025-08-31 02:36:45,736 autoreload 60448 64008 Watching for file changes with StatReloader
+INFO 2025-08-31 02:36:53,651 basehttp 60448 56192 "GET /admin/chatbot/account/ HTTP/1.1" 200 14834
+INFO 2025-08-31 02:36:53,707 basehttp 60448 56192 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:36:55,664 basehttp 60448 56192 "GET /admin/chatbot/instruction/ HTTP/1.1" 200 12908
+INFO 2025-08-31 02:36:55,711 basehttp 60448 56192 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:36:57,246 basehttp 60448 56192 "GET /admin/chatbot/instruction/add/ HTTP/1.1" 200 14942
+INFO 2025-08-31 02:36:57,297 basehttp 60448 56192 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:37:17,724 basehttp 60448 56192 "POST /admin/chatbot/instruction/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 02:37:17,751 basehttp 60448 56192 "GET /admin/chatbot/instruction/ HTTP/1.1" 200 14408
+INFO 2025-08-31 02:37:17,817 basehttp 60448 56192 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 02:37:20,740 basehttp 60448 56192 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:37:20,766 basehttp 60448 63320 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:37:20,773 basehttp 60448 18676 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:37:20,776 basehttp 60448 56192 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:37:20,782 basehttp 60448 42412 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:37:20,787 basehttp 60448 66156 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:37:20,806 basehttp 60448 66156 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:37:20,824 basehttp 60448 66156 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:37:21,651 basehttp 60448 66156 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:37:21,752 basehttp 60448 42412 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 200 65778
+INFO 2025-08-31 02:37:21,777 basehttp 60448 66156 "GET /static/assets/index-83FY8eJ9.js HTTP/1.1" 200 1390574
+INFO 2025-08-31 02:37:22,033 basehttp 60448 56192 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:37:22,038 basehttp 60448 66156 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:37:22,052 basehttp 60448 18676 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:37:22,057 basehttp 60448 42412 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:37:22,057 basehttp 60448 66156 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:37:22,098 basehttp 60448 42412 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:37:22,118 basehttp 60448 42412 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:37:22,147 basehttp 60448 42412 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:37:24,442 basehttp 60448 42412 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:37:24,647 basehttp 60448 18676 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:37:24,651 basehttp 60448 42412 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:37:24,651 basehttp 60448 56192 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:37:24,663 basehttp 60448 66156 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:37:24,667 basehttp 60448 42412 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:37:24,693 basehttp 60448 42412 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:37:24,731 basehttp 60448 42412 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:37:24,750 basehttp 60448 42412 "GET /api/quickstats/ HTTP/1.1" 200 310
+WARNING 2025-08-31 02:37:27,509 log 60448 42412 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-08-31 02:37:27,510 basehttp 60448 42412 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 3508
+INFO 2025-08-31 02:38:32,677 autoreload 66308 57848 Watching for file changes with StatReloader
+INFO 2025-08-31 02:38:39,697 basehttp 66308 11220 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:38:39,717 basehttp 66308 63116 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:38:39,717 basehttp 66308 11220 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:38:39,734 basehttp 66308 63116 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:38:39,735 basehttp 66308 11220 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:38:39,753 basehttp 66308 63116 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:38:39,771 basehttp 66308 63116 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:38:39,791 basehttp 66308 63116 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:38:41,742 basehttp 66308 63116 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:38:41,846 basehttp 66308 11220 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 200 65778
+INFO 2025-08-31 02:38:41,875 basehttp 66308 63116 "GET /static/assets/index-D1pb9Bfc.js HTTP/1.1" 200 1390562
+INFO 2025-08-31 02:38:42,128 basehttp 66308 62496 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:38:42,133 basehttp 66308 11220 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:38:42,135 basehttp 66308 36708 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:38:42,136 basehttp 66308 63116 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:38:42,150 basehttp 66308 63116 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:38:42,181 basehttp 66308 63116 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:38:42,215 basehttp 66308 63116 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:38:42,244 basehttp 66308 63116 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:38:43,226 basehttp 66308 63116 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:38:43,258 basehttp 66308 63116 "GET /static/assets/index-D1pb9Bfc.js HTTP/1.1" 304 0
+INFO 2025-08-31 02:38:43,261 basehttp 66308 36708 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 304 0
+INFO 2025-08-31 02:38:43,458 basehttp 66308 11220 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:38:43,462 basehttp 66308 63116 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:38:43,465 basehttp 66308 62496 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:38:43,470 basehttp 66308 36708 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:38:43,484 basehttp 66308 36708 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:38:43,508 basehttp 66308 36708 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:38:43,541 basehttp 66308 36708 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:38:43,556 basehttp 66308 36708 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:38:44,422 basehttp 66308 36708 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:38:44,429 basehttp 66308 62496 "GET /static/readme.md HTTP/1.1" 200 150
+INFO 2025-08-31 02:38:44,447 basehttp 66308 36708 "GET /api/notifications/ HTTP/1.1" 200 258
+WARNING 2025-08-31 02:38:46,722 log 66308 36708 Not Found: /readme
+WARNING 2025-08-31 02:38:46,723 basehttp 66308 36708 "GET /readme HTTP/1.1" 404 3382
+INFO 2025-08-31 02:38:56,705 basehttp 66308 36708 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:38:56,734 basehttp 66308 36708 "GET /static/assets/index-D1pb9Bfc.js HTTP/1.1" 304 0
+INFO 2025-08-31 02:38:56,743 basehttp 66308 36708 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 304 0
+INFO 2025-08-31 02:38:56,968 basehttp 66308 63116 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:38:56,970 basehttp 66308 62496 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:38:56,974 basehttp 66308 36708 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:38:56,997 basehttp 66308 11220 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:38:57,049 basehttp 66308 63116 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:38:57,057 basehttp 66308 36708 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:38:57,087 basehttp 66308 36708 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:38:57,116 basehttp 66308 36708 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:39:27,666 autoreload 66308 57848 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\IDFC\urls.py changed, reloading.
+INFO 2025-08-31 02:39:29,136 autoreload 49024 38880 Watching for file changes with StatReloader
+INFO 2025-08-31 02:39:38,202 basehttp 49024 66336 "GET /readme HTTP/1.1" 302 0
+INFO 2025-08-31 02:39:38,216 basehttp 49024 66336 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:39:38,244 basehttp 49024 66336 "GET /static/assets/index-D1pb9Bfc.js HTTP/1.1" 304 0
+INFO 2025-08-31 02:39:38,251 basehttp 49024 54152 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 304 0
+INFO 2025-08-31 02:39:38,494 basehttp 49024 66336 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:39:38,495 basehttp 49024 54152 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:39:38,499 basehttp 49024 63996 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:39:38,506 basehttp 49024 64208 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:39:38,514 basehttp 49024 54152 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:39:38,528 basehttp 49024 64208 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:39:38,544 basehttp 49024 64208 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:39:38,563 basehttp 49024 64208 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:39:39,564 basehttp 49024 64208 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:39:39,589 basehttp 49024 64208 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:41:05,288 autoreload 65364 63012 Watching for file changes with StatReloader
+INFO 2025-08-31 02:41:12,140 basehttp 65364 61232 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 02:41:12,157 basehttp 65364 61232 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:41:12,262 basehttp 65364 64032 "GET /static/assets/index-BN4vZ2-M.css HTTP/1.1" 200 65778
+INFO 2025-08-31 02:41:12,300 basehttp 65364 62812 "GET /static/assets/index-C0809n63.js HTTP/1.1" 200 1390797
+INFO 2025-08-31 02:41:12,576 basehttp 65364 63836 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:41:12,593 basehttp 65364 54776 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:41:12,593 basehttp 65364 64032 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:41:12,594 basehttp 65364 62812 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:41:12,612 basehttp 65364 62812 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:41:12,627 basehttp 65364 64032 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:41:12,656 basehttp 65364 64032 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:41:12,680 basehttp 65364 64032 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:41:14,905 basehttp 65364 64032 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:41:14,912 basehttp 65364 62812 "GET /api/instructions/ HTTP/1.1" 200 72
+INFO 2025-08-31 02:41:14,926 basehttp 65364 64032 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:41:16,224 basehttp 65364 64032 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:41:16,247 basehttp 65364 54776 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:41:16,253 basehttp 65364 62812 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:41:16,254 basehttp 65364 63836 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:41:16,258 basehttp 65364 64032 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:41:16,268 basehttp 65364 32364 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:41:16,288 basehttp 65364 32364 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:41:16,311 basehttp 65364 32364 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 02:41:16,621 basehttp 65364 32364 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:41:16,622 basehttp 65364 64032 "GET /api/instructions/ HTTP/1.1" 200 72
+INFO 2025-08-31 02:41:16,642 basehttp 65364 64032 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:41:17,449 basehttp 65364 64032 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:41:17,453 basehttp 65364 63836 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 02:41:17,468 basehttp 65364 32364 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 02:41:17,471 basehttp 65364 62812 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 02:41:17,478 basehttp 65364 64032 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 02:41:17,491 basehttp 65364 63836 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:41:17,507 basehttp 65364 63836 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 02:41:17,527 basehttp 65364 63836 "GET /api/quickstats/ HTTP/1.1" 200 310
