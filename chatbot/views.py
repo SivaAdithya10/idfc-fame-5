@@ -30,29 +30,13 @@ from .serializers import (
     UserSecuritySettingsSerializer, InstructionSerializer, DebitCardSettingsSerializer, CreditCardSettingsSerializer
 )
 
-# --- Importing tools (now without CrewAI decorators) ---
-from .tools import get_tool_descriptions, get_tool_by_name
+# --- Importing tools (now with new structure) ---
+from .tools import get_tool_descriptions_for_agent, get_tool_by_name
 
 logger = logging.getLogger(__name__)
 
 # ==============================================================================
-# === ENHANCED LOGGING SETUP ===================================================
-# ==============================================================================
-
-# This map helps translate a tool call back to the conceptual "agent" for clearer logs.
-TOOL_TO_AGENT_MAP = {
-    'get_user_accounts': 'Account Data Retrieval Specialist',
-    'get_account_balance': 'Account Data Retrieval Specialist',
-    'list_recent_transactions': 'Account Data Retrieval Specialist',
-    'get_credit_card_details': 'Account Data Retrieval Specialist',
-    'block_credit_card': 'Card and Account Security Officer',
-    'update_card_transaction_limits': 'Card and Account Security Officer',
-    'toggle_international_transactions': 'Card and Account Security Officer'
-}
-
-
-# ==============================================================================
-# === UPDATED CHATBOT VIEW WITH PERFECT LOGGING ================================
+# === UPDATED CHATBOT VIEW WITH MULTI-AGENT ARCHITECTURE =======================
 # ==============================================================================
 
 @method_decorator(csrf_exempt, name='dispatch')
@@ -67,9 +51,8 @@ class ChatView(APIView):
         history = []
         selected_model = 'gemini-1.5-flash'
 
-        # --- Determine Input Type: Audio or Text ---
+        # --- Determine Input Type: Audio or Text (This part is unchanged) ---
         if 'audio' in request.FILES:
-            # --- AUDIO PATH ---
             logger.info(f"======== [START AUDIO REQUEST: {request_id}] ========")
             audio_file = request.FILES['audio']
             history = json.loads(request.data.get('history', '[]'))
@@ -91,9 +74,8 @@ class ChatView(APIView):
                         temp_f.write(chunk)
                 
                 uploaded_file = genai.upload_file(path=temp_path)
-                # Wait for the file to be active.
                 while uploaded_file.state.name == "PROCESSING":
-                    time.sleep(5)
+                    time.sleep(2) # Reduced sleep time
                     uploaded_file = genai.get_file(uploaded_file.name)
 
                 if uploaded_file.state.name != "ACTIVE":
@@ -103,7 +85,6 @@ class ChatView(APIView):
                 os.remove(temp_path)
 
                 model = genai.GenerativeModel(selected_model)
-                # First, we get the transcription
                 transcription_prompt = "Please transcribe this audio file. Only return the transcribed text."
                 transcription_response = model.generate_content([transcription_prompt, uploaded_file])
                 user_message = transcription_response.text.strip()
@@ -133,105 +114,135 @@ class ChatView(APIView):
             # --- 1. Configure Gemini API ---
             genai.configure(api_key=gemini_api_key)
             model = genai.GenerativeModel(selected_model)
-
-            # --- 2. Build the Orchestrator Prompt ---
+            
+            # --- 2. STEP 1: ORCHESTRATION ---
+            # The first LLM call decides which specialist agent to route the query to.
             formatted_history = "\n".join([f"{msg.get('role', 'user').capitalize()}: {msg.get('content', '')}" for msg in history])
-            tool_descriptions = get_tool_descriptions()
-
+            
             orchestrator_prompt = f"""
-You are the Chief Customer Interaction Orchestrator for a modern digital bank. Your goal is to understand the user's needs and decide the best course of action.
-You have access to a set of tools to help you. Based on the user's message and the conversation history, you must decide what to do.
-Your available actions are:
-1.  **call_tool**: If the user's request requires fetching data or performing an action, choose the appropriate tool.
-2.  **direct_answer**: If the user's message is a simple greeting, a follow-up clarification, or a question that doesn't require a tool, answer it directly.
+You are the master request orchestrator for a digital bank. Your primary job is to analyze the user's query and route it to the correct specialist agent. Do not attempt to answer the user yourself.
+
+Here are the available specialist agents and their responsibilities:
+- **AccountSpecialist**: Use for any questions about retrieving data. This includes checking account balances, listing transactions, fetching account numbers, or getting details about credit/debit cards.
+- **SecurityOfficer**: Use for any requests that involve an action or a change to security settings. This includes updating transaction limits or enabling/disabling international transactions.
+- **FinancialAdvisor**: Use for any questions related to financial advice, planning, investment options, or market trends.
+- **Generalist**: Use for simple greetings, farewells, non-financial questions, or if the user's intent is unclear and doesn't fit any other specialist.
+
 **Conversation History:**
 {formatted_history}
+
 **User's Latest Message:**
 "{user_message}"
-**Available Tools:**
-{tool_descriptions}
-**Your Decision:**
-Respond with ONLY a JSON object in the following format. Do not add any other text before or after the JSON.
-If you decide to call a tool:
+
+Based on the user's latest message, which specialist agent is the most appropriate to handle the request?
+Respond with ONLY a JSON object in the following format. Do not add any other text.
 {{
-  "decision": "call_tool",
+  "agent_name": "<name_of_the_chosen_agent>"
+}}
+"""
+            logger.info(f"[{request_id}] STEP 1: Performing orchestration call to select an agent...")
+            orchestrator_response = model.generate_content(orchestrator_prompt)
+            
+            try:
+                decision_text = orchestrator_response.text.strip().replace("```json", "").replace("```", "")
+                decision_json = json.loads(decision_text)
+                chosen_agent = decision_json.get("agent_name")
+                logger.info(f"[{request_id}] Orchestrator selected agent: '{chosen_agent}'")
+            except (json.JSONDecodeError, AttributeError) as e:
+                logger.error(f"[{request_id}] Failed to parse orchestrator JSON response: {e}. Raw response: {orchestrator_response.text}")
+                # Fallback to a general response if orchestration fails
+                return Response({"response": "I'm having trouble understanding your request. Could you please rephrase it?"}, status=status.HTTP_200_OK)
+
+            bot_response = ""
+            tool_result = None
+
+            # --- 3. STEP 2: DELEGATION TO SUB-AGENT ---
+            if chosen_agent == "Generalist":
+                logger.info(f"[{request_id}] Delegating to Generalist for a direct answer.")
+                generalist_prompt = f"""
+You are a friendly and helpful banking assistant. The user said: "{user_message}".
+Provide a direct, conversational response. Do not offer to perform any actions you can't do.
+If you don't know the answer, say so politely.
+"""
+                final_response = model.generate_content(generalist_prompt)
+                bot_response = final_response.text
+
+            elif chosen_agent in ["AccountSpecialist", "SecurityOfficer", "FinancialAdvisor"]:
+                logger.info(f"[{request_id}] Delegating to sub-agent: '{chosen_agent}'")
+                tool_descriptions = get_tool_descriptions_for_agent(chosen_agent)
+
+                sub_agent_prompt = f"""
+You are a specialist agent known as the '{chosen_agent}'. Your role is to handle specific user requests by using your available tools.
+Based on the user's message, decide which tool to call.
+
+**User's Message:**
+"{user_message}"
+
+**Your Available Tools:**
+{tool_descriptions}
+
+Respond with ONLY a JSON object indicating the tool to call and its arguments.
+If no tool is appropriate, respond with a JSON object containing an error.
+{{
   "tool_name": "<name_of_the_tool_to_call>",
   "arguments": {{
     "arg1_name": "value1",
     "arg2_name": "value2"
   }}
 }}
-If you decide to answer directly:
-{{
-  "decision": "direct_answer",
-  "response": "<your_direct_and_helpful_answer>"
-}}
 """
-            
-            # --- 3. First LLM Call: Orchestration ---
-            logger.info(f"[{request_id}] STEP 1: Performing orchestration call to Gemini...")
-            orchestrator_response = model.generate_content(orchestrator_prompt)
-            
-            try:
-                decision_text = orchestrator_response.text.strip().replace("```json", "").replace("```", "")
-                logger.info(f"[{request_id}] ORCHESTRATOR RAW OUTPUT:\n{decision_text}")
-                decision_json = json.loads(decision_text)
-                decision = decision_json.get("decision")
-            except (json.JSONDecodeError, AttributeError) as e:
-                logger.error(f"[{request_id}] Failed to parse orchestrator JSON response: {e}. Raw response was: {orchestrator_response.text}")
-                return Response({"response": orchestrator_response.text}, status=status.HTTP_200_OK)
-
-            bot_response = ""
-
-            # --- 4. Execute Decision ---
-            if decision == "direct_answer":
-                bot_response = decision_json.get("response", "I'm sorry, I could not generate a response.")
-                logger.info(f"[{request_id}] Decision: Direct Answer. No agent transfer needed.")
-
-            elif decision == "call_tool":
-                tool_name = decision_json.get("tool_name")
-                arguments = decision_json.get("arguments", {})
+                logger.info(f"[{request_id}] STEP 2a: Sub-agent '{chosen_agent}' is deciding which tool to use...")
+                sub_agent_response = model.generate_content(sub_agent_prompt)
                 
-                # LOGGING: Log agent transfer and tool usage
-                agent_name = TOOL_TO_AGENT_MAP.get(tool_name, "Unknown Agent")
-                logger.info(f"[{request_id}] Decision: Delegate to Agent -> '{agent_name}'")
-                logger.info(f"[{request_id}] STEP 2: Agent '{agent_name}' is handling the query.")
-                logger.info(f"[{request_id}] TOOL USED: '{tool_name}' with arguments: {arguments}")
-                
-                tool_function = get_tool_by_name(tool_name)
+                try:
+                    tool_call_text = sub_agent_response.text.strip().replace("```json", "").replace("```", "")
+                    tool_call_json = json.loads(tool_call_text)
+                    tool_name = tool_call_json.get("tool_name")
+                    arguments = tool_call_json.get("arguments", {})
 
-                if not tool_function:
-                    logger.error(f"[{request_id}] Orchestrator decided to call an unknown tool: {tool_name}")
-                    bot_response = "I'm sorry, I tried to perform an action but couldn't find the right tool."
-                else:
-                    try:
+                    if not tool_name:
+                         raise ValueError("Sub-agent did not return a tool name.")
+
+                    logger.info(f"[{request_id}] Sub-agent '{chosen_agent}' decided to use tool '{tool_name}' with arguments: {arguments}")
+
+                    tool_function = get_tool_by_name(tool_name)
+                    if not tool_function:
+                        logger.error(f"[{request_id}] Sub-agent '{chosen_agent}' chose an unknown tool: {tool_name}")
+                        bot_response = "I'm sorry, I tried to perform an action but couldn't find the right internal capability."
+                    else:
                         tool_result = tool_function(**arguments)
                         logger.info(f"[{request_id}] TOOL OUTPUT (RAW): '{tool_result}'")
 
-                        # --- 5. Second LLM Call: Finalization ---
-                        finalizer_prompt = f"""
-The user asked the following question: "{user_message}"
-To answer this, I performed an internal action by calling the tool '{tool_name}' and got the following result:
-"{tool_result}"
-Based on this result, please formulate a final, comprehensive, and user-friendly answer.
-- If the result indicates success, confirm the action in a friendly way.
-- If the result is data, present it clearly.
-- If the result is an error, apologize and explain it simply.
-- Do not mention that you used a "tool" or "function". Speak naturally as a banking assistant.
-"""
-                        logger.info(f"[{request_id}] STEP 3: Performing finalization call to Gemini to format the tool output...")
-                        final_response = model.generate_content(finalizer_prompt)
-                        bot_response = final_response.text
-                        logger.info(f"[{request_id}] FINALIZER RAW OUTPUT:\n{bot_response}")
+                except (json.JSONDecodeError, AttributeError, ValueError) as e:
+                    logger.error(f"[{request_id}] Sub-agent '{chosen_agent}' failed to produce a valid tool call or tool execution failed: {e}. Raw response: {sub_agent_response.text}")
+                    bot_response = "I'm sorry, I was unable to complete that action. This is demo so my actions are limited. However, I have the capability to perform this if given enough permissions. Until then Please try contacting customer support."
+                except Exception as e:
+                    logger.exception(f"[{request_id}] An unexpected error occurred while executing tool '{tool_name}'.")
+                    bot_response = "An unexpected error occurred. Please contact support."
 
-                    except Exception as e:
-                        logger.exception(f"[{request_id}] Error executing tool '{tool_name}' or during finalization call.")
-                        bot_response = "I'm sorry, I encountered an error while trying to complete your request."
-            
             else:
-                 logger.warning(f"[{request_id}] Orchestrator returned an unknown decision: '{decision}'")
-                 bot_response = "I'm not sure how to handle that request. Please try rephrasing."
+                logger.warning(f"[{request_id}] Orchestrator returned an unknown agent: '{chosen_agent}'")
+                bot_response = "I'm not sure how to handle that request. Please try rephrasing."
 
+            # --- 4. STEP 3: FINALIZATION (if a tool was used) ---
+            if tool_result:
+                finalizer_prompt = f"""
+The user's original request was: "{user_message}"
+An internal specialist agent was used to process this, and it produced the following result:
+"{tool_result}"
+
+Based on this result, formulate a final, comprehensive, and user-friendly answer.
+- If the result indicates success, confirm the action in a friendly way.
+- If the result is data, present it clearly and concisely.
+- If the result is an error, apologize and explain it simply.
+- Do not mention that you used a "tool", "function", or "agent". Speak naturally as a single, unified banking assistant.
+"""
+                logger.info(f"[{request_id}] STEP 3: Performing finalization call to format the tool output...")
+                final_response = model.generate_content(finalizer_prompt)
+                bot_response = final_response.text
+                logger.info(f"[{request_id}] FINALIZER RAW OUTPUT:\n{bot_response}")
+
+            # --- 5. Return Final Response ---
             logger.info(f"[{request_id}] FINAL RESPONSE to User: '{bot_response}'")
             logger.info(f"======== [END REQUEST: {request_id}] ========\n")
             return Response({"response": bot_response}, status=status.HTTP_200_OK)
@@ -242,7 +253,9 @@ Based on this result, please formulate a final, comprehensive, and user-friendly
             return Response({"error": error_message}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
-
+# ==============================================================================
+# === ALL OTHER VIEWSETS (UNCHANGED) ===========================================
+# ==============================================================================
 
 @method_decorator(csrf_exempt, name='dispatch')
 class UserProfileViewSet(viewsets.ModelViewSet):

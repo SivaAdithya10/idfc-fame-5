@@ -4036,3 +4036,863 @@ INFO 2025-08-31 16:43:23,274 views 6076 27592 [2657b9fe-ebd8-488f-b22d-7536b62a6
 INFO 2025-08-31 16:43:23,275 views 6076 27592 ======== [END REQUEST: 2657b9fe-ebd8-488f-b22d-7536b62a669a] ========
 
 INFO 2025-08-31 16:43:23,276 basehttp 6076 27592 "POST /api/chat/ HTTP/1.1" 200 231
+INFO 2025-08-31 16:49:37,154 autoreload 13456 21276 Watching for file changes with StatReloader
+INFO 2025-08-31 16:49:42,685 basehttp 13456 24628 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 16:49:42,694 basehttp 13456 28192 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 16:49:42,704 basehttp 13456 28192 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 16:49:42,750 basehttp 13456 28192 "GET /static/assets/index-shc4WIfB.js HTTP/1.1" 304 0
+INFO 2025-08-31 16:49:42,753 basehttp 13456 22652 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 16:49:43,140 basehttp 13456 22652 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:49:43,142 basehttp 13456 28192 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 16:49:43,145 basehttp 13456 17132 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 16:49:43,148 basehttp 13456 1852 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 16:49:43,156 basehttp 13456 28192 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:49:43,208 basehttp 13456 28192 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:49:43,223 basehttp 13456 28192 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:49:43,254 basehttp 13456 28192 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 16:49:44,071 basehttp 13456 1852 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 16:49:44,071 basehttp 13456 28192 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:49:44,093 basehttp 13456 28192 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 16:49:44,094 basehttp 13456 1852 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:49:44,116 basehttp 13456 1852 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 16:49:54,187 views 13456 1852 ======== [START TEXT REQUEST: cbe6e626-5ac1-4c7d-8106-7a010e2d1d16] ========
+INFO 2025-08-31 16:49:54,188 views 13456 1852 [cbe6e626-5ac1-4c7d-8106-7a010e2d1d16] User Message (after potential transcription): 'shud I really invest in SIP?'
+INFO 2025-08-31 16:49:54,188 views 13456 1852 [cbe6e626-5ac1-4c7d-8106-7a010e2d1d16] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 16:49:56,545 views 13456 1852 [cbe6e626-5ac1-4c7d-8106-7a010e2d1d16] Orchestrator selected agent: 'FinancialAdvisor'
+INFO 2025-08-31 16:49:56,546 views 13456 1852 [cbe6e626-5ac1-4c7d-8106-7a010e2d1d16] Delegating to sub-agent: 'FinancialAdvisor'
+INFO 2025-08-31 16:49:56,546 views 13456 1852 [cbe6e626-5ac1-4c7d-8106-7a010e2d1d16] STEP 2a: Sub-agent 'FinancialAdvisor' is deciding which tool to use...
+INFO 2025-08-31 16:49:57,176 views 13456 1852 [cbe6e626-5ac1-4c7d-8106-7a010e2d1d16] Sub-agent 'FinancialAdvisor' decided to use tool 'search_financial_playbook' with arguments: {'query': 'SIP investment advice'}
+INFO 2025-08-31 16:49:57,180 views 13456 1852 [cbe6e626-5ac1-4c7d-8106-7a010e2d1d16] TOOL OUTPUT (RAW): 'No relevant information found in my knowledge base for 'SIP investment advice'.'
+INFO 2025-08-31 16:49:57,181 views 13456 1852 [cbe6e626-5ac1-4c7d-8106-7a010e2d1d16] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 16:49:59,614 views 13456 1852 [cbe6e626-5ac1-4c7d-8106-7a010e2d1d16] FINALIZER RAW OUTPUT:
+I am sorry, but I couldn't find any information on "SIP investment advice" in my knowledge base. I can't provide specific investment recommendations.
+
+If you're interested in learning more about Systematic Investment Plans (SIPs) as a way to invest, here's a general overview:
+
+A Systematic Investment Plan (SIP) is a method of investing a fixed sum of money at regular intervals (usually monthly) into mutual funds. It's a disciplined approach to investing that can help you:
+
+*   **Build wealth over the long term:** By investing consistently, you can benefit from the power of compounding.
+*   **Average out your purchase cost (Rupee Cost Averaging):** When the market is down, your fixed amount buys more units, and when the market is up, it buys fewer units. This can help reduce the overall cost of your investment.
+*   **Develop a saving habit:** The fixed, regular investment encourages discipline.
+*   **Invest affordably:** You can start with small amounts, making investing accessible.
+
+However, like all investments, SIPs also carry risks, and the value of your investment can go down as well as up.
+
+For personalized advice on whether investing in SIPs is right for you, I recommend speaking with a qualified financial advisor who can assess your financial goals, risk tolerance, and investment horizon.
+INFO 2025-08-31 16:49:59,614 views 13456 1852 [cbe6e626-5ac1-4c7d-8106-7a010e2d1d16] FINAL RESPONSE to User: 'I am sorry, but I couldn't find any information on "SIP investment advice" in my knowledge base. I can't provide specific investment recommendations.
+
+If you're interested in learning more about Systematic Investment Plans (SIPs) as a way to invest, here's a general overview:
+
+A Systematic Investment Plan (SIP) is a method of investing a fixed sum of money at regular intervals (usually monthly) into mutual funds. It's a disciplined approach to investing that can help you:
+
+*   **Build wealth over the long term:** By investing consistently, you can benefit from the power of compounding.
+*   **Average out your purchase cost (Rupee Cost Averaging):** When the market is down, your fixed amount buys more units, and when the market is up, it buys fewer units. This can help reduce the overall cost of your investment.
+*   **Develop a saving habit:** The fixed, regular investment encourages discipline.
+*   **Invest affordably:** You can start with small amounts, making investing accessible.
+
+However, like all investments, SIPs also carry risks, and the value of your investment can go down as well as up.
+
+For personalized advice on whether investing in SIPs is right for you, I recommend speaking with a qualified financial advisor who can assess your financial goals, risk tolerance, and investment horizon.'
+INFO 2025-08-31 16:49:59,615 views 13456 1852 ======== [END REQUEST: cbe6e626-5ac1-4c7d-8106-7a010e2d1d16] ========
+
+INFO 2025-08-31 16:49:59,616 basehttp 13456 1852 "POST /api/chat/ HTTP/1.1" 200 1346
+INFO 2025-08-31 16:51:22,169 basehttp 13456 1852 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:51:22,176 basehttp 13456 28192 "GET /api/chatbotknowledge/ HTTP/1.1" 200 3853
+INFO 2025-08-31 16:51:22,192 basehttp 13456 1852 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:51:31,712 autoreload 13456 21276 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:51:34,502 autoreload 10820 29304 Watching for file changes with StatReloader
+INFO 2025-08-31 16:51:36,442 basehttp 10820 6244 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:51:36,443 basehttp 10820 26700 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 16:51:36,466 basehttp 10820 6244 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 16:51:36,468 basehttp 10820 26700 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:51:36,480 basehttp 10820 26700 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 16:51:48,415 views 10820 26700 ======== [START TEXT REQUEST: 2b9c2e1a-1f4f-464c-ba08-1d43888ba593] ========
+INFO 2025-08-31 16:51:48,416 views 10820 26700 [2b9c2e1a-1f4f-464c-ba08-1d43888ba593] User Message (after potential transcription): 'shud i start ivesting now?'
+INFO 2025-08-31 16:51:48,416 views 10820 26700 [2b9c2e1a-1f4f-464c-ba08-1d43888ba593] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 16:51:50,711 views 10820 26700 [2b9c2e1a-1f4f-464c-ba08-1d43888ba593] Orchestrator selected agent: 'FinancialAdvisor'
+INFO 2025-08-31 16:51:50,712 views 10820 26700 [2b9c2e1a-1f4f-464c-ba08-1d43888ba593] Delegating to sub-agent: 'FinancialAdvisor'
+INFO 2025-08-31 16:51:50,712 views 10820 26700 [2b9c2e1a-1f4f-464c-ba08-1d43888ba593] STEP 2a: Sub-agent 'FinancialAdvisor' is deciding which tool to use...
+INFO 2025-08-31 16:51:51,286 views 10820 26700 [2b9c2e1a-1f4f-464c-ba08-1d43888ba593] Sub-agent 'FinancialAdvisor' decided to use tool 'search_financial_playbook' with arguments: {'query': 'when to start investing'}
+ERROR 2025-08-31 16:51:51,286 views 10820 26700 [2b9c2e1a-1f4f-464c-ba08-1d43888ba593] An unexpected error occurred while executing tool 'search_financial_playbook'.
+Traceback (most recent call last):
+  File "C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py", line 213, in post
+    tool_result = tool_function(**arguments)
+TypeError: search_financial_playbook() got an unexpected keyword argument 'query'
+INFO 2025-08-31 16:51:51,288 views 10820 26700 [2b9c2e1a-1f4f-464c-ba08-1d43888ba593] FINAL RESPONSE to User: 'An unexpected error occurred. Please contact support.'
+INFO 2025-08-31 16:51:51,288 views 10820 26700 ======== [END REQUEST: 2b9c2e1a-1f4f-464c-ba08-1d43888ba593] ========
+
+INFO 2025-08-31 16:51:51,289 basehttp 10820 26700 "POST /api/chat/ HTTP/1.1" 200 68
+INFO 2025-08-31 16:52:42,251 autoreload 10820 29304 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 16:52:45,070 autoreload 29364 23108 Watching for file changes with StatReloader
+INFO 2025-08-31 16:53:02,868 autoreload 29364 23108 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:53:03,789 autoreload 368 20020 Watching for file changes with StatReloader
+INFO 2025-08-31 16:53:07,664 autoreload 368 20020 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:53:08,451 autoreload 952 27748 Watching for file changes with StatReloader
+INFO 2025-08-31 16:53:18,665 autoreload 952 27748 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:53:19,661 autoreload 20728 21404 Watching for file changes with StatReloader
+INFO 2025-08-31 16:53:23,654 basehttp 20728 10532 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 16:53:23,662 basehttp 20728 29532 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 16:53:23,674 basehttp 20728 29532 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 16:53:23,721 basehttp 20728 29532 "GET /static/assets/index-shc4WIfB.js HTTP/1.1" 304 0
+INFO 2025-08-31 16:53:23,729 basehttp 20728 29320 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 16:53:24,072 basehttp 20728 29532 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 16:53:24,073 basehttp 20728 29320 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:53:24,077 basehttp 20728 24596 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 16:53:24,078 basehttp 20728 9048 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 16:53:24,087 basehttp 20728 29320 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:53:24,129 basehttp 20728 29320 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:53:24,142 basehttp 20728 29320 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:53:24,166 basehttp 20728 29320 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 16:53:24,938 basehttp 20728 29320 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:53:24,952 basehttp 20728 9048 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 16:53:24,966 basehttp 20728 29320 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:53:24,978 basehttp 20728 9048 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 16:53:25,000 basehttp 20728 9048 "GET /api/suggestedprompts/ HTTP/1.1" 200 204
+INFO 2025-08-31 16:53:26,293 views 20728 9048 ======== [START TEXT REQUEST: 21803b34-df31-495d-a2ae-21fd5bc3f03e] ========
+INFO 2025-08-31 16:53:26,293 views 20728 9048 [21803b34-df31-495d-a2ae-21fd5bc3f03e] User Message (after potential transcription): 'shud i start ivesting now?'
+INFO 2025-08-31 16:53:26,293 views 20728 9048 [21803b34-df31-495d-a2ae-21fd5bc3f03e] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 16:53:28,614 views 20728 9048 [21803b34-df31-495d-a2ae-21fd5bc3f03e] Orchestrator selected agent: 'FinancialAdvisor'
+INFO 2025-08-31 16:53:28,615 views 20728 9048 [21803b34-df31-495d-a2ae-21fd5bc3f03e] Delegating to sub-agent: 'FinancialAdvisor'
+INFO 2025-08-31 16:53:28,615 views 20728 9048 [21803b34-df31-495d-a2ae-21fd5bc3f03e] STEP 2a: Sub-agent 'FinancialAdvisor' is deciding which tool to use...
+INFO 2025-08-31 16:53:29,232 views 20728 9048 [21803b34-df31-495d-a2ae-21fd5bc3f03e] Sub-agent 'FinancialAdvisor' decided to use tool 'search_financial_playbook' with arguments: {}
+INFO 2025-08-31 16:53:29,246 views 20728 9048 [21803b34-df31-495d-a2ae-21fd5bc3f03e] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 16:53:30,943 views 20728 9048 [21803b34-df31-495d-a2ae-21fd5bc3f03e] FINALIZER RAW OUTPUT:
+It's a great time to consider investing! To give you the best advice, I need a little more information about you. Could you tell me:
+
+*   **Your age and your main financial goal?** (e.g., are you in your early 20s and looking to build wealth long-term, or are you in your late 40s and focusing on retirement planning?)
+*   **What's your comfort level with risk?** Are you a conservative, moderate, or aggressive investor?
+
+Once I have this, I can help you figure out the best way to get started, perhaps even with an IDFC FIRST Bank 3-in-1 account and a SIP in equity mutual funds if you're aiming for long-term growth!
+INFO 2025-08-31 16:53:30,943 views 20728 9048 [21803b34-df31-495d-a2ae-21fd5bc3f03e] FINAL RESPONSE to User: 'It's a great time to consider investing! To give you the best advice, I need a little more information about you. Could you tell me:
+
+*   **Your age and your main financial goal?** (e.g., are you in your early 20s and looking to build wealth long-term, or are you in your late 40s and focusing on retirement planning?)
+*   **What's your comfort level with risk?** Are you a conservative, moderate, or aggressive investor?
+
+Once I have this, I can help you figure out the best way to get started, perhaps even with an IDFC FIRST Bank 3-in-1 account and a SIP in equity mutual funds if you're aiming for long-term growth!'
+INFO 2025-08-31 16:53:30,944 views 20728 9048 ======== [END REQUEST: 21803b34-df31-495d-a2ae-21fd5bc3f03e] ========
+
+INFO 2025-08-31 16:53:30,945 basehttp 20728 9048 "POST /api/chat/ HTTP/1.1" 200 639
+INFO 2025-08-31 16:53:51,618 basehttp 20728 9048 "GET /admin/ HTTP/1.1" 200 20979
+INFO 2025-08-31 16:53:51,705 basehttp 20728 9048 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-08-31 16:53:55,816 basehttp 20728 9048 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 17745
+INFO 2025-08-31 16:53:55,873 basehttp 20728 9048 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:53:57,530 basehttp 20728 9048 "GET /admin/chatbot/suggestedprompt/3/change/ HTTP/1.1" 200 16500
+INFO 2025-08-31 16:53:57,576 basehttp 20728 9048 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:53:59,918 basehttp 20728 9048 "POST /admin/chatbot/suggestedprompt/3/change/ HTTP/1.1" 302 0
+INFO 2025-08-31 16:53:59,945 basehttp 20728 9048 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 17983
+INFO 2025-08-31 16:53:59,994 basehttp 20728 9048 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:54:53,567 basehttp 20728 9048 "GET /admin/chatbot/suggestedprompt/2/change/ HTTP/1.1" 200 16532
+INFO 2025-08-31 16:54:53,623 basehttp 20728 9048 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:54:54,501 basehttp 20728 9048 "GET /admin/chatbot/suggestedprompt/2/delete/ HTTP/1.1" 200 15446
+INFO 2025-08-31 16:54:55,410 basehttp 20728 9048 "POST /admin/chatbot/suggestedprompt/2/delete/ HTTP/1.1" 302 0
+INFO 2025-08-31 16:54:55,445 basehttp 20728 9048 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 17608
+INFO 2025-08-31 16:54:55,495 basehttp 20728 9048 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:54:56,953 basehttp 20728 9048 "GET /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 200 16195
+INFO 2025-08-31 16:54:57,003 basehttp 20728 9048 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:55:17,433 basehttp 20728 9048 "POST /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 16:55:17,462 basehttp 20728 9048 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 18029
+INFO 2025-08-31 16:55:17,516 basehttp 20728 9048 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:55:19,811 basehttp 20728 9048 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 16:55:19,821 basehttp 20728 29320 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 16:55:19,832 basehttp 20728 29320 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 16:55:19,865 basehttp 20728 29320 "GET /static/assets/index-shc4WIfB.js HTTP/1.1" 304 0
+INFO 2025-08-31 16:55:19,867 basehttp 20728 24596 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 16:55:20,088 basehttp 20728 29320 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 16:55:20,089 basehttp 20728 29532 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 16:55:20,093 basehttp 20728 24596 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:55:20,099 basehttp 20728 28816 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 16:55:20,109 basehttp 20728 24596 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:55:20,123 basehttp 20728 24596 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:55:20,141 basehttp 20728 24596 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:55:20,176 basehttp 20728 24596 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 16:55:21,150 basehttp 20728 24596 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:55:21,155 basehttp 20728 28816 "GET /api/chatbotknowledge/ HTTP/1.1" 200 3853
+INFO 2025-08-31 16:55:21,170 basehttp 20728 24596 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:55:21,519 basehttp 20728 24596 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:55:21,532 basehttp 20728 28816 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 16:55:21,547 basehttp 20728 24596 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:55:21,557 basehttp 20728 28816 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 16:55:21,574 basehttp 20728 28816 "GET /api/suggestedprompts/ HTTP/1.1" 200 216
+INFO 2025-08-31 16:55:24,530 basehttp 20728 28816 "GET /admin/chatbot/creditcardsettings/ HTTP/1.1" 200 16838
+INFO 2025-08-31 16:55:24,574 basehttp 20728 28816 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:55:25,599 basehttp 20728 28816 "GET /admin/chatbot/creditcardsettings/1/change/ HTTP/1.1" 200 20993
+INFO 2025-08-31 16:55:25,655 basehttp 20728 28816 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:55:31,282 views 20728 28816 ======== [START TEXT REQUEST: 3b226e70-4877-4068-b75a-a7972f66c3cd] ========
+INFO 2025-08-31 16:55:31,283 views 20728 28816 [3b226e70-4877-4068-b75a-a7972f66c3cd] User Message (after potential transcription): 'Enable international payments for my credit card'
+INFO 2025-08-31 16:55:31,285 views 20728 28816 [3b226e70-4877-4068-b75a-a7972f66c3cd] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 16:55:33,618 views 20728 28816 [3b226e70-4877-4068-b75a-a7972f66c3cd] Orchestrator selected agent: 'SecurityOfficer'
+INFO 2025-08-31 16:55:33,619 views 20728 28816 [3b226e70-4877-4068-b75a-a7972f66c3cd] Delegating to sub-agent: 'SecurityOfficer'
+INFO 2025-08-31 16:55:33,619 views 20728 28816 [3b226e70-4877-4068-b75a-a7972f66c3cd] STEP 2a: Sub-agent 'SecurityOfficer' is deciding which tool to use...
+INFO 2025-08-31 16:55:34,304 views 20728 28816 [3b226e70-4877-4068-b75a-a7972f66c3cd] Sub-agent 'SecurityOfficer' decided to use tool 'toggle_international_transactions' with arguments: {'card_type': 'credit', 'enabled': True}
+INFO 2025-08-31 16:55:34,307 views 20728 28816 [3b226e70-4877-4068-b75a-a7972f66c3cd] TOOL OUTPUT (RAW): 'International transaction setting not available for card ending in .'
+INFO 2025-08-31 16:55:34,307 views 20728 28816 [3b226e70-4877-4068-b75a-a7972f66c3cd] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 16:55:35,610 views 20728 28816 [3b226e70-4877-4068-b75a-a7972f66c3cd] FINALIZER RAW OUTPUT:
+Unfortunately, the setting to enable international payments is not available for your card ending in . We apologize for any inconvenience this may cause.
+INFO 2025-08-31 16:55:35,611 views 20728 28816 [3b226e70-4877-4068-b75a-a7972f66c3cd] FINAL RESPONSE to User: 'Unfortunately, the setting to enable international payments is not available for your card ending in . We apologize for any inconvenience this may cause.'
+INFO 2025-08-31 16:55:35,611 views 20728 28816 ======== [END REQUEST: 3b226e70-4877-4068-b75a-a7972f66c3cd] ========
+
+INFO 2025-08-31 16:55:35,612 basehttp 20728 28816 "POST /api/chat/ HTTP/1.1" 200 168
+INFO 2025-08-31 16:56:51,858 autoreload 20728 21404 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:56:54,640 autoreload 14820 28000 Watching for file changes with StatReloader
+INFO 2025-08-31 16:57:11,826 autoreload 14820 28000 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:57:12,611 autoreload 10184 12804 Watching for file changes with StatReloader
+INFO 2025-08-31 16:57:57,855 autoreload 10184 12804 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:57:58,662 autoreload 23544 29656 Watching for file changes with StatReloader
+INFO 2025-08-31 16:58:02,266 autoreload 23544 29656 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:58:03,043 autoreload 14656 8348 Watching for file changes with StatReloader
+INFO 2025-08-31 16:58:17,516 autoreload 14656 8348 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 16:58:18,393 autoreload 956 12004 Watching for file changes with StatReloader
+INFO 2025-08-31 16:58:20,756 basehttp 956 26096 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 16:58:20,765 basehttp 956 11684 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 16:58:20,775 basehttp 956 11684 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 16:58:20,821 basehttp 956 11684 "GET /static/assets/index-shc4WIfB.js HTTP/1.1" 304 0
+INFO 2025-08-31 16:58:20,827 basehttp 956 24620 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 16:58:21,197 basehttp 956 24620 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:58:21,197 basehttp 956 11684 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 16:58:21,197 basehttp 956 7476 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 16:58:21,198 basehttp 956 25212 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 16:58:21,211 basehttp 956 24620 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:58:21,254 basehttp 956 24620 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:58:21,268 basehttp 956 24620 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:58:21,289 basehttp 956 24620 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 16:58:23,511 basehttp 956 24620 "GET /admin/chatbot/creditcardsettings/1/change/ HTTP/1.1" 200 20993
+INFO 2025-08-31 16:58:23,557 basehttp 956 24620 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 16:58:25,147 basehttp 956 24620 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 16:58:25,147 basehttp 956 7476 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 16:58:25,169 basehttp 956 7476 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 16:58:25,170 basehttp 956 24620 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 16:58:25,191 basehttp 956 24620 "GET /api/suggestedprompts/ HTTP/1.1" 200 216
+INFO 2025-08-31 16:58:26,641 views 956 24620 ======== [START TEXT REQUEST: d922fa42-ec6a-407a-89b4-7c6e52efb526] ========
+INFO 2025-08-31 16:58:26,642 views 956 24620 [d922fa42-ec6a-407a-89b4-7c6e52efb526] User Message (after potential transcription): 'Enable international payments for my credit card'
+INFO 2025-08-31 16:58:26,642 views 956 24620 [d922fa42-ec6a-407a-89b4-7c6e52efb526] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 16:58:28,993 views 956 24620 [d922fa42-ec6a-407a-89b4-7c6e52efb526] Orchestrator selected agent: 'SecurityOfficer'
+INFO 2025-08-31 16:58:28,993 views 956 24620 [d922fa42-ec6a-407a-89b4-7c6e52efb526] Delegating to sub-agent: 'SecurityOfficer'
+INFO 2025-08-31 16:58:28,994 views 956 24620 [d922fa42-ec6a-407a-89b4-7c6e52efb526] STEP 2a: Sub-agent 'SecurityOfficer' is deciding which tool to use...
+INFO 2025-08-31 16:58:29,641 views 956 24620 [d922fa42-ec6a-407a-89b4-7c6e52efb526] Sub-agent 'SecurityOfficer' decided to use tool 'toggle_international_transactions' with arguments: {'card_type': 'credit', 'enabled': True}
+INFO 2025-08-31 16:58:29,644 views 956 24620 [d922fa42-ec6a-407a-89b4-7c6e52efb526] TOOL OUTPUT (RAW): 'International transaction setting not available for the card'
+INFO 2025-08-31 16:58:29,644 views 956 24620 [d922fa42-ec6a-407a-89b4-7c6e52efb526] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 16:58:30,906 views 956 24620 [d922fa42-ec6a-407a-89b4-7c6e52efb526] FINALIZER RAW OUTPUT:
+Unfortunately, the international transaction setting is not available for your credit card at this time. We apologize for any inconvenience this may cause.
+INFO 2025-08-31 16:58:30,906 views 956 24620 [d922fa42-ec6a-407a-89b4-7c6e52efb526] FINAL RESPONSE to User: 'Unfortunately, the international transaction setting is not available for your credit card at this time. We apologize for any inconvenience this may cause.'
+INFO 2025-08-31 16:58:30,907 views 956 24620 ======== [END REQUEST: d922fa42-ec6a-407a-89b4-7c6e52efb526] ========
+
+INFO 2025-08-31 16:58:30,908 basehttp 956 24620 "POST /api/chat/ HTTP/1.1" 200 170
+INFO 2025-08-31 17:00:45,104 autoreload 956 12004 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 17:00:47,936 autoreload 3312 19976 Watching for file changes with StatReloader
+INFO 2025-08-31 17:02:28,076 autoreload 3312 19976 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 17:02:29,113 autoreload 11176 23624 Watching for file changes with StatReloader
+INFO 2025-08-31 17:02:30,892 basehttp 11176 14104 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 17:02:30,901 basehttp 11176 15696 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:02:30,912 basehttp 11176 15696 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 17:02:30,950 basehttp 11176 15696 "GET /static/assets/index-shc4WIfB.js HTTP/1.1" 304 0
+INFO 2025-08-31 17:02:30,955 basehttp 11176 29592 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 17:02:31,191 basehttp 11176 29592 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:02:31,194 basehttp 11176 15696 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 17:02:31,194 basehttp 11176 13624 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 17:02:31,194 basehttp 11176 25544 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 17:02:31,203 basehttp 11176 29592 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:02:31,237 basehttp 11176 29592 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:02:31,250 basehttp 11176 29592 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:02:31,272 basehttp 11176 29592 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 17:02:32,137 basehttp 11176 29592 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:02:32,141 basehttp 11176 15696 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:02:32,162 basehttp 11176 15696 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:02:32,162 basehttp 11176 29592 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:02:32,184 basehttp 11176 29592 "GET /api/suggestedprompts/ HTTP/1.1" 200 216
+INFO 2025-08-31 17:02:33,672 views 11176 29592 ======== [START TEXT REQUEST: 7474817d-22e8-4265-ba03-46b70eb1d66a] ========
+INFO 2025-08-31 17:02:33,673 views 11176 29592 [7474817d-22e8-4265-ba03-46b70eb1d66a] User Message (after potential transcription): 'Enable international payments for my credit card'
+INFO 2025-08-31 17:02:33,673 views 11176 29592 [7474817d-22e8-4265-ba03-46b70eb1d66a] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:02:36,080 views 11176 29592 [7474817d-22e8-4265-ba03-46b70eb1d66a] Orchestrator selected agent: 'SecurityOfficer'
+INFO 2025-08-31 17:02:36,080 views 11176 29592 [7474817d-22e8-4265-ba03-46b70eb1d66a] Delegating to sub-agent: 'SecurityOfficer'
+INFO 2025-08-31 17:02:36,081 views 11176 29592 [7474817d-22e8-4265-ba03-46b70eb1d66a] STEP 2a: Sub-agent 'SecurityOfficer' is deciding which tool to use...
+INFO 2025-08-31 17:02:36,944 views 11176 29592 [7474817d-22e8-4265-ba03-46b70eb1d66a] Sub-agent 'SecurityOfficer' decided to use tool 'toggle_international_transactions' with arguments: {'card_type': 'credit', 'enabled': True}
+INFO 2025-08-31 17:02:36,955 views 11176 29592 [7474817d-22e8-4265-ba03-46b70eb1d66a] TOOL OUTPUT (RAW): 'Success: International transactions for Credit Card ...6789 is now enabled.'
+INFO 2025-08-31 17:02:36,956 views 11176 29592 [7474817d-22e8-4265-ba03-46b70eb1d66a] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 17:02:38,054 views 11176 29592 [7474817d-22e8-4265-ba03-46b70eb1d66a] FINALIZER RAW OUTPUT:
+Great news! Your credit card ending in ...6789 is now set up to make international payments. You're all ready to go for your travels or international purchases!
+INFO 2025-08-31 17:02:38,054 views 11176 29592 [7474817d-22e8-4265-ba03-46b70eb1d66a] FINAL RESPONSE to User: 'Great news! Your credit card ending in ...6789 is now set up to make international payments. You're all ready to go for your travels or international purchases!'
+INFO 2025-08-31 17:02:38,055 views 11176 29592 ======== [END REQUEST: 7474817d-22e8-4265-ba03-46b70eb1d66a] ========
+
+INFO 2025-08-31 17:02:38,056 basehttp 11176 29592 "POST /api/chat/ HTTP/1.1" 200 175
+INFO 2025-08-31 17:02:41,321 basehttp 11176 29592 "GET /admin/chatbot/creditcardsettings/1/change/ HTTP/1.1" 200 21001
+INFO 2025-08-31 17:02:41,362 basehttp 11176 29592 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:02:44,422 basehttp 11176 29592 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 17:02:44,430 basehttp 11176 15696 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:02:44,440 basehttp 11176 15696 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 17:02:44,662 basehttp 11176 25544 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 17:02:44,664 basehttp 11176 15696 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:02:44,668 basehttp 11176 13624 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 17:02:44,671 basehttp 11176 7668 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 17:02:44,679 basehttp 11176 15696 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:02:44,703 basehttp 11176 15696 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:02:44,718 basehttp 11176 15696 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:02:44,737 basehttp 11176 15696 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 17:02:45,638 basehttp 11176 15696 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:02:45,647 basehttp 11176 7668 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:02:45,667 basehttp 11176 7668 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:02:45,672 basehttp 11176 15696 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:02:45,690 basehttp 11176 15696 "GET /api/suggestedprompts/ HTTP/1.1" 200 216
+INFO 2025-08-31 17:02:50,239 views 11176 15696 ======== [START TEXT REQUEST: dfb398f3-71ce-4eba-bb32-0f138a054fed] ========
+INFO 2025-08-31 17:02:50,240 views 11176 15696 [dfb398f3-71ce-4eba-bb32-0f138a054fed] User Message (after potential transcription): 'Disable international payments for my credit card'
+INFO 2025-08-31 17:02:50,240 views 11176 15696 [dfb398f3-71ce-4eba-bb32-0f138a054fed] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:02:52,185 views 11176 15696 [dfb398f3-71ce-4eba-bb32-0f138a054fed] Orchestrator selected agent: 'SecurityOfficer'
+INFO 2025-08-31 17:02:52,185 views 11176 15696 [dfb398f3-71ce-4eba-bb32-0f138a054fed] Delegating to sub-agent: 'SecurityOfficer'
+INFO 2025-08-31 17:02:52,186 views 11176 15696 [dfb398f3-71ce-4eba-bb32-0f138a054fed] STEP 2a: Sub-agent 'SecurityOfficer' is deciding which tool to use...
+INFO 2025-08-31 17:02:52,890 views 11176 15696 [dfb398f3-71ce-4eba-bb32-0f138a054fed] Sub-agent 'SecurityOfficer' decided to use tool 'toggle_international_transactions' with arguments: {'card_type': 'credit', 'enabled': False}
+INFO 2025-08-31 17:02:52,899 views 11176 15696 [dfb398f3-71ce-4eba-bb32-0f138a054fed] TOOL OUTPUT (RAW): 'Success: International transactions for Credit Card ...6789 is now disabled.'
+INFO 2025-08-31 17:02:52,899 views 11176 15696 [dfb398f3-71ce-4eba-bb32-0f138a054fed] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 17:02:53,592 views 11176 15696 [dfb398f3-71ce-4eba-bb32-0f138a054fed] FINALIZER RAW OUTPUT:
+Your credit card ending in ...6789 has been updated. International transactions are now disabled for this card.
+INFO 2025-08-31 17:02:53,592 views 11176 15696 [dfb398f3-71ce-4eba-bb32-0f138a054fed] FINAL RESPONSE to User: 'Your credit card ending in ...6789 has been updated. International transactions are now disabled for this card.'
+INFO 2025-08-31 17:02:53,592 views 11176 15696 ======== [END REQUEST: dfb398f3-71ce-4eba-bb32-0f138a054fed] ========
+
+INFO 2025-08-31 17:02:53,593 basehttp 11176 15696 "POST /api/chat/ HTTP/1.1" 200 126
+INFO 2025-08-31 17:02:58,220 basehttp 11176 15696 "GET /admin/chatbot/creditcardsettings/1/change/ HTTP/1.1" 200 20993
+INFO 2025-08-31 17:02:58,268 basehttp 11176 15696 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:03:04,560 views 11176 15696 ======== [START TEXT REQUEST: 394f5924-c859-4436-9493-327757653fb6] ========
+INFO 2025-08-31 17:03:04,560 views 11176 15696 [394f5924-c859-4436-9493-327757653fb6] User Message (after potential transcription): 'Tell me about your credit card offers.'
+INFO 2025-08-31 17:03:04,561 views 11176 15696 [394f5924-c859-4436-9493-327757653fb6] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:03:06,630 views 11176 15696 [394f5924-c859-4436-9493-327757653fb6] Orchestrator selected agent: 'FinancialAdvisor'
+INFO 2025-08-31 17:03:06,630 views 11176 15696 [394f5924-c859-4436-9493-327757653fb6] Delegating to sub-agent: 'FinancialAdvisor'
+INFO 2025-08-31 17:03:06,630 views 11176 15696 [394f5924-c859-4436-9493-327757653fb6] STEP 2a: Sub-agent 'FinancialAdvisor' is deciding which tool to use...
+INFO 2025-08-31 17:03:07,206 views 11176 15696 [394f5924-c859-4436-9493-327757653fb6] Sub-agent 'FinancialAdvisor' decided to use tool 'search_financial_playbook' with arguments: {}
+INFO 2025-08-31 17:03:07,218 views 11176 15696 [394f5924-c859-4436-9493-327757653fb6] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 17:03:09,124 views 11176 15696 [394f5924-c859-4436-9493-327757653fb6] FINALIZER RAW OUTPUT:
+Certainly! I can help you with information about IDFC FIRST Bank credit cards.
+
+To recommend the best credit card for you, could you tell me a bit more about what you're looking for? For example:
+
+*   **What is your main reason for wanting a credit card?** Are you looking for rewards (like travel or shopping points), trying to build your credit score, or do you primarily need it for managing expenses?
+*   **Do you typically pay your credit card bill in full each month?**
+
+Once I have this information, I can tell you more about how IDFC FIRST Bank credit cards can be a great choice for you. Our cards offer rewards that never expire, low or no annual fees, and competitive interest rates starting from just 9% per annum, giving you peace of mind.
+INFO 2025-08-31 17:03:09,125 views 11176 15696 [394f5924-c859-4436-9493-327757653fb6] FINAL RESPONSE to User: 'Certainly! I can help you with information about IDFC FIRST Bank credit cards.
+
+To recommend the best credit card for you, could you tell me a bit more about what you're looking for? For example:
+
+*   **What is your main reason for wanting a credit card?** Are you looking for rewards (like travel or shopping points), trying to build your credit score, or do you primarily need it for managing expenses?
+*   **Do you typically pay your credit card bill in full each month?**
+
+Once I have this information, I can tell you more about how IDFC FIRST Bank credit cards can be a great choice for you. Our cards offer rewards that never expire, low or no annual fees, and competitive interest rates starting from just 9% per annum, giving you peace of mind.'
+INFO 2025-08-31 17:03:09,125 views 11176 15696 ======== [END REQUEST: 394f5924-c859-4436-9493-327757653fb6] ========
+
+INFO 2025-08-31 17:03:09,126 basehttp 11176 15696 "POST /api/chat/ HTTP/1.1" 200 774
+INFO 2025-08-31 17:03:23,247 basehttp 11176 15696 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 17:03:23,257 basehttp 11176 7668 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:03:23,266 basehttp 11176 7668 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 17:03:23,562 basehttp 11176 13624 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 17:03:23,567 basehttp 11176 25544 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 17:03:23,568 basehttp 11176 7668 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:03:23,571 basehttp 11176 24700 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 17:03:23,590 basehttp 11176 7668 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:03:23,613 basehttp 11176 7668 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:03:23,627 basehttp 11176 7668 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:03:23,650 basehttp 11176 7668 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 17:03:24,683 basehttp 11176 7668 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:03:24,690 basehttp 11176 25544 "GET /api/chatbotknowledge/ HTTP/1.1" 200 3853
+INFO 2025-08-31 17:03:24,706 basehttp 11176 25544 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:03:25,297 basehttp 11176 25544 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:03:25,315 basehttp 11176 7668 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:03:25,331 basehttp 11176 7668 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:03:25,343 basehttp 11176 25544 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:03:25,363 basehttp 11176 25544 "GET /api/suggestedprompts/ HTTP/1.1" 200 216
+INFO 2025-08-31 17:03:27,617 views 11176 25544 ======== [START TEXT REQUEST: 68bcd2c0-4371-4b97-bc9e-1b25d3eb10de] ========
+INFO 2025-08-31 17:03:27,617 views 11176 25544 [68bcd2c0-4371-4b97-bc9e-1b25d3eb10de] User Message (after potential transcription): 'What is my account balance?'
+INFO 2025-08-31 17:03:27,618 views 11176 25544 [68bcd2c0-4371-4b97-bc9e-1b25d3eb10de] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:03:29,613 views 11176 25544 [68bcd2c0-4371-4b97-bc9e-1b25d3eb10de] Orchestrator selected agent: 'AccountSpecialist'
+INFO 2025-08-31 17:03:29,614 views 11176 25544 [68bcd2c0-4371-4b97-bc9e-1b25d3eb10de] Delegating to sub-agent: 'AccountSpecialist'
+INFO 2025-08-31 17:03:29,614 views 11176 25544 [68bcd2c0-4371-4b97-bc9e-1b25d3eb10de] STEP 2a: Sub-agent 'AccountSpecialist' is deciding which tool to use...
+ERROR 2025-08-31 17:03:30,332 views 11176 25544 [68bcd2c0-4371-4b97-bc9e-1b25d3eb10de] Sub-agent 'AccountSpecialist' failed to produce a valid tool call or tool execution failed: Expecting value: line 1 column 1 (char 0). Raw response: The user is asking for their account balance, but the `get_account_balance` tool requires an `account_number`. To get the account number, I first need to list all available accounts. Therefore, I should call the `get_user_accounts` tool.
+
+```json
+{
+  "tool_name": "get_user_accounts",
+  "arguments": {}
+}
+```
+INFO 2025-08-31 17:03:30,333 views 11176 25544 [68bcd2c0-4371-4b97-bc9e-1b25d3eb10de] FINAL RESPONSE to User: 'I'm sorry, I was unable to complete that action. Please try again.'
+INFO 2025-08-31 17:03:30,333 views 11176 25544 ======== [END REQUEST: 68bcd2c0-4371-4b97-bc9e-1b25d3eb10de] ========
+
+INFO 2025-08-31 17:03:30,335 basehttp 11176 25544 "POST /api/chat/ HTTP/1.1" 200 81
+INFO 2025-08-31 17:04:41,933 autoreload 11176 23624 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 17:04:44,742 autoreload 27864 20860 Watching for file changes with StatReloader
+INFO 2025-08-31 17:04:47,899 basehttp 27864 5512 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 17:04:47,906 basehttp 27864 13588 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:04:47,918 basehttp 27864 13588 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 17:04:47,948 basehttp 27864 13588 "GET /static/assets/index-shc4WIfB.js HTTP/1.1" 304 0
+INFO 2025-08-31 17:04:47,954 basehttp 27864 21052 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 17:04:48,192 basehttp 27864 21052 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:04:48,200 basehttp 27864 16424 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 17:04:48,210 basehttp 27864 13588 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 17:04:48,213 basehttp 27864 21052 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:04:48,217 basehttp 27864 23088 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 17:04:48,232 basehttp 27864 23088 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:04:48,247 basehttp 27864 23088 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:04:48,268 basehttp 27864 23088 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 17:04:48,845 basehttp 27864 23088 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:04:48,851 basehttp 27864 21052 "GET /api/chatbotknowledge/ HTTP/1.1" 200 3853
+INFO 2025-08-31 17:04:48,868 basehttp 27864 21052 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:04:49,182 basehttp 27864 21052 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:04:49,193 basehttp 27864 23088 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:04:49,205 basehttp 27864 21052 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:04:49,212 basehttp 27864 23088 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:04:49,232 basehttp 27864 23088 "GET /api/suggestedprompts/ HTTP/1.1" 200 216
+INFO 2025-08-31 17:04:51,436 views 27864 23088 ======== [START TEXT REQUEST: 30a24f19-7a34-4091-8219-fbad98780cf0] ========
+INFO 2025-08-31 17:04:51,438 views 27864 23088 [30a24f19-7a34-4091-8219-fbad98780cf0] User Message (after potential transcription): 'What is my account balance?'
+INFO 2025-08-31 17:04:51,439 views 27864 23088 [30a24f19-7a34-4091-8219-fbad98780cf0] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:04:53,717 views 27864 23088 [30a24f19-7a34-4091-8219-fbad98780cf0] Orchestrator selected agent: 'AccountSpecialist'
+INFO 2025-08-31 17:04:53,718 views 27864 23088 [30a24f19-7a34-4091-8219-fbad98780cf0] Delegating to sub-agent: 'AccountSpecialist'
+INFO 2025-08-31 17:04:53,718 views 27864 23088 [30a24f19-7a34-4091-8219-fbad98780cf0] STEP 2a: Sub-agent 'AccountSpecialist' is deciding which tool to use...
+INFO 2025-08-31 17:04:54,338 views 27864 23088 [30a24f19-7a34-4091-8219-fbad98780cf0] Sub-agent 'AccountSpecialist' decided to use tool 'get_user_accounts' with arguments: {}
+INFO 2025-08-31 17:04:54,349 views 27864 23088 [30a24f19-7a34-4091-8219-fbad98780cf0] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 17:04:55,782 views 27864 23088 ======== [END REQUEST: 30a24f19-7a34-4091-8219-fbad98780cf0] ========
+
+INFO 2025-08-31 17:04:55,783 basehttp 27864 23088 "POST /api/chat/ HTTP/1.1" 200 212
+INFO 2025-08-31 17:05:17,006 basehttp 27864 23088 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 17:05:17,018 basehttp 27864 21052 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:05:17,028 basehttp 27864 21052 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 17:05:17,353 basehttp 27864 16424 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 17:05:17,357 basehttp 27864 13588 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 17:05:17,358 basehttp 27864 26824 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 17:05:17,363 basehttp 27864 21052 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:05:17,380 basehttp 27864 26824 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:05:17,394 basehttp 27864 26824 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:05:17,408 basehttp 27864 26824 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:05:17,425 basehttp 27864 26824 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 17:05:18,202 basehttp 27864 26824 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:05:18,204 basehttp 27864 21052 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:05:18,232 basehttp 27864 26824 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:05:18,232 basehttp 27864 21052 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:05:18,250 basehttp 27864 26824 "GET /api/suggestedprompts/ HTTP/1.1" 200 216
+INFO 2025-08-31 17:05:19,961 views 27864 26824 ======== [START TEXT REQUEST: d2e55ba5-c397-4b2a-86f0-fd04e7417cfb] ========
+INFO 2025-08-31 17:05:19,961 views 27864 26824 [d2e55ba5-c397-4b2a-86f0-fd04e7417cfb] User Message (after potential transcription): 'What is my account balance?'
+INFO 2025-08-31 17:05:19,963 views 27864 26824 [d2e55ba5-c397-4b2a-86f0-fd04e7417cfb] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:05:22,044 views 27864 26824 [d2e55ba5-c397-4b2a-86f0-fd04e7417cfb] Orchestrator selected agent: 'AccountSpecialist'
+INFO 2025-08-31 17:05:22,044 views 27864 26824 [d2e55ba5-c397-4b2a-86f0-fd04e7417cfb] Delegating to sub-agent: 'AccountSpecialist'
+INFO 2025-08-31 17:05:22,045 views 27864 26824 [d2e55ba5-c397-4b2a-86f0-fd04e7417cfb] STEP 2a: Sub-agent 'AccountSpecialist' is deciding which tool to use...
+INFO 2025-08-31 17:05:22,683 views 27864 26824 [d2e55ba5-c397-4b2a-86f0-fd04e7417cfb] Sub-agent 'AccountSpecialist' decided to use tool 'get_user_accounts' with arguments: {}
+INFO 2025-08-31 17:05:22,691 views 27864 26824 [d2e55ba5-c397-4b2a-86f0-fd04e7417cfb] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 17:05:24,047 views 27864 26824 ======== [END REQUEST: d2e55ba5-c397-4b2a-86f0-fd04e7417cfb] ========
+
+INFO 2025-08-31 17:05:24,048 basehttp 27864 26824 "POST /api/chat/ HTTP/1.1" 200 193
+INFO 2025-08-31 17:07:00,879 autoreload 27864 20860 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 17:07:03,861 autoreload 29232 10988 Watching for file changes with StatReloader
+INFO 2025-08-31 17:07:23,784 autoreload 29232 10988 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 17:07:24,747 autoreload 28752 15260 Watching for file changes with StatReloader
+INFO 2025-08-31 17:07:28,756 basehttp 28752 2920 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 17:07:28,764 basehttp 28752 14076 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:07:28,774 basehttp 28752 14076 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 17:07:28,820 basehttp 28752 14076 "GET /static/assets/index-shc4WIfB.js HTTP/1.1" 304 0
+INFO 2025-08-31 17:07:28,826 basehttp 28752 29424 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 17:07:29,136 basehttp 28752 29424 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:07:29,137 basehttp 28752 14076 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 17:07:29,141 basehttp 28752 29388 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 17:07:29,147 basehttp 28752 26776 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 17:07:29,157 basehttp 28752 29388 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:07:29,174 basehttp 28752 26776 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:07:29,197 basehttp 28752 26776 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:07:29,224 basehttp 28752 26776 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 17:07:32,934 basehttp 28752 26776 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:07:32,941 basehttp 28752 29388 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:07:32,961 basehttp 28752 29388 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:07:32,964 basehttp 28752 26776 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:07:32,982 basehttp 28752 26776 "GET /api/suggestedprompts/ HTTP/1.1" 200 216
+INFO 2025-08-31 17:07:35,270 views 28752 26776 ======== [START TEXT REQUEST: 29a6c191-0e6f-4bf9-99e5-59e8e9a96d85] ========
+INFO 2025-08-31 17:07:35,271 views 28752 26776 [29a6c191-0e6f-4bf9-99e5-59e8e9a96d85] User Message (after potential transcription): 'What is my account balance?'
+INFO 2025-08-31 17:07:35,272 views 28752 26776 [29a6c191-0e6f-4bf9-99e5-59e8e9a96d85] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:07:37,690 views 28752 26776 [29a6c191-0e6f-4bf9-99e5-59e8e9a96d85] Orchestrator selected agent: 'AccountSpecialist'
+INFO 2025-08-31 17:07:37,690 views 28752 26776 [29a6c191-0e6f-4bf9-99e5-59e8e9a96d85] Delegating to sub-agent: 'AccountSpecialist'
+INFO 2025-08-31 17:07:37,691 views 28752 26776 [29a6c191-0e6f-4bf9-99e5-59e8e9a96d85] STEP 2a: Sub-agent 'AccountSpecialist' is deciding which tool to use...
+INFO 2025-08-31 17:07:38,323 views 28752 26776 [29a6c191-0e6f-4bf9-99e5-59e8e9a96d85] Sub-agent 'AccountSpecialist' decided to use tool 'get_user_accounts' with arguments: {}
+INFO 2025-08-31 17:07:38,333 views 28752 26776 [29a6c191-0e6f-4bf9-99e5-59e8e9a96d85] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 17:07:39,829 views 28752 26776 ======== [END REQUEST: 29a6c191-0e6f-4bf9-99e5-59e8e9a96d85] ========
+
+INFO 2025-08-31 17:07:39,831 basehttp 28752 26776 "POST /api/chat/ HTTP/1.1" 200 212
+INFO 2025-08-31 17:07:44,599 basehttp 28752 29388 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 17:07:44,600 basehttp 28752 26776 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:07:44,618 basehttp 28752 26776 "GET /api/transactions/choices/ HTTP/1.1" 200 481
+INFO 2025-08-31 17:07:44,623 basehttp 28752 29388 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:07:45,857 basehttp 28752 29388 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:07:45,864 basehttp 28752 26776 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:07:45,880 basehttp 28752 26776 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:07:45,886 basehttp 28752 29388 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:07:45,903 basehttp 28752 29388 "GET /api/suggestedprompts/ HTTP/1.1" 200 216
+INFO 2025-08-31 17:07:52,671 views 28752 29388 ======== [START TEXT REQUEST: 9b155c26-0b09-4dc9-affb-db22ac65a885] ========
+INFO 2025-08-31 17:07:52,673 views 28752 29388 [9b155c26-0b09-4dc9-affb-db22ac65a885] User Message (after potential transcription): 'get me a list of my transactions'
+INFO 2025-08-31 17:07:52,674 views 28752 29388 [9b155c26-0b09-4dc9-affb-db22ac65a885] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:07:54,935 views 28752 29388 [9b155c26-0b09-4dc9-affb-db22ac65a885] Orchestrator selected agent: 'AccountSpecialist'
+INFO 2025-08-31 17:07:54,936 views 28752 29388 [9b155c26-0b09-4dc9-affb-db22ac65a885] Delegating to sub-agent: 'AccountSpecialist'
+INFO 2025-08-31 17:07:54,936 views 28752 29388 [9b155c26-0b09-4dc9-affb-db22ac65a885] STEP 2a: Sub-agent 'AccountSpecialist' is deciding which tool to use...
+ERROR 2025-08-31 17:07:55,653 views 28752 29388 [9b155c26-0b09-4dc9-affb-db22ac65a885] Sub-agent 'AccountSpecialist' failed to produce a valid tool call or tool execution failed: Sub-agent did not return a tool name.. Raw response: {
+  "error": "I can list recent transactions, but I need to know which account you're interested in. Would you like to see transactions from a specific account, or all of your accounts?"
+}
+INFO 2025-08-31 17:07:55,653 views 28752 29388 [9b155c26-0b09-4dc9-affb-db22ac65a885] FINAL RESPONSE to User: 'I'm sorry, I was unable to complete that action. Please try again.'
+INFO 2025-08-31 17:07:55,654 views 28752 29388 ======== [END REQUEST: 9b155c26-0b09-4dc9-affb-db22ac65a885] ========
+
+INFO 2025-08-31 17:07:55,654 basehttp 28752 29388 "POST /api/chat/ HTTP/1.1" 200 81
+INFO 2025-08-31 17:08:14,260 autoreload 2928 29516 Watching for file changes with StatReloader
+INFO 2025-08-31 17:08:19,561 basehttp 2928 15992 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 17769
+INFO 2025-08-31 17:08:19,620 basehttp 2928 15992 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:08:22,079 basehttp 2928 15992 "GET /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 200 16195
+INFO 2025-08-31 17:08:22,121 basehttp 2928 15992 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:08:28,676 basehttp 2928 15992 "POST /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:08:28,701 basehttp 2928 15992 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 18342
+INFO 2025-08-31 17:08:28,746 basehttp 2928 15992 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:08:31,855 basehttp 2928 15992 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 17:08:31,865 basehttp 2928 23800 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:08:31,874 basehttp 2928 23800 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 17:08:32,140 basehttp 2928 23800 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:08:32,142 basehttp 2928 11816 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 17:08:32,144 basehttp 2928 1552 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 17:08:32,157 basehttp 2928 14848 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 17:08:32,161 basehttp 2928 23800 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:08:32,180 basehttp 2928 23800 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:08:32,192 basehttp 2928 23800 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:08:32,222 basehttp 2928 23800 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 17:08:33,308 basehttp 2928 23800 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:08:33,308 basehttp 2928 14848 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:08:33,338 basehttp 2928 14848 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:08:33,340 basehttp 2928 23800 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:08:33,359 basehttp 2928 23800 "GET /api/suggestedprompts/ HTTP/1.1" 200 269
+INFO 2025-08-31 17:08:37,318 views 2928 23800 ======== [START TEXT REQUEST: 717ebdb4-3479-4797-9153-c648860cbe44] ========
+INFO 2025-08-31 17:08:37,319 views 2928 23800 [717ebdb4-3479-4797-9153-c648860cbe44] User Message (after potential transcription): 'get me the list of my transactions'
+INFO 2025-08-31 17:08:37,319 views 2928 23800 [717ebdb4-3479-4797-9153-c648860cbe44] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:08:39,582 views 2928 23800 [717ebdb4-3479-4797-9153-c648860cbe44] Orchestrator selected agent: 'AccountSpecialist'
+INFO 2025-08-31 17:08:39,583 views 2928 23800 [717ebdb4-3479-4797-9153-c648860cbe44] Delegating to sub-agent: 'AccountSpecialist'
+INFO 2025-08-31 17:08:39,583 views 2928 23800 [717ebdb4-3479-4797-9153-c648860cbe44] STEP 2a: Sub-agent 'AccountSpecialist' is deciding which tool to use...
+ERROR 2025-08-31 17:08:40,738 views 2928 23800 [717ebdb4-3479-4797-9153-c648860cbe44] Sub-agent 'AccountSpecialist' failed to produce a valid tool call or tool execution failed: Expecting value: line 1 column 1 (char 0). Raw response: The user wants a list of their transactions. The `list_recent_transactions` tool can be used for this purpose. However, it requires an account number, which is not provided in the user's request. The `get_user_accounts` tool can provide a list of accounts, which can then be used to satisfy the `list_recent_transactions` tool. Therefore, the `get_user_accounts` tool should be called first. Since no specific limit was mentioned, I will not specify one in the call.
+
+```json
+{
+  "tool_name": "get_user_accounts",
+  "arguments": {}
+}
+```
+INFO 2025-08-31 17:08:40,738 views 2928 23800 [717ebdb4-3479-4797-9153-c648860cbe44] FINAL RESPONSE to User: 'I'm sorry, I was unable to complete that action. Please try again.'
+INFO 2025-08-31 17:08:40,738 views 2928 23800 ======== [END REQUEST: 717ebdb4-3479-4797-9153-c648860cbe44] ========
+
+INFO 2025-08-31 17:08:40,739 basehttp 2928 23800 "POST /api/chat/ HTTP/1.1" 200 81
+INFO 2025-08-31 17:09:04,029 autoreload 2928 29516 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\tools.py changed, reloading.
+INFO 2025-08-31 17:09:06,845 autoreload 23852 4812 Watching for file changes with StatReloader
+INFO 2025-08-31 17:09:11,306 basehttp 23852 11684 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 17:09:11,317 basehttp 23852 15924 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:09:11,328 basehttp 23852 15924 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 17:09:11,601 basehttp 23852 15924 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:09:11,608 basehttp 23852 24744 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 17:09:11,609 basehttp 23852 3716 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 17:09:11,617 basehttp 23852 9028 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 17:09:11,620 basehttp 23852 15924 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:09:11,634 basehttp 23852 3716 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:09:11,665 basehttp 23852 3716 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:09:11,684 basehttp 23852 3716 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 17:09:12,363 basehttp 23852 3716 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:09:12,374 basehttp 23852 15924 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:09:12,396 basehttp 23852 15924 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:09:12,400 basehttp 23852 3716 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:09:12,419 basehttp 23852 3716 "GET /api/suggestedprompts/ HTTP/1.1" 200 269
+INFO 2025-08-31 17:09:14,223 views 23852 3716 ======== [START TEXT REQUEST: d19fb738-5705-47d8-a4b2-ba81c1d2a253] ========
+INFO 2025-08-31 17:09:14,224 views 23852 3716 [d19fb738-5705-47d8-a4b2-ba81c1d2a253] User Message (after potential transcription): 'get me the list of my transactions'
+INFO 2025-08-31 17:09:14,226 views 23852 3716 [d19fb738-5705-47d8-a4b2-ba81c1d2a253] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:09:16,486 views 23852 3716 [d19fb738-5705-47d8-a4b2-ba81c1d2a253] Orchestrator selected agent: 'AccountSpecialist'
+INFO 2025-08-31 17:09:16,487 views 23852 3716 [d19fb738-5705-47d8-a4b2-ba81c1d2a253] Delegating to sub-agent: 'AccountSpecialist'
+INFO 2025-08-31 17:09:16,488 views 23852 3716 [d19fb738-5705-47d8-a4b2-ba81c1d2a253] STEP 2a: Sub-agent 'AccountSpecialist' is deciding which tool to use...
+INFO 2025-08-31 17:09:17,268 views 23852 3716 [d19fb738-5705-47d8-a4b2-ba81c1d2a253] Sub-agent 'AccountSpecialist' decided to use tool 'list_recent_transactions' with arguments: {}
+INFO 2025-08-31 17:09:17,281 views 23852 3716 [d19fb738-5705-47d8-a4b2-ba81c1d2a253] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 17:09:18,641 views 23852 3716 ======== [END REQUEST: d19fb738-5705-47d8-a4b2-ba81c1d2a253] ========
+
+INFO 2025-08-31 17:09:18,641 basehttp 23852 3716 "POST /api/chat/ HTTP/1.1" 200 235
+INFO 2025-08-31 17:09:30,256 basehttp 23852 3716 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:09:30,265 basehttp 23852 15924 "GET /api/transactions/ HTTP/1.1" 200 407
+INFO 2025-08-31 17:09:30,285 basehttp 23852 3716 "GET /api/transactions/choices/ HTTP/1.1" 200 481
+INFO 2025-08-31 17:09:30,291 basehttp 23852 15924 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:09:44,781 basehttp 23852 15924 "POST /api/transactions/ HTTP/1.1" 201 127
+INFO 2025-08-31 17:09:47,821 basehttp 23852 15924 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:09:47,837 basehttp 23852 3716 "GET /api/transactions/ HTTP/1.1" 200 535
+INFO 2025-08-31 17:09:47,837 basehttp 23852 24744 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 17:09:47,845 basehttp 23852 9028 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 17:09:47,860 basehttp 23852 15924 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:09:47,865 basehttp 23852 23048 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:09:47,883 basehttp 23852 23048 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:09:47,906 basehttp 23852 23048 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 17:09:51,737 basehttp 23852 23048 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:09:51,744 basehttp 23852 15924 "GET /api/transactions/ HTTP/1.1" 200 535
+INFO 2025-08-31 17:09:51,758 basehttp 23852 23048 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:09:51,761 basehttp 23852 15924 "GET /api/transactions/choices/ HTTP/1.1" 200 481
+INFO 2025-08-31 17:09:52,721 basehttp 23852 15924 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:09:52,731 basehttp 23852 23048 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:09:52,747 basehttp 23852 15924 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:09:52,759 basehttp 23852 23048 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:09:52,779 basehttp 23852 23048 "GET /api/suggestedprompts/ HTTP/1.1" 200 269
+INFO 2025-08-31 17:09:54,223 views 23852 23048 ======== [START TEXT REQUEST: c20e6757-9427-466b-95bf-2f6e1f29fbf5] ========
+INFO 2025-08-31 17:09:54,224 views 23852 23048 [c20e6757-9427-466b-95bf-2f6e1f29fbf5] User Message (after potential transcription): 'get me the list of my transactions'
+INFO 2025-08-31 17:09:54,224 views 23852 23048 [c20e6757-9427-466b-95bf-2f6e1f29fbf5] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:09:56,349 views 23852 23048 [c20e6757-9427-466b-95bf-2f6e1f29fbf5] Orchestrator selected agent: 'AccountSpecialist'
+INFO 2025-08-31 17:09:56,349 views 23852 23048 [c20e6757-9427-466b-95bf-2f6e1f29fbf5] Delegating to sub-agent: 'AccountSpecialist'
+INFO 2025-08-31 17:09:56,350 views 23852 23048 [c20e6757-9427-466b-95bf-2f6e1f29fbf5] STEP 2a: Sub-agent 'AccountSpecialist' is deciding which tool to use...
+INFO 2025-08-31 17:09:57,182 views 23852 23048 [c20e6757-9427-466b-95bf-2f6e1f29fbf5] Sub-agent 'AccountSpecialist' decided to use tool 'list_recent_transactions' with arguments: {}
+INFO 2025-08-31 17:09:57,191 views 23852 23048 [c20e6757-9427-466b-95bf-2f6e1f29fbf5] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 17:09:58,619 views 23852 23048 ======== [END REQUEST: c20e6757-9427-466b-95bf-2f6e1f29fbf5] ========
+
+INFO 2025-08-31 17:09:58,620 basehttp 23852 23048 "POST /api/chat/ HTTP/1.1" 200 290
+INFO 2025-08-31 17:10:17,387 views 23852 23048 ======== [START TEXT REQUEST: 2be93b84-8e29-4f8a-8a4b-09f715518c5c] ========
+INFO 2025-08-31 17:10:17,388 views 23852 23048 [2be93b84-8e29-4f8a-8a4b-09f715518c5c] User Message (after potential transcription): 'can you provide some insights on how I can reduce my expense?'
+INFO 2025-08-31 17:10:17,389 views 23852 23048 [2be93b84-8e29-4f8a-8a4b-09f715518c5c] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:10:19,740 views 23852 23048 [2be93b84-8e29-4f8a-8a4b-09f715518c5c] Orchestrator selected agent: 'FinancialAdvisor'
+INFO 2025-08-31 17:10:19,740 views 23852 23048 [2be93b84-8e29-4f8a-8a4b-09f715518c5c] Delegating to sub-agent: 'FinancialAdvisor'
+INFO 2025-08-31 17:10:19,741 views 23852 23048 [2be93b84-8e29-4f8a-8a4b-09f715518c5c] STEP 2a: Sub-agent 'FinancialAdvisor' is deciding which tool to use...
+INFO 2025-08-31 17:10:20,327 views 23852 23048 [2be93b84-8e29-4f8a-8a4b-09f715518c5c] Sub-agent 'FinancialAdvisor' decided to use tool 'search_financial_playbook' with arguments: {}
+INFO 2025-08-31 17:10:20,335 views 23852 23048 [2be93b84-8e29-4f8a-8a4b-09f715518c5c] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 17:10:22,381 views 23852 23048 [2be93b84-8e29-4f8a-8a4b-09f715518c5c] FINALIZER RAW OUTPUT:
+I can definitely help you with that! To give you the best insights on reducing your expenses, I need a little more information. Think of it like this: we want to make sure the advice we give is tailored perfectly to you!
+
+Could you tell me a bit about:
+
+*   **Your financial goals?** Are you saving for something specific, planning for retirement, or looking to build wealth long-term?
+*   **Your comfort level with risk?** Are you more of a cautious investor, or are you open to taking on more risk for potentially higher returns?
+
+Once I have a better understanding of your situation, I can provide some more specific and helpful recommendations!
+INFO 2025-08-31 17:10:22,382 views 23852 23048 [2be93b84-8e29-4f8a-8a4b-09f715518c5c] FINAL RESPONSE to User: 'I can definitely help you with that! To give you the best insights on reducing your expenses, I need a little more information. Think of it like this: we want to make sure the advice we give is tailored perfectly to you!
+
+Could you tell me a bit about:
+
+*   **Your financial goals?** Are you saving for something specific, planning for retirement, or looking to build wealth long-term?
+*   **Your comfort level with risk?** Are you more of a cautious investor, or are you open to taking on more risk for potentially higher returns?
+
+Once I have a better understanding of your situation, I can provide some more specific and helpful recommendations!'
+INFO 2025-08-31 17:10:22,382 views 23852 23048 ======== [END REQUEST: 2be93b84-8e29-4f8a-8a4b-09f715518c5c] ========
+
+INFO 2025-08-31 17:10:22,383 basehttp 23852 23048 "POST /api/chat/ HTTP/1.1" 200 670
+INFO 2025-08-31 17:10:31,346 basehttp 23852 23048 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:10:31,357 basehttp 23852 15924 "GET /api/transactions/ HTTP/1.1" 200 535
+INFO 2025-08-31 17:10:31,377 basehttp 23852 23048 "GET /api/transactions/choices/ HTTP/1.1" 200 481
+INFO 2025-08-31 17:10:31,381 basehttp 23852 15924 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:10:31,737 basehttp 23852 15924 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:10:31,745 basehttp 23852 23048 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:10:31,763 basehttp 23852 23048 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:10:31,768 basehttp 23852 15924 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:10:31,783 basehttp 23852 15924 "GET /api/suggestedprompts/ HTTP/1.1" 200 269
+INFO 2025-08-31 17:10:33,216 basehttp 23852 15924 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:10:33,217 basehttp 23852 23048 "GET /api/transactions/ HTTP/1.1" 200 535
+INFO 2025-08-31 17:10:33,237 basehttp 23852 15924 "GET /api/transactions/choices/ HTTP/1.1" 200 481
+INFO 2025-08-31 17:10:33,245 basehttp 23852 23048 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:10:33,672 basehttp 23852 23048 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:10:33,672 basehttp 23852 15924 "GET /api/chatbotknowledge/ HTTP/1.1" 200 3853
+INFO 2025-08-31 17:10:33,688 basehttp 23852 15924 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:10:37,022 basehttp 23852 15924 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:10:37,034 basehttp 23852 15924 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:10:37,043 basehttp 23852 23048 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:10:37,051 basehttp 23852 15924 "GET /api/usernotificationsettings/ HTTP/1.1" 200 163
+INFO 2025-08-31 17:10:37,080 basehttp 23852 15924 "GET /api/usersecuritysettings/ HTTP/1.1" 200 120
+INFO 2025-08-31 17:10:37,099 basehttp 23852 15924 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 17:10:37,114 basehttp 23852 15924 "GET /api/debitcardsettings/?account=1 HTTP/1.1" 200 186
+INFO 2025-08-31 17:10:37,137 basehttp 23852 15924 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 17:10:37,163 basehttp 23852 15924 "GET /api/creditcardsettings/?credit_card=1 HTTP/1.1" 200 183
+INFO 2025-08-31 17:10:47,265 basehttp 23852 15924 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:10:47,276 basehttp 23852 23048 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:10:47,298 basehttp 23852 23048 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:10:47,301 basehttp 23852 15924 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:10:47,323 basehttp 23852 15924 "GET /api/suggestedprompts/ HTTP/1.1" 200 269
+INFO 2025-08-31 17:10:52,587 views 23852 15924 ======== [START TEXT REQUEST: ef9d18ef-90f7-419c-9082-c8ee41b7f8e3] ========
+INFO 2025-08-31 17:10:52,588 views 23852 15924 [ef9d18ef-90f7-419c-9082-c8ee41b7f8e3] User Message (after potential transcription): 'enable "Biometric Login"'
+INFO 2025-08-31 17:10:52,588 views 23852 15924 [ef9d18ef-90f7-419c-9082-c8ee41b7f8e3] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:10:54,716 views 23852 15924 [ef9d18ef-90f7-419c-9082-c8ee41b7f8e3] Orchestrator selected agent: 'SecurityOfficer'
+INFO 2025-08-31 17:10:54,716 views 23852 15924 [ef9d18ef-90f7-419c-9082-c8ee41b7f8e3] Delegating to sub-agent: 'SecurityOfficer'
+INFO 2025-08-31 17:10:54,716 views 23852 15924 [ef9d18ef-90f7-419c-9082-c8ee41b7f8e3] STEP 2a: Sub-agent 'SecurityOfficer' is deciding which tool to use...
+ERROR 2025-08-31 17:10:55,350 views 23852 15924 [ef9d18ef-90f7-419c-9082-c8ee41b7f8e3] Sub-agent 'SecurityOfficer' failed to produce a valid tool call or tool execution failed: Sub-agent did not return a tool name.. Raw response: {"error": "No appropriate tool found for this request."}
+INFO 2025-08-31 17:10:55,351 views 23852 15924 [ef9d18ef-90f7-419c-9082-c8ee41b7f8e3] FINAL RESPONSE to User: 'I'm sorry, I was unable to complete that action. Please try again.'
+INFO 2025-08-31 17:10:55,351 views 23852 15924 ======== [END REQUEST: ef9d18ef-90f7-419c-9082-c8ee41b7f8e3] ========
+
+INFO 2025-08-31 17:10:55,352 basehttp 23852 15924 "POST /api/chat/ HTTP/1.1" 200 81
+INFO 2025-08-31 17:12:56,059 autoreload 23852 4812 C:\Users\sivaa\OneDrive\SivaAdithya\Coding\VSCode\IDFCFame5\chatbot\views.py changed, reloading.
+INFO 2025-08-31 17:12:59,515 autoreload 10596 10932 Watching for file changes with StatReloader
+INFO 2025-08-31 17:13:05,691 basehttp 10596 3604 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 17:13:05,699 basehttp 10596 5572 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:13:05,720 basehttp 10596 5572 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 17:13:05,758 basehttp 10596 5572 "GET /static/assets/index-shc4WIfB.js HTTP/1.1" 304 0
+INFO 2025-08-31 17:13:05,764 basehttp 10596 8452 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 17:13:06,067 basehttp 10596 8452 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:13:06,076 basehttp 10596 5572 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 17:13:06,076 basehttp 10596 13320 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 17:13:06,077 basehttp 10596 29336 "GET /api/transactions/ HTTP/1.1" 200 535
+INFO 2025-08-31 17:13:06,080 basehttp 10596 8452 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:13:06,111 basehttp 10596 5572 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:13:06,127 basehttp 10596 5572 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:13:06,156 basehttp 10596 5572 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 17:13:07,297 basehttp 10596 5572 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:13:07,309 basehttp 10596 5572 "GET /api/chatbotknowledge/ HTTP/1.1" 200 3853
+INFO 2025-08-31 17:13:07,318 basehttp 10596 8452 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:14:57,744 basehttp 10596 5572 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:14:57,755 basehttp 10596 8452 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:14:57,779 basehttp 10596 8452 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:14:57,783 basehttp 10596 5572 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:14:57,803 basehttp 10596 5572 "GET /api/suggestedprompts/ HTTP/1.1" 200 269
+INFO 2025-08-31 17:14:58,697 basehttp 10596 5572 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 17:14:58,704 basehttp 10596 8452 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:14:58,713 basehttp 10596 8452 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 17:14:58,970 basehttp 10596 29336 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 17:14:58,972 basehttp 10596 13320 "GET /api/transactions/ HTTP/1.1" 200 535
+INFO 2025-08-31 17:14:58,973 basehttp 10596 8452 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:14:58,974 basehttp 10596 17688 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 17:14:58,990 basehttp 10596 13320 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:14:59,009 basehttp 10596 13320 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:14:59,033 basehttp 10596 13320 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:14:59,057 basehttp 10596 13320 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 17:15:01,140 basehttp 10596 13320 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:15:01,149 basehttp 10596 17688 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:15:01,170 basehttp 10596 17688 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:15:01,174 basehttp 10596 13320 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:15:01,192 basehttp 10596 13320 "GET /api/suggestedprompts/ HTTP/1.1" 200 269
+INFO 2025-08-31 17:15:03,390 views 10596 13320 ======== [START TEXT REQUEST: cf6e2fa8-56ac-446c-b72a-f6ba36d40528] ========
+INFO 2025-08-31 17:15:03,391 views 10596 13320 [cf6e2fa8-56ac-446c-b72a-f6ba36d40528] User Message (after potential transcription): 'Mere saare accounts and unka balance dikhao.'
+INFO 2025-08-31 17:15:03,392 views 10596 13320 [cf6e2fa8-56ac-446c-b72a-f6ba36d40528] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:15:04,815 views 10596 13320 [cf6e2fa8-56ac-446c-b72a-f6ba36d40528] Orchestrator selected agent: 'AccountSpecialist'
+INFO 2025-08-31 17:15:04,816 views 10596 13320 [cf6e2fa8-56ac-446c-b72a-f6ba36d40528] Delegating to sub-agent: 'AccountSpecialist'
+INFO 2025-08-31 17:15:04,817 views 10596 13320 [cf6e2fa8-56ac-446c-b72a-f6ba36d40528] STEP 2a: Sub-agent 'AccountSpecialist' is deciding which tool to use...
+INFO 2025-08-31 17:15:05,761 views 10596 13320 [cf6e2fa8-56ac-446c-b72a-f6ba36d40528] Sub-agent 'AccountSpecialist' decided to use tool 'get_user_accounts' with arguments: {}
+INFO 2025-08-31 17:15:05,783 views 10596 13320 [cf6e2fa8-56ac-446c-b72a-f6ba36d40528] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 17:15:07,506 views 10596 13320 ======== [END REQUEST: cf6e2fa8-56ac-446c-b72a-f6ba36d40528] ========
+
+INFO 2025-08-31 17:15:07,507 basehttp 10596 13320 "POST /api/chat/ HTTP/1.1" 200 273
+INFO 2025-08-31 17:15:14,724 basehttp 10596 13320 "GET /admin/chatbot/suggestedprompt/6/change/ HTTP/1.1" 200 16528
+INFO 2025-08-31 17:15:14,769 basehttp 10596 13320 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:15:16,830 basehttp 10596 13320 "GET /admin/chatbot/suggestedprompt/6/delete/ HTTP/1.1" 200 15443
+INFO 2025-08-31 17:15:17,751 basehttp 10596 13320 "POST /admin/chatbot/suggestedprompt/6/delete/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:15:17,798 basehttp 10596 13320 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 17962
+INFO 2025-08-31 17:15:17,835 basehttp 10596 13320 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:15:18,435 basehttp 10596 13320 "GET /admin/chatbot/suggestedprompt/5/change/ HTTP/1.1" 200 16584
+INFO 2025-08-31 17:15:18,485 basehttp 10596 13320 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:15:20,987 basehttp 10596 13320 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 17769
+INFO 2025-08-31 17:15:22,720 basehttp 10596 13320 "GET /admin/chatbot/suggestedprompt/1/change/ HTTP/1.1" 200 16500
+INFO 2025-08-31 17:15:22,763 basehttp 10596 13320 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:15:24,702 basehttp 10596 13320 "POST /admin/chatbot/suggestedprompt/1/change/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:15:24,729 basehttp 10596 13320 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 18061
+INFO 2025-08-31 17:15:24,781 basehttp 10596 13320 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:15:43,397 basehttp 10596 13320 "GET /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 200 16195
+INFO 2025-08-31 17:15:43,457 basehttp 10596 13320 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:15:55,077 basehttp 10596 13320 "POST /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:15:55,107 basehttp 10596 13320 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 18376
+INFO 2025-08-31 17:15:55,156 basehttp 10596 13320 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:16:21,435 basehttp 10596 13320 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 17:16:21,443 basehttp 10596 17688 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:16:21,452 basehttp 10596 17688 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 17:16:21,719 basehttp 10596 8452 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 17:16:21,722 basehttp 10596 17688 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:16:21,723 basehttp 10596 29336 "GET /api/transactions/ HTTP/1.1" 200 535
+INFO 2025-08-31 17:16:21,725 basehttp 10596 10464 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 17:16:21,741 basehttp 10596 17688 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:16:21,756 basehttp 10596 17688 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:16:21,774 basehttp 10596 17688 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:16:21,801 basehttp 10596 17688 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 17:16:22,947 basehttp 10596 17688 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:16:22,948 basehttp 10596 10464 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:16:22,970 basehttp 10596 17688 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:16:22,971 basehttp 10596 10464 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:16:22,986 basehttp 10596 10464 "GET /api/suggestedprompts/ HTTP/1.1" 200 286
+INFO 2025-08-31 17:16:24,931 views 10596 10464 ======== [START TEXT REQUEST: 91d1c231-b79a-4e57-9dda-5eaa9267d08d] ========
+INFO 2025-08-31 17:16:24,931 views 10596 10464 [91d1c231-b79a-4e57-9dda-5eaa9267d08d] User Message (after potential transcription): 'Enoda kadaisi transactions kaattu.'
+INFO 2025-08-31 17:16:24,934 views 10596 10464 [91d1c231-b79a-4e57-9dda-5eaa9267d08d] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:16:27,281 views 10596 10464 [91d1c231-b79a-4e57-9dda-5eaa9267d08d] Orchestrator selected agent: 'AccountSpecialist'
+INFO 2025-08-31 17:16:27,281 views 10596 10464 [91d1c231-b79a-4e57-9dda-5eaa9267d08d] Delegating to sub-agent: 'AccountSpecialist'
+INFO 2025-08-31 17:16:27,282 views 10596 10464 [91d1c231-b79a-4e57-9dda-5eaa9267d08d] STEP 2a: Sub-agent 'AccountSpecialist' is deciding which tool to use...
+INFO 2025-08-31 17:16:27,819 views 10596 10464 [91d1c231-b79a-4e57-9dda-5eaa9267d08d] Sub-agent 'AccountSpecialist' decided to use tool 'list_recent_transactions' with arguments: {}
+INFO 2025-08-31 17:16:27,829 views 10596 10464 [91d1c231-b79a-4e57-9dda-5eaa9267d08d] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 17:16:29,521 views 10596 10464 ======== [END REQUEST: 91d1c231-b79a-4e57-9dda-5eaa9267d08d] ========
+
+INFO 2025-08-31 17:16:29,522 basehttp 10596 10464 "POST /api/chat/ HTTP/1.1" 200 292
+INFO 2025-08-31 17:16:39,579 views 10596 10464 ======== [START TEXT REQUEST: d7a2eb78-370f-42cc-8f57-db9aaf3e830a] ========
+INFO 2025-08-31 17:16:39,580 views 10596 10464 [d7a2eb78-370f-42cc-8f57-db9aaf3e830a] User Message (after potential transcription): 'paravalaiye nala panuriye'
+INFO 2025-08-31 17:16:39,580 views 10596 10464 [d7a2eb78-370f-42cc-8f57-db9aaf3e830a] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:16:41,537 views 10596 10464 [d7a2eb78-370f-42cc-8f57-db9aaf3e830a] Orchestrator selected agent: 'Generalist'
+INFO 2025-08-31 17:16:41,538 views 10596 10464 [d7a2eb78-370f-42cc-8f57-db9aaf3e830a] Delegating to Generalist for a direct answer.
+INFO 2025-08-31 17:16:42,218 views 10596 10464 [d7a2eb78-370f-42cc-8f57-db9aaf3e830a] FINAL RESPONSE to User: '"Paravalaiye nala panuriye" - that's a lovely thing to say, thank you! It means "everything is going well."
+
+I'm glad to hear that things are going well for you! Is there anything I can help you with today?'
+INFO 2025-08-31 17:16:42,219 views 10596 10464 ======== [END REQUEST: d7a2eb78-370f-42cc-8f57-db9aaf3e830a] ========
+
+INFO 2025-08-31 17:16:42,220 basehttp 10596 10464 "POST /api/chat/ HTTP/1.1" 200 227
+INFO 2025-08-31 17:16:47,799 basehttp 10596 10464 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:16:47,811 basehttp 10596 10464 "GET /api/chatbotknowledge/ HTTP/1.1" 200 3853
+INFO 2025-08-31 17:16:47,829 basehttp 10596 10464 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:17:01,602 basehttp 10596 10464 "PUT /api/chatbotknowledge/1/ HTTP/1.1" 200 393
+INFO 2025-08-31 17:17:03,545 basehttp 10596 10464 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:17:03,547 basehttp 10596 17688 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:17:03,588 basehttp 10596 10464 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:17:03,589 basehttp 10596 17688 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:17:03,608 basehttp 10596 17688 "GET /api/suggestedprompts/ HTTP/1.1" 200 286
+INFO 2025-08-31 17:17:07,978 views 10596 17688 ======== [START TEXT REQUEST: d2554daa-6808-4162-944b-0afce40d0c1d] ========
+INFO 2025-08-31 17:17:07,979 views 10596 17688 [d2554daa-6808-4162-944b-0afce40d0c1d] User Message (after potential transcription): 'un peru enna'
+INFO 2025-08-31 17:17:07,979 views 10596 17688 [d2554daa-6808-4162-944b-0afce40d0c1d] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:17:08,656 views 10596 17688 [d2554daa-6808-4162-944b-0afce40d0c1d] Orchestrator selected agent: 'Generalist'
+INFO 2025-08-31 17:17:08,656 views 10596 17688 [d2554daa-6808-4162-944b-0afce40d0c1d] Delegating to Generalist for a direct answer.
+INFO 2025-08-31 17:17:10,112 views 10596 17688 [d2554daa-6808-4162-944b-0afce40d0c1d] FINAL RESPONSE to User: 'That's a new one! I'm not quite sure what "un peru enna" means. Could you try explaining it in a different way or using other words? I'm here to help if I can!'
+INFO 2025-08-31 17:17:10,112 views 10596 17688 ======== [END REQUEST: d2554daa-6808-4162-944b-0afce40d0c1d] ========
+
+INFO 2025-08-31 17:17:10,114 basehttp 10596 17688 "POST /api/chat/ HTTP/1.1" 200 176
+INFO 2025-08-31 17:17:19,717 views 10596 17688 ======== [START TEXT REQUEST: 8aef3ca0-73bf-4213-9a99-418ad3d26a8b] ========
+INFO 2025-08-31 17:17:19,718 views 10596 17688 [8aef3ca0-73bf-4213-9a99-418ad3d26a8b] User Message (after potential transcription): 'aap ka name kya hai'
+INFO 2025-08-31 17:17:19,718 views 10596 17688 [8aef3ca0-73bf-4213-9a99-418ad3d26a8b] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:17:21,718 views 10596 17688 [8aef3ca0-73bf-4213-9a99-418ad3d26a8b] Orchestrator selected agent: 'Generalist'
+INFO 2025-08-31 17:17:21,718 views 10596 17688 [8aef3ca0-73bf-4213-9a99-418ad3d26a8b] Delegating to Generalist for a direct answer.
+INFO 2025-08-31 17:17:22,364 views 10596 17688 [8aef3ca0-73bf-4213-9a99-418ad3d26a8b] FINAL RESPONSE to User: 'Mera koi naam nahi hai. Main Google dwara train kiya gaya ek bada bhasha model hoon.'
+INFO 2025-08-31 17:17:22,365 views 10596 17688 ======== [END REQUEST: 8aef3ca0-73bf-4213-9a99-418ad3d26a8b] ========
+
+INFO 2025-08-31 17:17:22,366 basehttp 10596 17688 "POST /api/chat/ HTTP/1.1" 200 99
+INFO 2025-08-31 17:17:45,391 views 10596 17688 ======== [START TEXT REQUEST: b694627c-1ee7-4608-acdb-8a9fc55e3bfc] ========
+INFO 2025-08-31 17:17:45,392 views 10596 17688 [b694627c-1ee7-4608-acdb-8a9fc55e3bfc] User Message (after potential transcription): 'Mere saare accounts and unka balance dikhao.'
+INFO 2025-08-31 17:17:45,393 views 10596 17688 [b694627c-1ee7-4608-acdb-8a9fc55e3bfc] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:17:47,604 views 10596 17688 [b694627c-1ee7-4608-acdb-8a9fc55e3bfc] Orchestrator selected agent: 'AccountSpecialist'
+INFO 2025-08-31 17:17:47,605 views 10596 17688 [b694627c-1ee7-4608-acdb-8a9fc55e3bfc] Delegating to sub-agent: 'AccountSpecialist'
+INFO 2025-08-31 17:17:47,606 views 10596 17688 [b694627c-1ee7-4608-acdb-8a9fc55e3bfc] STEP 2a: Sub-agent 'AccountSpecialist' is deciding which tool to use...
+INFO 2025-08-31 17:17:48,214 views 10596 17688 [b694627c-1ee7-4608-acdb-8a9fc55e3bfc] Sub-agent 'AccountSpecialist' decided to use tool 'get_user_accounts' with arguments: {}
+INFO 2025-08-31 17:17:48,221 views 10596 17688 [b694627c-1ee7-4608-acdb-8a9fc55e3bfc] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 17:17:49,692 views 10596 17688 ======== [END REQUEST: b694627c-1ee7-4608-acdb-8a9fc55e3bfc] ========
+
+INFO 2025-08-31 17:17:49,693 basehttp 10596 17688 "POST /api/chat/ HTTP/1.1" 200 249
+INFO 2025-08-31 17:18:08,006 views 10596 17688 ======== [START TEXT REQUEST: 04873722-bbe4-4a69-bed8-4c22a2fb3569] ========
+INFO 2025-08-31 17:18:08,017 views 10596 17688 [04873722-bbe4-4a69-bed8-4c22a2fb3569] STEP 1: Performing orchestration call to select an agent...
+INFO 2025-08-31 17:18:10,359 views 10596 17688 [04873722-bbe4-4a69-bed8-4c22a2fb3569] Orchestrator selected agent: 'FinancialAdvisor'
+INFO 2025-08-31 17:18:10,360 views 10596 17688 [04873722-bbe4-4a69-bed8-4c22a2fb3569] Delegating to sub-agent: 'FinancialAdvisor'
+INFO 2025-08-31 17:18:10,361 views 10596 17688 [04873722-bbe4-4a69-bed8-4c22a2fb3569] STEP 2a: Sub-agent 'FinancialAdvisor' is deciding which tool to use...
+INFO 2025-08-31 17:18:10,985 views 10596 17688 [04873722-bbe4-4a69-bed8-4c22a2fb3569] Sub-agent 'FinancialAdvisor' decided to use tool 'search_financial_playbook' with arguments: {}
+INFO 2025-08-31 17:18:10,992 views 10596 17688 [04873722-bbe4-4a69-bed8-4c22a2fb3569] STEP 3: Performing finalization call to format the tool output...
+INFO 2025-08-31 17:18:12,857 views 10596 17688 ======== [END REQUEST: 04873722-bbe4-4a69-bed8-4c22a2fb3569] ========
+
+INFO 2025-08-31 17:18:12,858 basehttp 10596 17688 "POST /api/chat/ HTTP/1.1" 200 1066
+INFO 2025-08-31 17:18:23,850 basehttp 10596 17688 "GET /chat HTTP/1.1" 301 0
+INFO 2025-08-31 17:18:23,859 basehttp 10596 10464 "GET /chat/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:18:23,868 basehttp 10596 10464 "GET / HTTP/1.1" 200 1362
+INFO 2025-08-31 17:18:23,903 basehttp 10596 10464 "GET /static/assets/index-shc4WIfB.js HTTP/1.1" 304 0
+INFO 2025-08-31 17:18:23,908 basehttp 10596 29336 "GET /static/assets/index-RzZ_RbCm.css HTTP/1.1" 304 0
+INFO 2025-08-31 17:18:24,198 basehttp 10596 10464 "GET /api/accounts/ HTTP/1.1" 200 450
+INFO 2025-08-31 17:18:24,199 basehttp 10596 29336 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:18:24,200 basehttp 10596 1556 "GET /api/creditcards/ HTTP/1.1" 200 206
+INFO 2025-08-31 17:18:24,208 basehttp 10596 8452 "GET /api/transactions/ HTTP/1.1" 200 535
+INFO 2025-08-31 17:18:24,212 basehttp 10596 29336 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:18:24,246 basehttp 10596 29336 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:18:24,260 basehttp 10596 29336 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:18:24,289 basehttp 10596 29336 "GET /api/quickstats/ HTTP/1.1" 200 310
+INFO 2025-08-31 17:18:47,444 basehttp 10596 29336 "GET /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 200 16195
+INFO 2025-08-31 17:18:47,496 basehttp 10596 29336 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:18:49,070 basehttp 10596 29336 "POST /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:18:49,108 basehttp 10596 29336 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 18820
+INFO 2025-08-31 17:18:49,156 basehttp 10596 29336 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:19:02,546 basehttp 10596 29336 "GET /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 200 16195
+INFO 2025-08-31 17:19:02,592 basehttp 10596 29336 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:19:03,328 basehttp 10596 29336 "POST /admin/chatbot/suggestedprompt/add/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:19:03,357 basehttp 10596 29336 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 19300
+INFO 2025-08-31 17:19:03,411 basehttp 10596 29336 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:19:12,258 basehttp 10596 29336 "GET /admin/chatbot/suggestedprompt/5/change/ HTTP/1.1" 200 16584
+INFO 2025-08-31 17:19:12,316 basehttp 10596 29336 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:19:14,713 basehttp 10596 29336 "POST /admin/chatbot/suggestedprompt/5/change/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:19:14,744 basehttp 10596 29336 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 19399
+INFO 2025-08-31 17:19:14,793 basehttp 10596 29336 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:19:21,070 basehttp 10596 29336 "GET /api/userprofiles/ HTTP/1.1" 200 90
+INFO 2025-08-31 17:19:21,070 basehttp 10596 8452 "GET /api/initialbotmessages/ HTTP/1.1" 200 88
+INFO 2025-08-31 17:19:21,094 basehttp 10596 29336 "GET /api/aimodels/ HTTP/1.1" 200 214
+INFO 2025-08-31 17:19:21,096 basehttp 10596 8452 "GET /api/notifications/ HTTP/1.1" 200 258
+INFO 2025-08-31 17:19:21,118 basehttp 10596 8452 "GET /api/suggestedprompts/ HTTP/1.1" 200 519
+INFO 2025-08-31 17:19:39,039 basehttp 10596 8452 "GET /admin/chatbot/suggestedprompt/3/change/ HTTP/1.1" 200 16496
+INFO 2025-08-31 17:19:39,094 basehttp 10596 8452 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-08-31 17:19:41,181 basehttp 10596 8452 "POST /admin/chatbot/suggestedprompt/3/change/ HTTP/1.1" 302 0
+INFO 2025-08-31 17:19:41,208 basehttp 10596 8452 "GET /admin/chatbot/suggestedprompt/ HTTP/1.1" 200 19442
+INFO 2025-08-31 17:19:41,248 basehttp 10596 8452 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
